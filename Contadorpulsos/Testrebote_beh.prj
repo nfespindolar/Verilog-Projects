@@ -1,0 +1,6 @@
+verilog work "../DecodificadorHexadecimal/Codificadorsietesegmentos.v"
+verilog work "debounce.v"
+verilog work "cuenta.v"
+verilog work "Contador.v"
+verilog work "Testrebote.v"
+verilog work "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

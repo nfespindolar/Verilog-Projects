@@ -1,0 +1,31 @@
+Running: C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/testRam_isim_beh.exe -prj C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/testRam_beh.prj work.testRam work.glbl 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/ram.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/counter.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/comp.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/ramcontroler.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/testRam.v" into library work
+Analyzing Verilog file "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/ramcontroler.v" Line 17: Size mismatch in connection of port <inc>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/ramcontroler.v" Line 20: Size mismatch in connection of port <load>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/ramcontroler.v" Line 21: Size mismatch in connection of port <d>. Formal port size is 12-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 97664 KB
+Fuse CPU Usage: 545 ms
+Compiling module comp
+Compiling module counter(N=8)
+Compiling module counter(N=12)
+Compiling module ram(DWIDTH=8)
+Compiling module ramcontroler
+Compiling module testRam
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 7 Verilog Units
+Built simulation executable C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/testRam_isim_beh.exe
+Fuse Memory Usage: 102128 KB
+Fuse CPU Usage: 624 ms

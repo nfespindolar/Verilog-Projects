@@ -1,0 +1,43 @@
+Running: C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/TestReloj_isim_beh.exe -prj C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/TestReloj_beh.prj work.TestReloj work.glbl 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Selectordisplay.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/SelectorDigito.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Mode.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/HoraReloj.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/DivisorFrecuencia.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/debounce.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Control.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Contador.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Codificadorsietesegmentos1.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Codificadorsietesegmentos.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Alarma.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/relojMain.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/TestReloj.v" into library work
+Analyzing Verilog file "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97200 KB
+Fuse CPU Usage: 529 ms
+Compiling module DivisorFrecuencia
+Compiling module HoraReloj
+Compiling module Alarma
+Compiling module Contador
+Compiling module debounce
+Compiling module Codificadorsietesegmentos
+Compiling module Codificadorsietesegmentos1
+Compiling module Selectordigito
+Compiling module Selectordisplay
+Compiling module Mode
+Compiling module Control
+Compiling module relojMain
+Compiling module TestReloj
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 14 Verilog Units
+Built simulation executable C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/TestReloj_isim_beh.exe
+Fuse Memory Usage: 101664 KB
+Fuse CPU Usage: 717 ms

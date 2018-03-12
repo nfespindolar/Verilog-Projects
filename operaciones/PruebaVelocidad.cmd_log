@@ -1,0 +1,110 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PruebaVelocidad.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 PruebaVelocidad.ngc PruebaVelocidad.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o PruebaVelocidad_map.ncd PruebaVelocidad.ngd PruebaVelocidad.pcf 
+par -w -intstyle ise -ol high -mt off PruebaVelocidad_map.ncd PruebaVelocidad.ncd PruebaVelocidad.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml PruebaVelocidad.twx PruebaVelocidad.ncd -o PruebaVelocidad.twr PruebaVelocidad.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f PruebaVelocidad.ut PruebaVelocidad.ncd 

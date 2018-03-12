@@ -1,0 +1,1608 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.61 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.62 secs
+ 
+--> Reading design: PruebaVelocidad.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "PruebaVelocidad.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "PruebaVelocidad"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : PruebaVelocidad
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PulsoAImpulso.v" into library work
+Parsing module <pulsoAImpulso>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\sumaDeLongitudes.v" into library work
+Parsing module <sumaDeLongitudes>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\restar.v" into library work
+Parsing module <restar>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\multiplicacionFloat.v" into library work
+Parsing module <multiplicacionFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\floatAFijo.v" into library work
+Parsing module <floatAFijo>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\enterominaFloat.v" into library work
+Parsing module <enterominaFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\enteroAFloat.v" into library work
+Parsing module <enteroAFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\division.v" into library work
+Parsing module <division>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\DivisorFrecuencia.v" into library work
+Parsing module <DivisorFrecuencia>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" into library work
+Parsing module <velocidad>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\Selectordisplay.v" into library work
+Parsing module <Selectordisplay>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\SelectorDigito.v" into library work
+Parsing module <Selectordigito>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" into library work
+Parsing module <desplazamiento>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\Codificadorsietesegmentos.v" into library work
+Parsing module <Codificadorsietesegmentos>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" into library work
+Parsing module <codifBinDec>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\adapatadorEntero.v" into library work
+Parsing module <adapatadorEntero>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\aceleracion.v" into library work
+Parsing module <aceleracion>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" into library work
+Parsing module <PruebaVelocidad>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 36: Port circunferenciaF is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 37: Port desplazfAntg is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 38: Port desplazfAntg is not connected to this instance
+
+Elaborating module <PruebaVelocidad>.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\debounce.v" Line 35: Result of 20-bit expression is truncated to fit in 19-bit target.
+
+Elaborating module <pulsoAImpulso>.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PulsoAImpulso.v" Line 29: Assignment to valorNuevo ignored, since the identifier is never used
+
+Elaborating module <desplazamiento>.
+
+Elaborating module <enterominaFloat>.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" Line 51: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <division>.
+
+Elaborating module <sumaDeLongitudes>.
+
+Elaborating module <floatAFijo>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" Line 96: Result of 8-bit expression is truncated to fit in 7-bit target.
+
+Elaborating module <velocidad>.
+
+Elaborating module <DivisorFrecuencia(NDELAY=10,NBITS=4)>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\DivisorFrecuencia.v" Line 37: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <restar>.
+
+Elaborating module <enteroAFloat>.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 126: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 136: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <multiplicacionFloat>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 207: Result of 8-bit expression is truncated to fit in 7-bit target.
+
+Elaborating module <aceleracion>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\aceleracion.v" Line 156: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 38: Assignment to aceleracionFloat ignored, since the identifier is never used
+
+Elaborating module <adapatadorEntero>.
+
+Elaborating module <codifBinDec>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 26: Result of 16-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 27: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 28: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 29: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <Codificadorsietesegmentos>.
+
+Elaborating module <Selectordigito>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\SelectorDigito.v" Line 37: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\SelectorDigito.v" Line 41: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Selectordisplay>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\Selectordisplay.v" Line 34: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\Selectordisplay.v" Line 38: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <PruebaVelocidad>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 36: Output port <despFixed> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 36: Output port <circunferenciaF> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 36: Output port <milFloat> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 36: Output port <circunfMetrosFloat> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 36: Output port <validar> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <desplazfAntg> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <millonSeg> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <contadorFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <diferencialDesp> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <diferencialTiemp> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <milFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <tresmilFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <constantekmh> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <velocidadkmhfloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <contadorW> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <validar> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <impulsoW> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <clock20M> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 37: Output port <impulso20M> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <aceleracionFloat> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <aceleracionFixed> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <desplazfAntg> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <millonSeg> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <contadorFloat> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <diferencialDesp> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <diferencialTiemp> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <contadorW> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <validar> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <impulsoW> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <clock20M> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v" line 38: Output port <impulso20M> of the instance <aceleracion1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <PruebaVelocidad> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/debounce.v".
+        NDELAY = 300000
+        NBITS = 19
+    Found 19-bit register for signal <count>.
+    Found 1-bit register for signal <clean>.
+    Found 1-bit register for signal <xnew>.
+    Found 19-bit adder for signal <count[18]_GND_2_o_add_3_OUT> created at line 35.
+    Found 1-bit comparator equal for signal <n0000> created at line 33
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <pulsoAImpulso>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/pulsoaimpulso.v".
+    Found 1-bit register for signal <valorAntiguo>.
+    Found 1-bit register for signal <impulso>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pulsoAImpulso> synthesized.
+
+Synthesizing Unit <desplazamiento>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 35: Output port <s_axis_a_tready> of the instance <circunfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 35: Output port <m_axis_result_tvalid> of the instance <circunfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 46: Output port <s_axis_a_tready> of the instance <milfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 46: Output port <m_axis_result_tvalid> of the instance <milfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 57: Output port <s_axis_a_tready> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 57: Output port <s_axis_b_tready> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 57: Output port <m_axis_result_tvalid> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 71: Output port <s_axis_a_tready> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 71: Output port <s_axis_b_tready> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 71: Output port <m_axis_result_tvalid> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 84: Output port <s_axis_a_tready> of the instance <convertirDespAFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 84: Output port <m_axis_result_tvalid> of the instance <convertirDespAFijo> is unconnected or connected to loadless signal.
+    Found 7-bit register for signal <counter>.
+    Found 1-bit register for signal <validarReg>.
+    Found 7-bit adder for signal <counter[6]_GND_4_o_add_2_OUT> created at line 96.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <desplazamiento> synthesized.
+
+Synthesizing Unit <velocidad>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 63: Output port <s_axis_a_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 63: Output port <s_axis_b_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 63: Output port <m_axis_result_tvalid> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 76: Output port <s_axis_a_tready> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 76: Output port <m_axis_result_tvalid> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 86: Output port <s_axis_a_tready> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 86: Output port <m_axis_result_tvalid> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 96: Output port <s_axis_a_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 96: Output port <s_axis_b_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 96: Output port <m_axis_result_tvalid> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 109: Output port <s_axis_a_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 109: Output port <s_axis_b_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 109: Output port <m_axis_result_tvalid> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 122: Output port <s_axis_a_tready> of the instance <milAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 122: Output port <m_axis_result_tvalid> of the instance <milAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 132: Output port <s_axis_a_tready> of the instance <tresmilAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 132: Output port <m_axis_result_tvalid> of the instance <tresmilAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 142: Output port <s_axis_a_tready> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 142: Output port <s_axis_b_tready> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 142: Output port <m_axis_result_tvalid> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 155: Output port <s_axis_a_tready> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 155: Output port <s_axis_b_tready> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 155: Output port <m_axis_result_tvalid> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 168: Output port <s_axis_a_tready> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 168: Output port <m_axis_result_tvalid> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <desplazamientofNuevo>.
+    Found 1-bit register for signal <impulso>.
+    Found 32-bit register for signal <contadorAcumulado>.
+    Found 32-bit register for signal <contador>.
+    Found 1-bit register for signal <validarReg>.
+    Found 7-bit register for signal <counter>.
+    Found 16-bit register for signal <desplazamientofAntg>.
+    Found 32-bit adder for signal <contador[31]_GND_9_o_add_5_OUT> created at line 192.
+    Found 7-bit adder for signal <counter[6]_GND_9_o_add_20_OUT> created at line 207.
+    Found 16-bit comparator equal for signal <desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o> created at line 182
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 105 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <velocidad> synthesized.
+
+Synthesizing Unit <DivisorFrecuencia>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/divisorfrecuencia.v".
+        NDELAY = 10
+        NBITS = 4
+    Found 1-bit register for signal <freq>.
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count[3]_GND_10_o_add_2_OUT> created at line 37.
+    Found 4-bit comparator greater for signal <count[3]_PWR_10_o_LessThan_2_o> created at line 35
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <DivisorFrecuencia> synthesized.
+
+Synthesizing Unit <aceleracion>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 59: Output port <s_axis_a_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 59: Output port <s_axis_b_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 59: Output port <m_axis_result_tvalid> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 72: Output port <s_axis_a_tready> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 72: Output port <m_axis_result_tvalid> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 82: Output port <s_axis_a_tready> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 82: Output port <m_axis_result_tvalid> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 92: Output port <s_axis_a_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 92: Output port <s_axis_b_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 92: Output port <m_axis_result_tvalid> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 105: Output port <s_axis_a_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 105: Output port <s_axis_b_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 105: Output port <m_axis_result_tvalid> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 119: Output port <s_axis_a_tready> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v" line 119: Output port <m_axis_result_tvalid> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <velocidadfNuevo>.
+    Found 1-bit register for signal <impulso>.
+    Found 32-bit register for signal <contadorAcumulado>.
+    Found 32-bit register for signal <contador>.
+    Found 1-bit register for signal <validarReg>.
+    Found 7-bit register for signal <counter>.
+    Found 16-bit register for signal <velocidadfAntg>.
+    Found 32-bit adder for signal <contador[31]_GND_14_o_add_5_OUT> created at line 141.
+    Found 7-bit adder for signal <counter[6]_GND_14_o_add_20_OUT> created at line 156.
+    Found 16-bit comparator equal for signal <velocidadfNuevo[15]_velocidadf[15]_equal_4_o> created at line 131
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 105 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <aceleracion> synthesized.
+
+Synthesizing Unit <adapatadorEntero>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/adapatadorentero.v".
+WARNING:Xst:647 - Input <fixedPoint<23:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <fixedPoint<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:2935 - Signal 'circunferencia', unconnected in block 'adapatadorEntero', is tied to its initial value (0000100100010110).
+    Summary:
+	no macro.
+Unit <adapatadorEntero> synthesized.
+
+Synthesizing Unit <codifBinDec>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/codifbin7segdec.v".
+    Found 17-bit subtractor for signal <GND_16_o_GND_16_o_sub_3_OUT> created at line 27.
+    Found 17-bit subtractor for signal <GND_16_o_GND_16_o_sub_8_OUT> created at line 28.
+    Found 15-bit adder for signal <n0035[14:0]> created at line 28.
+    Found 12-bit adder for signal <n0038[11:0]> created at line 29.
+    Found 15-bit adder for signal <n0041> created at line 29.
+    Found 4-bit subtractor for signal <unidades> created at line 23.
+    Found 10x4-bit multiplier for signal <PWR_16_o_numero[15]_MuLt_1_OUT> created at line 27.
+    Found 7x4-bit multiplier for signal <PWR_16_o_GND_16_o_MuLt_5_OUT> created at line 28.
+    Found 4x4-bit multiplier for signal <PWR_16_o_GND_16_o_MuLt_11_OUT> created at line 29.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <codifBinDec> synthesized.
+
+Synthesizing Unit <div_16u_10u>.
+    Related source file is "".
+    Found 26-bit adder for signal <GND_17_o_b[9]_add_1_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_17_o_b[9]_add_3_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_17_o_b[9]_add_5_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_17_o_b[9]_add_7_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_17_o_b[9]_add_9_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_17_o_b[9]_add_11_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_17_o_b[9]_add_13_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_17_o_b[9]_add_15_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_17_o_b[9]_add_17_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_17_o_b[9]_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[9]_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_17_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_17_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_17_o_add_27_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_17_o_add_29_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_17_o_add_31_OUT[15:0]> created at line 0.
+    Found 26-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 211 Multiplexer(s).
+Unit <div_16u_10u> synthesized.
+
+Synthesizing Unit <div_32u_7u>.
+    Related source file is "".
+    Found 39-bit adder for signal <GND_19_o_b[6]_add_1_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_19_o_b[6]_add_3_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_19_o_b[6]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_19_o_b[6]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_19_o_b[6]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_19_o_b[6]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_19_o_b[6]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[6]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_19_o_add_63_OUT[31:0]> created at line 0.
+    Found 39-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_7u> synthesized.
+
+Synthesizing Unit <div_32u_4u>.
+    Related source file is "".
+    Found 36-bit adder for signal <GND_21_o_b[3]_add_1_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_21_o_b[3]_add_3_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_21_o_b[3]_add_5_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_21_o_b[3]_add_7_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[3]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_21_o_add_63_OUT[31:0]> created at line 0.
+    Found 36-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_4u> synthesized.
+
+Synthesizing Unit <Codificadorsietesegmentos>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/codificadorsietesegmentos.v".
+    Found 16x7-bit Read Only RAM for signal <Codificar>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Codificadorsietesegmentos> synthesized.
+
+Synthesizing Unit <Selectordigito>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/selectordigito.v".
+    Found 2-bit register for signal <digito>.
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_24_o_add_2_OUT> created at line 37.
+    Found 2-bit adder for signal <digito[1]_GND_24_o_add_3_OUT> created at line 41.
+    Found 4x4-bit Read Only RAM for signal <Switch>
+    Found 26-bit comparator greater for signal <counter[25]_GND_24_o_LessThan_2_o> created at line 36
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Selectordigito> synthesized.
+
+Synthesizing Unit <Selectordisplay>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/selectordisplay.v".
+    Found 2-bit register for signal <digito>.
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_25_o_add_2_OUT> created at line 34.
+    Found 2-bit adder for signal <digito[1]_GND_25_o_add_3_OUT> created at line 38.
+    Found 7-bit 4-to-1 multiplexer for signal <displaytotal> created at line 46.
+    Found 26-bit comparator greater for signal <counter[25]_GND_25_o_LessThan_2_o> created at line 33
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <Selectordisplay> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x7-bit single-port Read Only RAM                    : 4
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 3
+ 10x4-bit multiplier                                   : 1
+ 4x4-bit multiplier                                    : 1
+ 7x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 98
+ 12-bit adder                                          : 1
+ 15-bit adder                                          : 2
+ 16-bit adder                                          : 6
+ 17-bit adder                                          : 1
+ 17-bit subtractor                                     : 2
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 2
+ 2-bit adder                                           : 2
+ 20-bit adder                                          : 1
+ 21-bit adder                                          : 1
+ 22-bit adder                                          : 1
+ 23-bit adder                                          : 1
+ 24-bit adder                                          : 1
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 3
+ 32-bit adder                                          : 55
+ 33-bit adder                                          : 2
+ 34-bit adder                                          : 2
+ 35-bit adder                                          : 2
+ 36-bit adder                                          : 2
+ 37-bit adder                                          : 1
+ 38-bit adder                                          : 1
+ 39-bit adder                                          : 1
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 1
+ 7-bit adder                                           : 3
+# Registers                                            : 33
+ 1-bit register                                        : 15
+ 16-bit register                                       : 4
+ 19-bit register                                       : 1
+ 2-bit register                                        : 2
+ 26-bit register                                       : 2
+ 32-bit register                                       : 4
+ 4-bit register                                        : 2
+ 7-bit register                                        : 3
+# Comparators                                          : 90
+ 1-bit comparator equal                                : 1
+ 16-bit comparator equal                               : 2
+ 16-bit comparator lessequal                           : 7
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator greater                             : 2
+ 26-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 55
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 2077
+ 1-bit 2-to-1 multiplexer                              : 2067
+ 16-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+ 7-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/enterominaFloat.ngc>.
+Reading core <ipcore_dir/division.ngc>.
+Reading core <ipcore_dir/sumaDeLongitudes.ngc>.
+Reading core <ipcore_dir/floatAFijo.ngc>.
+Reading core <ipcore_dir/restar.ngc>.
+Reading core <ipcore_dir/enteroAFloat.ngc>.
+Reading core <ipcore_dir/multiplicacionFloat.ngc>.
+Loading core <enterominaFloat> for timing and area information for instance <circunfAFloat>.
+Loading core <enterominaFloat> for timing and area information for instance <milfAFloat>.
+Loading core <division> for timing and area information for instance <milimetrosAmetros>.
+Loading core <sumaDeLongitudes> for timing and area information for instance <sumatotalDistancia>.
+Loading core <floatAFijo> for timing and area information for instance <convertirDespAFijo>.
+Loading core <restar> for timing and area information for instance <restarDesp>.
+Loading core <enteroAFloat> for timing and area information for instance <millonAseg>.
+Loading core <enteroAFloat> for timing and area information for instance <contadorAfloat>.
+Loading core <division> for timing and area information for instance <contadorASeg>.
+Loading core <division> for timing and area information for instance <cocienteVelocidad>.
+Loading core <enterominaFloat> for timing and area information for instance <milAFloat>.
+Loading core <enterominaFloat> for timing and area information for instance <tresmilAFloat>.
+Loading core <division> for timing and area information for instance <hallarConstanteKmh>.
+Loading core <multiplicacionFloat> for timing and area information for instance <productokmh>.
+Loading core <floatAFijo> for timing and area information for instance <convertirVelAFijo>.
+Loading core <restar> for timing and area information for instance <restarDesp>.
+Loading core <enteroAFloat> for timing and area information for instance <millonAseg>.
+Loading core <enteroAFloat> for timing and area information for instance <contadorAfloat>.
+Loading core <division> for timing and area information for instance <contadorASeg>.
+Loading core <division> for timing and area information for instance <cocienteVelocidad>.
+Loading core <floatAFijo> for timing and area information for instance <convertirVelAFijo>.
+WARNING:Xst:1290 - Hierarchical block <reloj25M> is unconnected in block <velocidad1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <pulso> is unconnected in block <velocidad1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <reloj25M> is unconnected in block <aceleracion1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <pulso> is unconnected in block <aceleracion1>.
+   It will be removed from the design.
+
+Synthesizing (advanced) Unit <Codificadorsietesegmentos>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Codificar> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <numero>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Codificar>     |          |
+    -----------------------------------------------------------------------
+Unit <Codificadorsietesegmentos> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DivisorFrecuencia>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DivisorFrecuencia> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Selectordigito>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <digito>: 1 register on signal <digito>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Switch> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digito>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Switch>        |          |
+    -----------------------------------------------------------------------
+Unit <Selectordigito> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Selectordisplay>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <digito>: 1 register on signal <digito>.
+Unit <Selectordisplay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <aceleracion>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <aceleracion> synthesized (advanced).
+
+Synthesizing (advanced) Unit <codifBinDec>.
+	Multiplier <Mmult_PWR_16_o_GND_16_o_MuLt_11_OUT> in block <codifBinDec> and adder/subtractor <Madd_n0038[11:0]_Madd> in block <codifBinDec> are combined into a MAC<Maddsub_PWR_16_o_GND_16_o_MuLt_11_OUT>.
+Unit <codifBinDec> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <desplazamiento>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <desplazamiento> synthesized (advanced).
+
+Synthesizing (advanced) Unit <velocidad>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <velocidad> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x7-bit single-port distributed Read Only RAM        : 4
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 4x4-to-4-bit MAC                                      : 1
+# Multipliers                                          : 2
+ 10x4-bit multiplier                                   : 1
+ 7x4-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 85
+ 15-bit adder                                          : 1
+ 16-bit adder                                          : 16
+ 17-bit subtractor                                     : 2
+ 32-bit adder                                          : 64
+ 4-bit adder                                           : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 12
+ 19-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 26-bit up counter                                     : 2
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 2
+ 7-bit up counter                                      : 3
+# Registers                                            : 143
+ Flip-Flops                                            : 143
+# Comparators                                          : 90
+ 1-bit comparator equal                                : 1
+ 16-bit comparator equal                               : 2
+ 16-bit comparator lessequal                           : 7
+ 17-bit comparator lessequal                           : 1
+ 18-bit comparator lessequal                           : 1
+ 19-bit comparator lessequal                           : 1
+ 20-bit comparator lessequal                           : 1
+ 21-bit comparator lessequal                           : 1
+ 22-bit comparator lessequal                           : 1
+ 23-bit comparator lessequal                           : 1
+ 24-bit comparator lessequal                           : 1
+ 25-bit comparator lessequal                           : 1
+ 26-bit comparator greater                             : 2
+ 26-bit comparator lessequal                           : 1
+ 32-bit comparator lessequal                           : 55
+ 33-bit comparator lessequal                           : 2
+ 34-bit comparator lessequal                           : 2
+ 35-bit comparator lessequal                           : 2
+ 36-bit comparator lessequal                           : 2
+ 37-bit comparator lessequal                           : 1
+ 38-bit comparator lessequal                           : 1
+ 39-bit comparator lessequal                           : 1
+ 4-bit comparator greater                              : 2
+# Multiplexers                                         : 2075
+ 1-bit 2-to-1 multiplexer                              : 2065
+ 16-bit 2-to-1 multiplexer                             : 3
+ 32-bit 2-to-1 multiplexer                             : 6
+ 7-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <PruebaVelocidad> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <desplazamiento> ...
+
+Optimizing unit <velocidad> ...
+
+Optimizing unit <aceleracion> ...
+
+Optimizing unit <codifBinDec> ...
+
+Optimizing unit <div_16u_10u> ...
+WARNING:Xst:2677 - Node <velocidad1/reloj25M/count_3> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/reloj25M/count_2> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/reloj25M/count_1> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/reloj25M/count_0> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_6> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_5> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_4> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_3> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_2> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_1> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/counter_0> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/reloj25M/freq> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/pulso/valorAntiguo> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/pulso/impulso> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/impulso> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <velocidad1/validarReg> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/reloj25M/count_3> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/reloj25M/count_2> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/reloj25M/count_1> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/reloj25M/count_0> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_6> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_5> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_4> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_3> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_2> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_1> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/counter_0> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/reloj25M/freq> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/pulso/valorAntiguo> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/pulso/impulso> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/impulso> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:2677 - Node <aceleracion1/validarReg> of sequential type is unconnected in block <PruebaVelocidad>.
+WARNING:Xst:1293 - FF/Latch <aceleracion1/contador_31> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <aceleracion1/contador_29> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <aceleracion1/contador_30> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <velocidad1/contador_30> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <velocidad1/contador_29> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <velocidad1/contador_31> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_25> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_24> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_23> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_22> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_21> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_20> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_19> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_18> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <seleccionDisplay/counter_17> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_25> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_24> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_23> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_22> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_21> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_20> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_19> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_18> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <switchactual/counter_17> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <aceleracion1/contadorAcumulado_29> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <aceleracion1/contadorAcumulado_30> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <aceleracion1/contadorAcumulado_31> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <velocidad1/contadorAcumulado_29> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <velocidad1/contadorAcumulado_30> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <velocidad1/contadorAcumulado_31> has a constant value of 0 in block <PruebaVelocidad>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <switchactual/digito_0> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/digito_0> 
+INFO:Xst:2261 - The FF/Latch <switchactual/digito_1> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/digito_1> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_0> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_0> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_1> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_1> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_2> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_2> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_3> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_3> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_4> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_4> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_5> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_5> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_6> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_6> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_7> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_7> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_8> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_8> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_10> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_10> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_9> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_9> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_11> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_11> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_12> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_12> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_13> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_13> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_14> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_14> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_15> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_15> 
+INFO:Xst:2261 - The FF/Latch <switchactual/counter_16> in Unit <PruebaVelocidad> is equivalent to the following FF/Latch, which will be removed : <seleccionDisplay/counter_16> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block PruebaVelocidad, actual ratio is 66.
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/tresmilAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/milAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <aceleracion1/cocienteVelocidad> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <aceleracion1/contadorASeg> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/hallarConstanteKmh> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/cocienteVelocidad> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/contadorASeg> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <desplazamiento1/milimetrosAmetros> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <aceleracion1/convertirVelAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <aceleracion1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <aceleracion1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <aceleracion1/restarDesp> is equivalent to the following 3 FFs/Latches : <blk000002a0> <blk000002a1> <blk000002a3> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/restarDesp> is equivalent to the following 3 FFs/Latches : <blk000002a0> <blk000002a1> <blk000002a3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <aceleracion1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <aceleracion1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <aceleracion1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <aceleracion1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <aceleracion1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <aceleracion1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/productokmh> is equivalent to the following 3 FFs/Latches : <blk000002cd> <blk000002cf> <blk000002d1> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/tresmilAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/milAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <aceleracion1/cocienteVelocidad> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <aceleracion1/contadorASeg> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/hallarConstanteKmh> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/cocienteVelocidad> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/contadorASeg> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <desplazamiento1/milimetrosAmetros> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <aceleracion1/convertirVelAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <aceleracion1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <aceleracion1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <aceleracion1/restarDesp> is equivalent to the following 3 FFs/Latches : <blk000002a0> <blk000002a1> <blk000002a3> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/restarDesp> is equivalent to the following 3 FFs/Latches : <blk000002a0> <blk000002a1> <blk000002a3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <aceleracion1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <aceleracion1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <aceleracion1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <aceleracion1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <aceleracion1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <aceleracion1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/productokmh> is equivalent to the following 3 FFs/Latches : <blk000002cd> <blk000002cf> <blk000002d1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 230
+ Flip-Flops                                            : 230
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : PruebaVelocidad.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11318
+#      GND                         : 22
+#      INV                         : 90
+#      LUT1                        : 116
+#      LUT2                        : 1018
+#      LUT3                        : 1707
+#      LUT4                        : 505
+#      LUT5                        : 1451
+#      LUT6                        : 1407
+#      MULT_AND                    : 40
+#      MUXCY                       : 2570
+#      MUXF7                       : 53
+#      VCC                         : 22
+#      XORCY                       : 2317
+# FlipFlops/Latches                : 4017
+#      FD                          : 404
+#      FD_1                        : 3
+#      FDE                         : 3501
+#      FDR                         : 46
+#      FDRE                        : 63
+# Shift Registers                  : 180
+#      SRL16E                      : 1
+#      SRLC16E                     : 179
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+# DSPs                             : 2
+#      DSP48A1                     : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            4017  out of  18224    22%  
+ Number of Slice LUTs:                 6474  out of   9112    71%  
+    Number used as Logic:              6294  out of   9112    69%  
+    Number used as Memory:              180  out of   2176     8%  
+       Number used as SRL:              180
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   7990
+   Number with an unused Flip Flop:    3973  out of   7990    49%  
+   Number with an unused LUT:          1516  out of   7990    18%  
+   Number of fully used LUT-FF pairs:  2501  out of   7990    31%  
+   Number of unique control sets:       207
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+ Number of DSP48A1s:                      2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+clock                              | BUFGP                                   | 4197  |
+aceleracion1/contador<29>          | NONE(codificarADecimal/Madd_n0041_Madd1)| 1     |
+-----------------------------------+-----------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 20.264ns (Maximum Frequency: 49.348MHz)
+   Minimum input arrival time before clock: 3.681ns
+   Maximum output required time after clock: 210.822ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 20.264ns (frequency: 49.348MHz)
+  Total number of paths / destination ports: 17982048207 / 7934
+-------------------------------------------------------------------------
+Delay:               20.264ns (Levels of Logic = 50)
+  Source:            desplazamiento1/sumatotalDistancia/blk00000011 (FF)
+  Destination:       velocidad1/contador_26 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: desplazamiento1/sumatotalDistancia/blk00000011 to velocidad1/contador_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.447   1.021  blk00000011 (sig00000005)
+     LUT4:I0->O            1   0.203   0.000  blk00000115 (sig00000115)
+     MUXCY:S->O            1   0.172   0.000  blk0000007d (sig0000011c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000007c (sig0000011b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000007b (sig0000011a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000007a (sig00000119)
+     MUXCY:CI->O           1   0.019   0.000  blk00000079 (sig00000118)
+     MUXCY:CI->O           1   0.019   0.000  blk00000078 (sig00000117)
+     MUXCY:CI->O           1   0.019   0.000  blk00000077 (sig00000116)
+     MUXCY:CI->O          20   0.213   1.437  blk00000076 (sig00000105)
+     LUT6:I1->O            4   0.203   0.931  blk000000fa (sig000000c4)
+     LUT4:I0->O            1   0.203   0.000  blk0000011f (sig00000125)
+     MUXCY:S->O            2   0.172   0.981  blk0000008e (sig00000127)
+     LUT6:I0->O            2   0.203   0.617  blk00000154 (sig0000017c)
+     LUT6:I5->O            1   0.205   0.000  blk00000155 (sig000000ca)
+     MUXCY:S->O            1   0.172   0.000  blk00000090 (sig00000135)
+     MUXCY:CI->O           1   0.019   0.000  blk0000009b (sig0000013a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000099 (sig00000139)
+     MUXCY:CI->O           1   0.019   0.000  blk00000097 (sig00000138)
+     MUXCY:CI->O           1   0.019   0.000  blk00000095 (sig00000137)
+     MUXCY:CI->O           1   0.019   0.000  blk00000093 (sig00000134)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a8 (sig00000140)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a6 (sig0000013f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a4 (sig0000013e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a2 (sig0000013d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a0 (sig0000013c)
+     MUXCY:CI->O           0   0.019   0.000  blk0000009e (sig0000013b)
+     XORCY:CI->O           5   0.180   0.962  blk0000009c (sig000000cf)
+     LUT4:I0->O            1   0.203   0.000  blk00000129 (sig00000142)
+     MUXCY:S->O           17   0.172   0.000  blk000000aa (sig00000146)
+     MUXCY:CI->O          22   0.213   1.134  blk000000ab (sig00000095)
+     LUT3:I2->O            2   0.205   0.981  blk00000127 (sig00000141)
+     LUT6:I0->O           13   0.203   0.933  blk0000015d (sig00000098)
+     LUT2:I1->O            1   0.205   0.000  blk0000005f (sig00000085)
+     MUXCY:S->O            1   0.172   0.000  blk0000005e (sig00000084)
+     MUXCY:CI->O           1   0.019   0.000  blk0000005b (sig00000082)
+     MUXCY:CI->O           1   0.019   0.000  blk00000059 (sig00000080)
+     MUXCY:CI->O           1   0.019   0.000  blk00000056 (sig0000007e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000054 (sig0000007c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000052 (sig0000007a)
+     MUXCY:CI->O           0   0.019   0.000  blk00000050 (sig00000078)
+     XORCY:CI->O           3   0.180   0.898  blk0000004e (sig000000dc)
+     LUT6:I2->O            8   0.203   1.147  blk0000013d (sig000000dd)
+     LUT6:I1->O            4   0.203   0.912  blk00000173 (sig00000168)
+     LUT4:I1->O            8   0.205   0.803  blk00000138 (m_axis_result_tdata<11>)
+     end scope: 'desplazamiento1/sumatotalDistancia:m_axis_result_tdata<11>'
+     LUT6:I5->O            1   0.205   0.000  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_lut<3> (velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<3> (velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<4> (velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<4>)
+     MUXCY:CI->O          90   0.019   1.812  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<5> (velocidad1/desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o)
+     LUT3:I2->O            1   0.205   0.000  velocidad1/contador_26_rstpot (velocidad1/contador_26_rstpot)
+     FD:D                      0.102          velocidad1/contador_26
+    ----------------------------------------
+    Total                     20.264ns (5.696ns logic, 14.568ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 21 / 21
+-------------------------------------------------------------------------
+Offset:              3.681ns (Levels of Logic = 2)
+  Source:            iman (PAD)
+  Destination:       limpiarIman/count_18 (FF)
+  Destination Clock: clock rising
+
+  Data Path: iman to limpiarIman/count_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  iman_IBUF (iman_IBUF)
+     LUT2:I0->O           19   0.203   1.071  limpiarIman/n0000_inv1 (limpiarIman/n0000_inv)
+     FDRE:R                    0.430          limpiarIman/count_0
+    ----------------------------------------
+    Total                      3.681ns (1.855ns logic, 1.826ns route)
+                                       (50.4% logic, 49.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 52345972813269044000000000000000000000000000000000000000000000000000000000 / 11
+-------------------------------------------------------------------------
+Offset:              210.822ns (Levels of Logic = 263)
+  Source:            velocidad1/convertirVelAFijo/blk00000030 (FF)
+  Destination:       a (PAD)
+  Source Clock:      clock rising
+
+  Data Path: velocidad1/convertirVelAFijo/blk00000030 to a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.447   1.002  blk00000030 (m_axis_result_tdata<15>)
+     end scope: 'velocidad1/convertirVelAFijo:m_axis_result_tdata<15>'
+     LUT3:I0->O            6   0.205   0.992  codificarADecimal/numero[15]_PWR_16_o_div_0/o<4>1311 (codificarADecimal/numero[15]_PWR_16_o_div_0/o<4>131)
+     LUT6:I2->O           10   0.203   1.221  codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_n08491611 (codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_n0849161)
+     LUT6:I0->O            3   0.203   0.995  codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_a[0]_a[15]_MUX_589_o1321 (codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_a[0]_a[15]_MUX_589_o132)
+     LUT6:I1->O            5   0.203   0.819  codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_a[0]_a[15]_MUX_589_o141 (codificarADecimal/numero[15]_PWR_16_o_div_0/a[13]_a[15]_MUX_576_o)
+     LUT5:I3->O           38   0.203   1.624  codificarADecimal/numero[15]_PWR_16_o_div_0/o<3>1 (miles<3>)
+     LUT6:I2->O            8   0.203   1.031  codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_n084941 (codificarADecimal/numero[15]_PWR_16_o_div_0/n0849<12>)
+     LUT6:I3->O            1   0.205   0.580  codificarADecimal/numero[15]_PWR_16_o_div_0/o<2>12 (codificarADecimal/numero[15]_PWR_16_o_div_0/o<2>11)
+     LUT6:I5->O           38   0.205   1.377  codificarADecimal/numero[15]_PWR_16_o_div_0/o<2>14 (miles<2>)
+     LUT5:I4->O            2   0.205   0.981  codificarADecimal/numero[15]_PWR_16_o_div_0/Mmux_n085321 (codificarADecimal/numero[15]_PWR_16_o_div_0/n0853<10>)
+     LUT6:I0->O            1   0.203   0.924  codificarADecimal/numero[15]_PWR_16_o_div_0/o<1>12 (codificarADecimal/numero[15]_PWR_16_o_div_0/o<1>11)
+     LUT6:I1->O            4   0.203   0.684  codificarADecimal/numero[15]_PWR_16_o_div_0/o<1>13 (codificarADecimal/numero[15]_PWR_16_o_div_0/o<1>12)
+     LUT5:I4->O           15   0.205   1.346  codificarADecimal/numero[15]_PWR_16_o_div_0/o<1>15 (miles<1>)
+     LUT6:I0->O           18   0.203   1.278  codificarADecimal/numero[15]_PWR_16_o_div_0/o<0>29 (miles<0>)
+     LUT4:I1->O            1   0.205   0.000  codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_lut<9> (codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_lut<9>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_cy<9> (codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_cy<10> (codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_cy<10>)
+     MUXCY:CI->O           0   0.019   0.000  codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_cy<11> (codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_cy<11>)
+     XORCY:CI->O           2   0.180   0.617  codificarADecimal/Mmult_PWR_16_o_numero[15]_MuLt_1_OUT_Madd2_xor<12> (codificarADecimal/PWR_16_o_numero[15]_MuLt_1_OUT<13>)
+     LUT2:I1->O            1   0.205   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_lut<13> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_lut<13>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_cy<13> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_cy<13>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_cy<14> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_cy<14>)
+     MUXCY:CI->O           0   0.019   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_cy<15> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_cy<15>)
+     XORCY:CI->O          76   0.180   1.718  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_3_OUT_xor<16> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Madd_GND_19_o_b[6]_add_11_OUT_Madd_cy<29>)
+     INV:I->O              1   0.206   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Madd_a[31]_GND_19_o_add_29_OUT_lut<25>_INV_0 (codificarADecimal/GND_16_o_PWR_16_o_div_3/Madd_a[31]_GND_19_o_add_29_OUT_lut<25>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Madd_a[31]_GND_19_o_add_29_OUT_cy<25> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Madd_a[31]_GND_19_o_add_29_OUT_cy<25>)
+     XORCY:CI->O           5   0.180   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_3/Madd_a[31]_GND_19_o_add_29_OUT_xor<26> (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[31]_GND_19_o_add_29_OUT<26>)
+     LUT6:I0->O            1   0.203   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<17>2_SW1 (N105)
+     LUT6:I4->O           45   0.203   1.724  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<17>2 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<17>)
+     LUT4:I0->O            4   0.203   1.048  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1477_o1231 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[30]_a[31]_MUX_1447_o)
+     LUT6:I0->O            1   0.203   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<16>24_SW0 (N99)
+     LUT6:I5->O           41   0.205   1.784  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<16>24 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<16>)
+     LUT6:I0->O            6   0.203   0.992  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1509_o1161 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[24]_a[31]_MUX_1485_o)
+     LUT6:I2->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<15>21_G (N144)
+     MUXF7:I1->O           2   0.140   0.981  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<15>21 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<15>2)
+     LUT6:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<15>23_G (N146)
+     MUXF7:I1->O          43   0.140   1.793  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<15>23 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<15>)
+     LUT5:I0->O            5   0.203   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1541_o1191 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[27]_a[31]_MUX_1514_o)
+     LUT6:I0->O            2   0.203   0.617  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>21 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>2)
+     LUT6:I5->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>24_SW0_G (N152)
+     MUXF7:I1->O           2   0.140   0.617  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>24_SW0 (N97)
+     LUT6:I5->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>24_G (N156)
+     MUXF7:I1->O          49   0.140   1.878  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>24 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<14>)
+     LUT5:I0->O            5   0.203   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1573_o1161 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[24]_a[31]_MUX_1549_o)
+     LUT6:I0->O            1   0.203   0.924  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<13>21 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<13>2)
+     LUT5:I0->O           51   0.203   1.899  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<13>24 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<13>)
+     LUT5:I0->O            5   0.203   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1605_o1171 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[25]_a[31]_MUX_1580_o)
+     LUT6:I0->O            2   0.203   0.981  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<12>21 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<12>2)
+     LUT6:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<12>24_G (N158)
+     MUXF7:I1->O          55   0.140   1.925  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<12>24 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<12>)
+     LUT5:I0->O            5   0.203   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1637_o1141 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[22]_a[31]_MUX_1615_o)
+     LUT6:I0->O            3   0.203   0.995  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<11>31 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<11>3)
+     LUT5:I0->O           52   0.203   1.905  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<11>34 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<11>)
+     LUT5:I0->O            5   0.203   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1669_o1201 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[28]_a[31]_MUX_1641_o)
+     LUT6:I0->O            2   0.203   0.721  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>32 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>31)
+     LUT6:I4->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>35_SW0_G (N148)
+     MUXF7:I1->O           2   0.140   0.617  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>35_SW0 (N95)
+     LUT6:I5->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>35_G (N150)
+     MUXF7:I1->O          63   0.140   1.978  codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>35 (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<10>)
+     LUT5:I0->O            8   0.203   1.147  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1701_o1231 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[30]_a[31]_MUX_1671_o)
+     LUT5:I0->O            0   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<9>_lutdi3 (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<9>_lutdi3)
+     MUXCY:DI->O           1   0.145   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<9>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<9>_cy<3>)
+     MUXCY:CI->O          50   0.213   1.892  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<9>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<9>)
+     LUT5:I0->O            4   0.203   1.028  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1733_o161 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[15]_a[31]_MUX_1718_o)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_lut<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O          41   0.213   1.420  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<3>)
+     LUT3:I2->O            6   0.205   1.089  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<8>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<8>)
+     LUT5:I0->O            4   0.203   0.912  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mmux_a[0]_a[31]_MUX_1765_o131 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[12]_a[31]_MUX_1753_o)
+     LUT4:I1->O            0   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_lutdi (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O          45   0.213   1.477  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<3>)
+     LUT4:I3->O            6   0.205   1.089  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<7>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<7>)
+     LUT5:I0->O            6   0.203   0.849  codificarADecimal/GND_16_o_PWR_16_o_div_3/a[10]_a[31]_MUX_1787_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[10]_a[31]_MUX_1819_o_bdd0)
+     LUT4:I2->O            0   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_lutdi (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<3>)
+     LUT5:I4->O           92   0.205   2.169  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<6>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<6>)
+     LUT5:I0->O            6   0.203   1.089  codificarADecimal/GND_16_o_PWR_16_o_div_3/a[11]_a[31]_MUX_1818_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[11]_a[31]_MUX_1850_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<3>)
+     LUT6:I5->O           58   0.205   1.945  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<5>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<5>)
+     LUT5:I0->O            6   0.203   1.089  codificarADecimal/GND_16_o_PWR_16_o_div_3/a[10]_a[31]_MUX_1851_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_3/a[10]_a[31]_MUX_1883_o_bdd0)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O           1   0.213   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<4>)
+     LUT6:I4->O           62   0.203   1.971  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<4>_cy<5> (codificarADecimal/GND_16_o_PWR_16_o_div_3/o<4>)
+     LUT5:I0->O            6   0.203   1.089  codificarADecimal/GND_16_o_PWR_16_o_div_3/a[9]_a[31]_MUX_1884_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_3/n2430<9>_bdd4)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O          58   0.213   1.601  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<4>)
+     LUT3:I2->O           24   0.205   1.517  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<3>_cy<5> (centenas<3>)
+     LUT5:I0->O            3   0.203   0.995  codificarADecimal/GND_16_o_PWR_16_o_div_3/n2555<8>1 (codificarADecimal/GND_16_o_PWR_16_o_div_3/n2555<8>)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O          43   0.213   1.449  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<4>)
+     LUT4:I3->O           54   0.205   1.918  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<2>_cy<5> (centenas<2>)
+     LUT5:I0->O            2   0.203   0.961  codificarADecimal/GND_16_o_PWR_16_o_div_3/n2559<7>1 (codificarADecimal/GND_16_o_PWR_16_o_div_3/n2559<7>)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           2   0.213   0.617  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<4>)
+     LUT5:I4->O           86   0.205   2.129  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<1>_cy<5> (centenas<1>)
+     LUT5:I0->O            2   0.203   0.961  codificarADecimal/GND_16_o_PWR_16_o_div_3/n2430<6> (codificarADecimal/GND_16_o_PWR_16_o_div_3/n2430<6>)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.213   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<4>)
+     LUT6:I5->O           15   0.205   1.086  codificarADecimal/GND_16_o_PWR_16_o_div_3/Mcompar_o<0>_cy<5> (centenas<0>)
+     LUT5:I3->O            1   0.203   0.000  codificarADecimal/Madd_n0035[14:0]_lut<8> (codificarADecimal/Madd_n0035[14:0]_lut<8>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/Madd_n0035[14:0]_cy<8> (codificarADecimal/Madd_n0035[14:0]_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/Madd_n0035[14:0]_cy<9> (codificarADecimal/Madd_n0035[14:0]_cy<9>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/Madd_n0035[14:0]_cy<10> (codificarADecimal/Madd_n0035[14:0]_cy<10>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/Madd_n0035[14:0]_cy<11> (codificarADecimal/Madd_n0035[14:0]_cy<11>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/Madd_n0035[14:0]_cy<12> (codificarADecimal/Madd_n0035[14:0]_cy<12>)
+     MUXCY:CI->O           1   0.213   0.580  codificarADecimal/Madd_n0035[14:0]_cy<13> (codificarADecimal/Madd_n0035[14:0]_cy<13>)
+     LUT2:I1->O            1   0.205   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_lut<14> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_lut<14>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_cy<14> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_cy<14>)
+     MUXCY:CI->O           0   0.019   0.000  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_cy<15> (codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_cy<15>)
+     XORCY:CI->O          77   0.180   1.725  codificarADecimal/Msub_GND_16_o_GND_16_o_sub_8_OUT_xor<16> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_GND_21_o_b[3]_add_7_OUT_Madd_cy<30>)
+     INV:I->O              1   0.206   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_lut<20>_INV_0 (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_lut<20>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<20> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<20>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<21> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<21>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<22> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<22>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<23> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<23>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<24> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<24>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<25> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<25>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<26> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<26>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<27> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_cy<27>)
+     XORCY:CI->O           6   0.180   0.973  codificarADecimal/GND_16_o_PWR_16_o_div_8/Madd_a[31]_GND_21_o_add_27_OUT_xor<28> (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[31]_GND_21_o_add_27_OUT<28>)
+     LUT3:I0->O            1   0.205   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<18>24_SW0_SW0 (N111)
+     LUT6:I5->O            1   0.205   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<18>24_SW0 (N93)
+     LUT6:I5->O           49   0.205   1.781  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<18>24 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<18>)
+     LUT4:I0->O            3   0.203   0.995  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2511_o1181 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[26]_a[31]_MUX_2485_o)
+     LUT5:I0->O            1   0.203   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<17>24_SW0_SW0_SW0 (N119)
+     LUT6:I5->O            2   0.205   0.721  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<17>24_SW0_SW0 (N113)
+     LUT5:I3->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<17>24_SW1_G (N164)
+     MUXF7:I1->O           1   0.140   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<17>24_SW1 (N117)
+     LUT6:I4->O           41   0.203   1.784  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<17>24 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<17>)
+     LUT6:I0->O            5   0.203   1.079  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2543_o1231 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[30]_a[31]_MUX_2513_o)
+     LUT6:I0->O            1   0.203   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<16>22 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<16>21)
+     LUT5:I3->O           42   0.203   1.778  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<16>23 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<16>)
+     LUT5:I0->O            4   0.203   1.048  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2575_o1171 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[25]_a[31]_MUX_2550_o)
+     LUT6:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>21_G (N142)
+     MUXF7:I1->O           2   0.140   0.617  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>21 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>2)
+     LUT6:I5->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>24_SW0_G (N160)
+     MUXF7:I1->O           2   0.140   0.721  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>24_SW0 (N89)
+     LUT6:I4->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>24_G (N162)
+     MUXF7:I1->O          32   0.140   1.636  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>24 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<15>)
+     LUT5:I0->O            3   0.203   1.015  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2607_o1141 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[22]_a[31]_MUX_2585_o)
+     LUT6:I0->O           34   0.203   1.568  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<14>21 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<14>2)
+     LUT5:I1->O            5   0.203   1.059  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2639_o1121 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[20]_a[31]_MUX_2619_o)
+     LUT5:I0->O            1   0.203   0.808  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<13>21 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<13>2)
+     LUT5:I2->O           66   0.205   1.882  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<13>24 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<13>)
+     LUT3:I0->O            1   0.205   0.944  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2671_o1121 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[20]_a[31]_MUX_2651_o)
+     LUT6:I0->O            1   0.203   0.808  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<12>31 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<12>3)
+     LUT6:I3->O           48   0.205   1.864  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<12>34 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<12>)
+     LUT5:I0->O            5   0.203   1.059  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2703_o191 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[18]_a[31]_MUX_2685_o)
+     LUT5:I0->O            1   0.203   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<11>31 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<11>3)
+     LUT6:I4->O            1   0.203   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<11>35_SW0 (N87)
+     LUT6:I4->O           74   0.203   2.050  codificarADecimal/GND_16_o_PWR_16_o_div_8/o<11>35 (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<11>)
+     LUT5:I0->O            8   0.203   1.147  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2735_o1231 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[30]_a[31]_MUX_2705_o)
+     LUT5:I0->O            0   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<10>_lutdi3 (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<10>_lutdi3)
+     MUXCY:DI->O           3   0.339   0.651  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<10>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<10>_cy<3>)
+     LUT5:I4->O           46   0.205   1.835  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<10>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<10>)
+     LUT5:I0->O            4   0.203   1.028  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2767_o1121 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[20]_a[31]_MUX_2747_o)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_lut<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_lut<2>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_cy<2>)
+     MUXCY:CI->O          43   0.213   1.449  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_cy<3>)
+     LUT3:I2->O            4   0.205   1.028  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<9>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<9>)
+     LUT5:I0->O            6   0.203   0.973  codificarADecimal/GND_16_o_PWR_16_o_div_8/a[11]_a[31]_MUX_2788_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[11]_a[31]_MUX_2820_o_bdd0)
+     LUT4:I1->O            0   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_lutdi (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<2>)
+     MUXCY:CI->O          45   0.213   1.477  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<3>)
+     LUT4:I3->O            6   0.205   1.089  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<8>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<8>)
+     LUT5:I0->O            6   0.203   0.973  codificarADecimal/GND_16_o_PWR_16_o_div_8/a[10]_a[31]_MUX_2821_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[10]_a[31]_MUX_2853_o_bdd0)
+     LUT4:I1->O            0   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_lutdi (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_lutdi)
+     MUXCY:DI->O           1   0.145   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<3>)
+     LUT5:I4->O           92   0.205   2.169  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<7>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<7>)
+     LUT5:I0->O            6   0.203   0.973  codificarADecimal/GND_16_o_PWR_16_o_div_8/a[11]_a[31]_MUX_2852_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[11]_a[31]_MUX_2884_o_bdd0)
+     LUT5:I2->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<2>)
+     MUXCY:CI->O           1   0.213   0.580  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<3>)
+     LUT6:I5->O           58   0.205   1.945  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<6>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<6>)
+     LUT5:I0->O            8   0.203   1.147  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mmux_a[0]_a[31]_MUX_2895_o1231 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[30]_a[31]_MUX_2865_o)
+     LUT5:I0->O            0   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<5>_lutdi4 (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<5>_lutdi4)
+     MUXCY:DI->O           1   0.339   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<5>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<5>_cy<4>)
+     LUT6:I4->O           62   0.203   1.971  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<5>_cy<5> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<5>)
+     LUT5:I0->O            6   0.203   0.973  codificarADecimal/GND_16_o_PWR_16_o_div_8/a[9]_a[31]_MUX_2918_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_8/a[9]_a[31]_MUX_2950_o_bdd0)
+     LUT5:I2->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<3>)
+     MUXCY:CI->O          49   0.213   1.534  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<4>)
+     LUT3:I2->O           14   0.205   1.302  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<4>_cy<5> (codificarADecimal/GND_16_o_PWR_16_o_div_8/o<4>)
+     LUT5:I0->O            6   0.203   0.973  codificarADecimal/GND_16_o_PWR_16_o_div_8/a[8]_a[31]_MUX_2951_o1 (codificarADecimal/GND_16_o_PWR_16_o_div_8/n2394<8>_bdd4)
+     LUT5:I2->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<3>)
+     MUXCY:CI->O          49   0.213   1.534  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<4>)
+     LUT4:I3->O           46   0.205   1.835  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<3>_cy<5> (decenas<3>)
+     LUT5:I0->O            3   0.203   0.879  codificarADecimal/GND_16_o_PWR_16_o_div_8/n2519<7>1 (codificarADecimal/GND_16_o_PWR_16_o_div_8/n2519<7>)
+     LUT5:I2->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_lut<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<0> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<3>)
+     MUXCY:CI->O           5   0.213   0.715  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<4>)
+     LUT5:I4->O           87   0.205   2.136  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<2>_cy<5> (decenas<2>)
+     LUT5:I0->O            2   0.203   0.961  codificarADecimal/GND_16_o_PWR_16_o_div_8/n2523<7> (codificarADecimal/GND_16_o_PWR_16_o_div_8/n2523<7>)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_lut<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<3>)
+     MUXCY:CI->O           2   0.213   0.617  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<4>)
+     LUT6:I5->O            1   0.205   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<5>_G (N140)
+     MUXF7:I1->O          38   0.140   1.721  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<1>_cy<5> (decenas<1>)
+     LUT5:I0->O            2   0.203   0.961  codificarADecimal/GND_16_o_PWR_16_o_div_8/n2394<6> (codificarADecimal/GND_16_o_PWR_16_o_div_8/n2394<6>)
+     LUT5:I0->O            1   0.203   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_lut<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_lut<1>)
+     MUXCY:S->O            1   0.172   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<1> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<2> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<3> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<4> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<4>)
+     MUXCY:CI->O           1   0.213   0.684  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<5> (codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<5>)
+     LUT6:I4->O            8   0.203   0.802  codificarADecimal/GND_16_o_PWR_16_o_div_8/Mcompar_o<0>_cy<6> (decenas<0>)
+     DSP48A1:A0->PCOUT47    1   4.469   0.000  codificarADecimal/Maddsub_PWR_16_o_GND_16_o_MuLt_11_OUT (codificarADecimal/Maddsub_PWR_16_o_GND_16_o_MuLt_11_OUT_PCOUT_to_Madd_n0041_Madd1_PCIN_47)
+     DSP48A1:PCIN47->P1    3   2.264   0.879  codificarADecimal/Madd_n0041_Madd1 (codificarADecimal/n0041<1>)
+     LUT4:I1->O            1   0.205   0.580  codificarADecimal/unidades<3>_SW0 (N103)
+     LUT5:I4->O            7   0.205   1.021  codificarADecimal/unidades<3> (unidades<3>)
+     LUT6:I2->O            1   0.203   0.808  seleccionDisplay/Mmux_displaytotal66 (seleccionDisplay/Mmux_displaytotal65)
+     LUT3:I0->O            1   0.205   0.579  seleccionDisplay/Mmux_displaytotal67 (f_OBUF)
+     OBUF:I->O                 2.571          f_OBUF (f)
+    ----------------------------------------
+    Total                    210.822ns (50.447ns logic, 160.375ns route)
+                                       (23.9% logic, 76.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock aceleracion1/contador<29>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |  202.749|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |   20.264|    4.641|    3.716|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 57.00 secs
+Total CPU time to Xst completion: 56.36 secs
+ 
+--> 
+
+Total memory usage is 203000 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   90 (   0 filtered)
+Number of infos    :  190 (   0 filtered)
+

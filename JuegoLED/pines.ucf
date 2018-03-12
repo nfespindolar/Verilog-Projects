@@ -1,0 +1,29 @@
+
+net "clock" loc = V10    |  IOSTANDARD=LVCMOS33;
+net "Reset" loc = C9     |  IOSTANDARD=LVCMOS33;
+net "Start" loc = T10	 |  IOSTANDARD=LVCMOS33;
+net "BotonA" loc = D9	 |  IOSTANDARD=LVCMOS33;
+net "BotonB" loc = C4	 |  IOSTANDARD=LVCMOS33;
+net "LedRED" loc = H3	 |  IOSTANDARD=LVCMOS33;
+net "LedVerde" loc = T12 |  IOSTANDARD=LVCMOS33;
+net "LedFin" loc = U16	 |  IOSTANDARD=LVCMOS33;
+
+net "displaytotal[6]" loc = T17  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[5]" loc = T18  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[4]" loc = U17  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[3]" loc = U18  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[2]" loc = M14  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[1]" loc = N14  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[0]" loc = L14  |  IOSTANDARD=LVCMOS33;
+
+net "Switch0" loc = N16  |  IOSTANDARD=LVCMOS33;
+net "Switch1" loc = N15  |  IOSTANDARD=LVCMOS33;
+net "Switch2" loc = P18  |  IOSTANDARD=LVCMOS33;
+net "Switch3" loc = P17  |  IOSTANDARD=LVCMOS33;
+
+
+net "Reset" CLOCK_DEDICATED_ROUTE = FALSE;
+net "Start" CLOCK_DEDICATED_ROUTE = FALSE;
+net "BotonA" CLOCK_DEDICATED_ROUTE = FALSE;
+net "BotonB" CLOCK_DEDICATED_ROUTE = FALSE;
+

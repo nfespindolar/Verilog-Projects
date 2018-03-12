@@ -1,0 +1,481 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.63 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.64 secs
+ 
+--> Reading design: mainMemoria.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mainMemoria.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mainMemoria"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : mainMemoria
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\ipcore_dir\ram4.v" into library work
+Parsing module <ram4>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\memoria4K.v" into library work
+Parsing module <memoria4K>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" into library work
+Parsing module <Controlador>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\mainMemoria.v" into library work
+Parsing module <mainMemoria>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mainMemoria>.
+
+Elaborating module <Controlador>.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 115: Signal <x_salida_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 116: Signal <y_salida_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 119: Signal <direccion_memoria_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 123: Signal <x_salida_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 124: Signal <y_salida_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 126: Signal <x_sensor> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 127: Signal <direccion_memoria_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 127: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 131: Signal <dato_leer_memoria> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 132: Signal <dato_leer_memoria> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 135: Signal <direccion_memoria_actual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 135: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 149: Signal <EstadoActual> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <memoria4K>.
+
+Elaborating module <ram4>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\ipcore_dir\ram4.v" Line 39: Empty module <ram4> remains a black box.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mainMemoria>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/controladormemoria/mainmemoria.v".
+        bits_eje = 6
+        bits_coordenada = 12
+        direccionamiento = 9
+    Summary:
+	no macro.
+Unit <mainMemoria> synthesized.
+
+Synthesizing Unit <Controlador>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/controladormemoria/controlador.v".
+        bits_eje = 6
+        bits_coordenada = 12
+        direccionamiento = 9
+    Found 6-bit register for signal <x_salida_actual>.
+    Found 6-bit register for signal <y_salida_actual>.
+    Found 9-bit register for signal <direccion_memoria_actual>.
+    Found 4-bit register for signal <EstadoActual>.
+    Found finite state machine <FSM_0> for signal <EstadoActual>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 17                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 6                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | _n0245 (positive)                              |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0000                                           |
+    | Power Up State     | 0010                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <direccion_memoria_actual[8]_GND_2_o_add_1_OUT> created at line 127.
+    Found 9-bit 3-to-1 multiplexer for signal <direccion_memoria> created at line 60.
+    Found 6-bit 4-to-1 multiplexer for signal <x_salida> created at line 54.
+    Found 6-bit 4-to-1 multiplexer for signal <y_salida> created at line 55.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   4 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <Controlador> synthesized.
+
+Synthesizing Unit <memoria4K>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/controladormemoria/memoria4k.v".
+    Summary:
+	no macro.
+Unit <memoria4K> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 3
+ 6-bit register                                        : 2
+ 9-bit register                                        : 1
+# Multiplexers                                         : 4
+ 12-bit 2-to-1 multiplexer                             : 1
+ 6-bit 4-to-1 multiplexer                              : 2
+ 9-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/ram4.ngc>.
+Loading core <ram4> for timing and area information for instance <memoria>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+# Multiplexers                                         : 4
+ 12-bit 2-to-1 multiplexer                             : 1
+ 6-bit 4-to-1 multiplexer                              : 2
+ 9-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <Control1/FSM_0> on signal <EstadoActual[1:2]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 00
+ 0010  | 01
+ 0001  | 10
+ 0011  | 11
+-------------------
+
+Optimizing unit <mainMemoria> ...
+
+Optimizing unit <Controlador> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mainMemoria, actual ratio is 0.
+FlipFlop Control1/EstadoActual_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop Control1/EstadoActual_FSM_FFd2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mainMemoria.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 51
+#      GND                         : 2
+#      LUT2                        : 4
+#      LUT3                        : 15
+#      LUT4                        : 14
+#      LUT5                        : 5
+#      LUT6                        : 10
+#      VCC                         : 1
+# FlipFlops/Latches                : 25
+#      FD                          : 23
+#      FDR                         : 2
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 35
+#      IBUF                        : 18
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              25  out of  18224     0%  
+ Number of Slice LUTs:                   48  out of   9112     0%  
+    Number used as Logic:                48  out of   9112     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     49
+   Number with an unused Flip Flop:      24  out of     49    48%  
+   Number with an unused LUT:             1  out of     49     2%  
+   Number of fully used LUT-FF pairs:    24  out of     49    48%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                          36
+ Number of bonded IOBs:                  36  out of    232    15%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of     32     3%  
+    Number using Block RAM only:          1
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                                                                                                                     | Load  |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clock                              | BUFGP                                                                                                                                     | 26    |
+memoria4k/memoria/N1               | NONE(memoria4k/memoria/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)| 1     |
+-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.573ns (Maximum Frequency: 179.430MHz)
+   Minimum input arrival time before clock: 3.681ns
+   Maximum output required time after clock: 7.372ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 5.573ns (frequency: 179.430MHz)
+  Total number of paths / destination ports: 384 / 48
+-------------------------------------------------------------------------
+Delay:               5.573ns (Levels of Logic = 5)
+  Source:            Control1/EstadoActual_FSM_FFd2_1 (FF)
+  Destination:       Control1/EstadoActual_FSM_FFd1 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: Control1/EstadoActual_FSM_FFd2_1 to Control1/EstadoActual_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.684  Control1/EstadoActual_FSM_FFd2_1 (Control1/EstadoActual_FSM_FFd2_1)
+     LUT2:I0->O            1   0.203   0.579  Control1/reset_memoria1 (reset_memoria)
+     begin scope: 'memoria4k/memoria:rsta'
+     RAMB8BWER:RSTA->DOADO9    2   1.450   0.981  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram (douta<7>)
+     end scope: 'memoria4k/memoria:douta<7>'
+     LUT6:I0->O            2   0.203   0.721  memoria4k/corte_terminado<11>1 (memoria4k/corte_terminado<11>)
+     LUT6:I4->O            2   0.203   0.000  Control1/EstadoActual_FSM_FFd1-In3 (Control1/EstadoActual_FSM_FFd1-In)
+     FDR:D                     0.102          Control1/EstadoActual_FSM_FFd1
+    ----------------------------------------
+    Total                      5.573ns (2.608ns logic, 2.965ns route)
+                                       (46.8% logic, 53.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 52 / 16
+-------------------------------------------------------------------------
+Offset:              3.681ns (Levels of Logic = 3)
+  Source:            iniciar_detener (PAD)
+  Destination:       Control1/EstadoActual_FSM_FFd1 (FF)
+  Destination Clock: clock rising
+
+  Data Path: iniciar_detener to Control1/EstadoActual_FSM_FFd1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   1.028  iniciar_detener_IBUF (iniciar_detener_IBUF)
+     LUT5:I0->O            1   0.203   0.924  Control1/EstadoActual_FSM_FFd1-In3_SW2 (N11)
+     LUT6:I1->O            2   0.203   0.000  Control1/EstadoActual_FSM_FFd1-In3 (Control1/EstadoActual_FSM_FFd1-In)
+     FDR:D                     0.102          Control1/EstadoActual_FSM_FFd1
+    ----------------------------------------
+    Total                      3.681ns (1.730ns logic, 1.951ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 76 / 15
+-------------------------------------------------------------------------
+Offset:              7.372ns (Levels of Logic = 5)
+  Source:            Control1/EstadoActual_FSM_FFd2_1 (FF)
+  Destination:       x_salida<5> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: Control1/EstadoActual_FSM_FFd2_1 to x_salida<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.684  Control1/EstadoActual_FSM_FFd2_1 (Control1/EstadoActual_FSM_FFd2_1)
+     LUT2:I0->O            1   0.203   0.579  Control1/reset_memoria1 (reset_memoria)
+     begin scope: 'memoria4k/memoria:rsta'
+     RAMB8BWER:RSTA->DOADO13    2   1.450   0.617  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram (douta<11>)
+     end scope: 'memoria4k/memoria:douta<11>'
+     LUT4:I3->O            2   0.205   0.616  Control1/Mmux_x_salida61 (x_salida_5_OBUF)
+     OBUF:I->O                 2.571          x_salida_5_OBUF (x_salida<5>)
+    ----------------------------------------
+    Total                      7.372ns (4.876ns logic, 2.496ns route)
+                                       (66.1% logic, 33.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    5.573|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 11.08 secs
+ 
+--> 
+
+Total memory usage is 177528 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

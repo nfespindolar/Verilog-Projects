@@ -1,0 +1,29 @@
+Command line:
+   TestReloj_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49260
+
+Tue May 22 12:39:57 2012
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 346.227 Meg
+
+ Total Signals          : 147
+ Total Nets             : 202
+ Total Signal Drivers   : 58
+ Total Blocks           : 27
+ Total Primitive Blocks : 25
+ Total Processes        : 92
+ Total Traceable Variables  : 115
+ Total Scalar Nets and Variables : 1194
+Total Line Count : 415
+
+ Total Simulation Time: 0.140402 sec
+
+ Current Memory Usage: 346.227 Meg
+
+Tue May 22 12:40:14 2012
+

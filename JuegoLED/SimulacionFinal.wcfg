@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Fernando/Desktop/SimulacionesX/JuegoLED/TestJuegoLED_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="TestJuegoLED" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/TestJuegoLED/LedRED" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LedRED</obj_property>
+      <obj_property name="ObjectShortName">LedRED</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/LedVerde" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LedVerde</obj_property>
+      <obj_property name="ObjectShortName">LedVerde</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/LedFin" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LedFin</obj_property>
+      <obj_property name="ObjectShortName">LedFin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/displaytotal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">displaytotal[6:0]</obj_property>
+      <obj_property name="ObjectShortName">displaytotal[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/Switch0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Switch0</obj_property>
+      <obj_property name="ObjectShortName">Switch0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/Switch1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Switch1</obj_property>
+      <obj_property name="ObjectShortName">Switch1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/Switch2" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Switch2</obj_property>
+      <obj_property name="ObjectShortName">Switch2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/Switch3" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Switch3</obj_property>
+      <obj_property name="ObjectShortName">Switch3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/Reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/Start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Start</obj_property>
+      <obj_property name="ObjectShortName">Start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/BotonA" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BotonA</obj_property>
+      <obj_property name="ObjectShortName">BotonA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestJuegoLED/BotonB" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">BotonB</obj_property>
+      <obj_property name="ObjectShortName">BotonB</obj_property>
+   </wvobject>
+</wave_config>

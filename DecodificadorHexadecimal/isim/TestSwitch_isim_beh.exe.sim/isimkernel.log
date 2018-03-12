@@ -1,0 +1,10 @@
+Command line:
+   TestSwitch_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50537
+
+Thu May 03 17:20:00 2012
+
+
+ Elaboration Time: 0.0624 sec

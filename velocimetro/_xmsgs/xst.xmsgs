@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="0" delta="new" >Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" Line 43: Port <arg fmt="%s" index="1">circunferenciaF</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" Line 49: Port <arg fmt="%s" index="1">desplazfAntg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\debounce.v" Line 35: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\PulsoAImpulso.v" Line 29: Assignment to <arg fmt="%s" index="1">valorNuevo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\desplazamiento.v" Line 51: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\desplazamiento.v" Line 96: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" Line 125: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" Line 135: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" Line 206: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" Line 51: Assignment to <arg fmt="%s" index="1">velocidadFloat</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\generarCircunferencia.v" Line 21: Empty module &lt;<arg fmt="%s" index="1">generarCircunferencia</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 26: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 27: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 28: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 29: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCero50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romCero50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 47: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romUno50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romUno50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 53: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romDos50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romDos50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 59: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romTres50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romTres50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 65: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCuatro50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romCuatro50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 71: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCinco50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romCinco50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 77: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romSeis50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romSeis50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 83: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romSiete50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romSiete50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 89: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romOcho50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romOcho50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 95: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romNueve50x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romNueve50x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 101: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">11</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romPunto25x72.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romPunto25x72</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 107: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">10</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romDesplazamientoT.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romDesplazamientoT</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 113: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romVelocidadT.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romVelocidadT</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 119: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romAceleracionT.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">romAceleracionT</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 125: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">addra</arg>&gt;. Formal port size is <arg fmt="%d" index="2">13</arg>-bit while actual signal size is <arg fmt="%d" index="1">15</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 126: Assignment to <arg fmt="%s" index="1">AdataTitulo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 33: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 34: Signal &lt;<arg fmt="%s" index="1">dataUno</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 35: Signal &lt;<arg fmt="%s" index="1">dataDos</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 36: Signal &lt;<arg fmt="%s" index="1">dataTres</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 37: Signal &lt;<arg fmt="%s" index="1">dataCuatro</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 38: Signal &lt;<arg fmt="%s" index="1">dataCinco</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 39: Signal &lt;<arg fmt="%s" index="1">dataSeis</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 40: Signal &lt;<arg fmt="%s" index="1">dataSiete</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 41: Signal &lt;<arg fmt="%s" index="1">dataOcho</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 42: Signal &lt;<arg fmt="%s" index="1">dataNueve</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 43: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 52: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 53: Signal &lt;<arg fmt="%s" index="1">dataUno</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 54: Signal &lt;<arg fmt="%s" index="1">dataDos</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 55: Signal &lt;<arg fmt="%s" index="1">dataTres</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 56: Signal &lt;<arg fmt="%s" index="1">dataCuatro</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 57: Signal &lt;<arg fmt="%s" index="1">dataCinco</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 58: Signal &lt;<arg fmt="%s" index="1">dataSeis</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 59: Signal &lt;<arg fmt="%s" index="1">dataSiete</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 60: Signal &lt;<arg fmt="%s" index="1">dataOcho</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 61: Signal &lt;<arg fmt="%s" index="1">dataNueve</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 62: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 71: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 72: Signal &lt;<arg fmt="%s" index="1">dataUno</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 73: Signal &lt;<arg fmt="%s" index="1">dataDos</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 74: Signal &lt;<arg fmt="%s" index="1">dataTres</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 75: Signal &lt;<arg fmt="%s" index="1">dataCuatro</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 76: Signal &lt;<arg fmt="%s" index="1">dataCinco</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 77: Signal &lt;<arg fmt="%s" index="1">dataSeis</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 78: Signal &lt;<arg fmt="%s" index="1">dataSiete</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 79: Signal &lt;<arg fmt="%s" index="1">dataOcho</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 80: Signal &lt;<arg fmt="%s" index="1">dataNueve</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 81: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 90: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 91: Signal &lt;<arg fmt="%s" index="1">dataUno</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 92: Signal &lt;<arg fmt="%s" index="1">dataDos</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 93: Signal &lt;<arg fmt="%s" index="1">dataTres</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 94: Signal &lt;<arg fmt="%s" index="1">dataCuatro</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 95: Signal &lt;<arg fmt="%s" index="1">dataCinco</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 96: Signal &lt;<arg fmt="%s" index="1">dataSeis</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 97: Signal &lt;<arg fmt="%s" index="1">dataSiete</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 98: Signal &lt;<arg fmt="%s" index="1">dataOcho</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 99: Signal &lt;<arg fmt="%s" index="1">dataNueve</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 100: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 109: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 110: Signal &lt;<arg fmt="%s" index="1">dataUno</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 111: Signal &lt;<arg fmt="%s" index="1">dataUno</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 112: Signal &lt;<arg fmt="%s" index="1">dataDos</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 113: Signal &lt;<arg fmt="%s" index="1">dataTres</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 114: Signal &lt;<arg fmt="%s" index="1">dataTres</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 115: Signal &lt;<arg fmt="%s" index="1">dataCuatro</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 116: Signal &lt;<arg fmt="%s" index="1">dataCuatro</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 117: Signal &lt;<arg fmt="%s" index="1">dataCinco</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 118: Signal &lt;<arg fmt="%s" index="1">dataSeis</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 119: Signal &lt;<arg fmt="%s" index="1">dataSeis</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 120: Signal &lt;<arg fmt="%s" index="1">dataSiete</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 121: Signal &lt;<arg fmt="%s" index="1">dataOcho</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 122: Signal &lt;<arg fmt="%s" index="1">dataOcho</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 123: Signal &lt;<arg fmt="%s" index="1">dataNueve</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 124: Signal &lt;<arg fmt="%s" index="1">dataNueve</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 125: Signal &lt;<arg fmt="%s" index="1">dataCero</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 27: Using initial value of <arg fmt="%s" index="1">escribir</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 28: Assignment to <arg fmt="%s" index="1">escribirW</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\relojSegundos.v" Line 32: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\ram1x30000.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ram1x30000</arg>&gt; remains a black box.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 63: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 64: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 94: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 174: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">entera</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="872" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 27: Using initial value of <arg fmt="%s" index="1">escribir</arg> since it is never assigned
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 28: Assignment to <arg fmt="%s" index="1">escribirW</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 63: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 64: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 94: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 201: Assignment to <arg fmt="%s" index="1">addrapunto</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 227: Assignment to <arg fmt="%s" index="1">AtituloActivo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 231: Result of <arg fmt="%d" index="1">15</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">1</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="new" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 231: Assignment to <arg fmt="%s" index="1">GraficaActivadoD</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 237: Result of <arg fmt="%d" index="1">15</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">8</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 268: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">15</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 42: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 45: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 50: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 53: Result of <arg fmt="%d" index="1">11</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">10</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">circunferenciaF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">milFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">circunfMetrosFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">43</arg>: Output port &lt;<arg fmt="%s" index="3">validar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">velocidadFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">desplazfAntg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">millonSeg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">contadorFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">diferencialDesp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">diferencialTiemp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">milFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">tresmilFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">constantekmh</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">velocidadkmhfloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">contadorW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">validar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v</arg>&quot; line <arg fmt="%s" index="2">49</arg>: Output port &lt;<arg fmt="%s" index="3">impulsoW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">35</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">circunfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">35</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">circunfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">46</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">46</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milimetrosAmetros</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milimetrosAmetros</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milimetrosAmetros</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">71</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sumatotalDistancia</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">71</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sumatotalDistancia</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">71</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sumatotalDistancia</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">84</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirDespAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">84</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirDespAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">62</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">62</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">62</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">millonAseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">75</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">millonAseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">85</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorAfloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">85</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorAfloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">95</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">108</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">108</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">108</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">121</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">121</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">131</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tresmilAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">131</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tresmilAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hallarConstanteKmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hallarConstanteKmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">141</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hallarConstanteKmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">productokmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">productokmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">154</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">productokmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">167</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirVelAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">167</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirVelAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">circunferencia</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">generarCircunferencia</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000100100010110</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fixedPoint&lt;23:20&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Amiles&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Acentenas&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Adecenas&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Aunidades&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">Adecimales&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">desplazamientoEnt&lt;15:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/velocimetro/colorpixel.v</arg>&quot; line <arg fmt="%s" index="2">123</arg>: Output port &lt;<arg fmt="%s" index="3">douta</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">ramAceleracion</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">entera&lt;15:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clock</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">entera&lt;15:10&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">clock</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">datain</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">graficarDes</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">datain</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">graficar</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">datain</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">graficaDesplazamiento</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">datain</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">graficaVelocidad</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n02611</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n03001</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n02771</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n02871</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n03191</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n03081</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">Mmult_n03141</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">colorpixel</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/impulso</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/validarReg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mainVelocimetro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mainVelocimetro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficar/relojSeg/count_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mainVelocimetro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficar/relojSeg/count_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">mainVelocimetro</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/freq</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/freq&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_20</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_20&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_21</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_21&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_22</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_22&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_17</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_17&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_23</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_23&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_18&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_19</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/relojSeg/count_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/relojSeg/count_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/pulsoIman/valorAntiguo</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/pulsoIman/valorAntiguo&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/pulsoIman/impulso</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/pulsoIman/impulso&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">asignarcolores/graficarDes/datain</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">mainVelocimetro</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;asignarcolores/graficar/datain&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/hallarConstanteKmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/cocienteVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorASeg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milimetrosAmetros</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/restarDesp</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002a0&gt; &lt;blk000002a1&gt; &lt;blk000002a3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/productokmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002cd&gt; &lt;blk000002cf&gt; &lt;blk000002d1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/hallarConstanteKmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/cocienteVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorASeg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milimetrosAmetros</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/restarDesp</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002a0&gt; &lt;blk000002a1&gt; &lt;blk000002a3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/productokmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002cd&gt; &lt;blk000002cf&gt; &lt;blk000002d1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

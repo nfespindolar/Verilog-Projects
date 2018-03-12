@@ -1,0 +1,28 @@
+net "clock" loc = V10        |  IOSTANDARD=LVCMOS33;
+net "punto" loc = M13	 	  |  IOSTANDARD=LVCMOS33;
+net "botonMode" loc = B8     |  IOSTANDARD=LVCMOS33;
+net "botonAumentar" loc = A8 |  IOSTANDARD=LVCMOS33;
+net "botonDisplay" loc = C9  |  IOSTANDARD=LVCMOS33;
+
+net "displaytotal[6]" loc = T17  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[5]" loc = T18  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[4]" loc = U17  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[3]" loc = U18  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[2]" loc = M14  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[1]" loc = N14  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[0]" loc = L14  |  IOSTANDARD=LVCMOS33;
+
+net "sw0" loc = N16  |  IOSTANDARD=LVCMOS33;
+net "sw1" loc = N15  |  IOSTANDARD=LVCMOS33;
+net "sw2" loc = P18  |  IOSTANDARD=LVCMOS33;
+net "sw3" loc = P17  |  IOSTANDARD=LVCMOS33;
+
+net "ledsModo[0]" loc = U16  |  IOSTANDARD=LVCMOS33;
+net "ledsModo[1]" loc = V16  |  IOSTANDARD=LVCMOS33;
+net "ledsModo[2]" loc = U15  |  IOSTANDARD=LVCMOS33;
+
+net "ledsAl[0]" loc = M11  |  IOSTANDARD=LVCMOS33;
+net "ledsAl[1]" loc = N11  |  IOSTANDARD=LVCMOS33;
+net "ledsAl[2]" loc = R11  |  IOSTANDARD=LVCMOS33;
+net "ledsAl[3]" loc = T11  |  IOSTANDARD=LVCMOS33;
+

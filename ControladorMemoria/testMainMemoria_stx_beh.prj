@@ -1,0 +1,6 @@
+verilog isim_temp "ipcore_dir/ram4k.v"
+verilog isim_temp "memoria4K.v"
+verilog isim_temp "Controlador.v"
+verilog isim_temp "mainMemoria.v"
+verilog isim_temp "testMainMemoria.v"
+verilog isim_temp "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

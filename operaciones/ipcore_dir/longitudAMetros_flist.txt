@@ -1,0 +1,18 @@
+# Output products list for <longitudAMetros>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_longitudAMetros.vhd
+longitudAMetros.asy
+longitudAMetros.gise
+longitudAMetros.ngc
+longitudAMetros.sym
+longitudAMetros.v
+longitudAMetros.veo
+longitudAMetros.xco
+longitudAMetros.xise
+longitudAMetros\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+longitudAMetros\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+longitudAMetros\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+longitudAMetros\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+longitudAMetros_flist.txt
+longitudAMetros_readme.txt
+longitudAMetros_xmdf.tcl

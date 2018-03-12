@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Tue Jun 12 11:48:47 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "iman" LOCATE = SITE "T12" LEVEL 1;
+COMP "clock" LOCATE = SITE "V10" LEVEL 1;
+COMP "hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "blanking" LOCATE = SITE "U16" LEVEL 1;
+COMP "colores<0>" LOCATE = SITE "R7" LEVEL 1;
+COMP "colores<1>" LOCATE = SITE "T7" LEVEL 1;
+COMP "colores<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "colores<3>" LOCATE = SITE "T6" LEVEL 1;
+COMP "colores<4>" LOCATE = SITE "V6" LEVEL 1;
+COMP "colores<5>" LOCATE = SITE "U7" LEVEL 1;
+COMP "colores<6>" LOCATE = SITE "V7" LEVEL 1;
+COMP "colores<7>" LOCATE = SITE "N7" LEVEL 1;
+SCHEMATIC END;
+

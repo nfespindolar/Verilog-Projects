@@ -1,0 +1,16 @@
+ISim log file
+Running: C:\Users\Fernando\Desktop\SimulacionesX\memoriaLaser\testRam_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Fernando/Desktop/SimulacionesX/memoriaLaser/testRam_isim_beh.wdb 
+ISim O.87xd (signature 0x2f00eba5)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING:  For instance uut/buf0/, width 1 of formal port inc is not equal to width 32 of actual constant.
+WARNING:  For instance uut/pc0/, width 1 of formal port load is not equal to width 32 of actual constant.
+WARNING:  For instance uut/pc0/, width 12 of formal port d is not equal to width 32 of actual constant.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

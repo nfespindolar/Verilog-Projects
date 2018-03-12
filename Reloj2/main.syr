@@ -1,0 +1,189 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.02 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.02 secs
+ 
+--> Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Selectordisplay.v" into library work
+Parsing module <Selectordisplay>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\SelectorDigito.v" into library work
+Parsing module <Selectordigito>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Mode.v" into library work
+Parsing module <Mode>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" into library work
+Parsing module <HoraReloj>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\DivisorFrecuencia.v" into library work
+Parsing module <DivisorFrecuencia>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" into library work
+Parsing module <Control>.
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 44: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 45: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 46: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Contador.v" into library work
+Parsing module <Contador>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Codificadorsietesegmentos1.v" into library work
+Parsing module <Codificadorsietesegmentos1>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Codificadorsietesegmentos.v" into library work
+Parsing module <Codificadorsietesegmentos>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Alarma.v" into library work
+Parsing module <Alarma>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\main.v" into library work
+Parsing module <main>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <main>.
+
+Elaborating module <DivisorFrecuencia>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\DivisorFrecuencia.v" Line 35: Result of 27-bit expression is truncated to fit in 26-bit target.
+
+Elaborating module <HoraReloj>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" Line 42: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" Line 54: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" Line 70: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\HoraReloj.v" Line 82: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <Alarma>.
+
+Elaborating module <Contador>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Contador.v" Line 32: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Contador.v" Line 38: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Contador.v" Line 53: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\debounce.v" Line 44: Result of 22-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <Codificadorsietesegmentos>.
+
+Elaborating module <Codificadorsietesegmentos1>.
+
+Elaborating module <Selectordigito>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\SelectorDigito.v" Line 36: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\SelectorDigito.v" Line 39: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Selectordisplay>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Selectordisplay.v" Line 35: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Selectordisplay.v" Line 38: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Mode>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Mode.v" Line 32: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 44: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 45: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 46: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:327 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 47: Concatenation with unsized literal; will interpret as 32 bits
+
+Elaborating module <Control>.
+WARNING:HDLCompiler:296 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 44: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 45: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 46: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:296 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\Control.v" Line 47: case condition never applies due to comparison with x or z
+WARNING:HDLCompiler:634 - "C:\Users\Fernando\Desktop\SimulacionesX\Reloj2\main.v" Line 66: Net <clok> does not have a driver.

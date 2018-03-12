@@ -1,0 +1,34 @@
+//! **************************************************************************
+// Written by: Map O.87xd on Fri May 25 20:29:48 2012
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "LedVerde" LOCATE = SITE "T12" LEVEL 1;
+COMP "Switch0" LOCATE = SITE "N16" LEVEL 1;
+COMP "Switch1" LOCATE = SITE "N15" LEVEL 1;
+COMP "Switch2" LOCATE = SITE "P18" LEVEL 1;
+COMP "Switch3" LOCATE = SITE "P17" LEVEL 1;
+COMP "Reset" LOCATE = SITE "C9" LEVEL 1;
+PIN Reset_pin<0> = BEL "Reset" PINNAME PAD;
+PIN "Reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "Start" LOCATE = SITE "T10" LEVEL 1;
+PIN Start_pin<0> = BEL "Start" PINNAME PAD;
+PIN "Start_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clock" LOCATE = SITE "V10" LEVEL 1;
+COMP "LedRED" LOCATE = SITE "H3" LEVEL 1;
+COMP "LedFin" LOCATE = SITE "U16" LEVEL 1;
+COMP "BotonA" LOCATE = SITE "D9" LEVEL 1;
+PIN BotonA_pin<0> = BEL "BotonA" PINNAME PAD;
+PIN "BotonA_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "BotonB" LOCATE = SITE "C4" LEVEL 1;
+PIN BotonB_pin<0> = BEL "BotonB" PINNAME PAD;
+PIN "BotonB_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "displaytotal<0>" LOCATE = SITE "L14" LEVEL 1;
+COMP "displaytotal<1>" LOCATE = SITE "N14" LEVEL 1;
+COMP "displaytotal<2>" LOCATE = SITE "M14" LEVEL 1;
+COMP "displaytotal<3>" LOCATE = SITE "U18" LEVEL 1;
+COMP "displaytotal<4>" LOCATE = SITE "U17" LEVEL 1;
+COMP "displaytotal<5>" LOCATE = SITE "T18" LEVEL 1;
+COMP "displaytotal<6>" LOCATE = SITE "T17" LEVEL 1;
+SCHEMATIC END;
+

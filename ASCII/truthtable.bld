@@ -1,0 +1,35 @@
+Release 13.4 ngdbuild O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle ise
+-dd _ngo -nt timestamp -i -p xc7a8-csg324-3 truthtable.ngc truthtable.ngd
+
+Reading NGO file "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.ngc"
+...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 154368 kilobytes
+
+Writing NGD file "truthtable.ngd" ...
+Total REAL time to NGDBUILD completion:  17 sec
+Total CPU time to NGDBUILD completion:   15 sec
+
+Writing NGDBUILD log file "truthtable.bld"...

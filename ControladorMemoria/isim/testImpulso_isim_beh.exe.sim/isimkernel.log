@@ -1,0 +1,29 @@
+Command line:
+   testImpulso_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49624
+
+Mon Nov 11 07:44:52 2013
+
+
+ Elaboration Time: 0.0312 sec
+
+ Current Memory Usage: 346.481 Meg
+
+ Total Signals          : 16
+ Total Nets             : 16
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 101
+Total Line Count : 29
+
+ Total Simulation Time: 0.0312 sec
+
+ Current Memory Usage: 346.481 Meg
+
+Mon Nov 11 07:45:20 2013
+

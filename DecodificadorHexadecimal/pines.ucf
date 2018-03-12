@@ -1,0 +1,21 @@
+net "Clock" loc = V10;
+net "A3" loc = T5;
+net "A2" loc = V8;
+net "A1" loc = U8;
+net "A0" loc = N8;
+net "B3" loc = M8;
+net "B2" loc = V9;
+net "B1" loc = T9;
+net "B0" loc = T10;
+net "a" loc = T17;
+net "b" loc = T18;
+net "c" loc = U17;
+net "d" loc = U18;
+net "e" loc = M14;
+net "f" loc = N14;
+net "g" loc = L14;
+net "s0" loc = P17;
+net "s1" loc = P18;
+net "s2" loc = N15;
+net "s3" loc = N16;
+

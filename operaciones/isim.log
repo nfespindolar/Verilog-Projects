@@ -1,0 +1,18 @@
+ISim log file
+Running: C:\Users\Fernando\Desktop\SimulacionesX\operaciones\TestVelocidad_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad_isim_beh.wdb 
+ISim O.87xd (signature 0x2f00eba5)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING:  For instance uut/milAFloat/, width 16 of formal port s_axis_a_tdata is not equal to width 32 of actual constant.
+WARNING:  For instance uut/tresmilAFloat/, width 16 of formal port s_axis_a_tdata is not equal to width 32 of actual constant.
+WARNING: File "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad.v" Line 29.  For instance TestVelocidad/uut/, width 16 of formal port desplazamientof is not equal to width 32 of actual variable desplazamientof. 
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+WARNING: This is a limited version of the ISim. The current design has exceeded the design size limit for this version and the performance of the simulation will be derated. Please contact your nearest sales office at http://www.xilinx.com/company/contact.htm or visit the Xilinx on-line store at http://www.xilinx.com/onlinestore/design_resources.htm if interested in purchasing the full, unlimited version of this simulator.
+# run 10.00us

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Instrumentacion.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SelectorDigito.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="mainFrecuencia.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="mainFrecuencia.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="mainFrecuencia.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mainFrecuencia.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="mainFrecuencia.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="mainFrecuencia.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="mainFrecuencia.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="mainFrecuencia.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="mainFrecuencia.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="mainFrecuencia.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="mainFrecuencia.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="mainFrecuencia.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="mainFrecuencia.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="mainFrecuencia.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="mainFrecuencia.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="mainFrecuencia.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="mainFrecuencia.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mainFrecuencia.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="mainFrecuencia.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="mainFrecuencia.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mainFrecuencia_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="mainFrecuencia_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mainFrecuencia_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="mainFrecuencia_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="mainFrecuencia_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="mainFrecuencia_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mainFrecuencia_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mainFrecuencia_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="mainFrecuencia_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="mainFrecuencia_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mainFrecuencia_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="mainFrecuencia_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="mainFrecuencia_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="mainFrecuencia_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="mainFrecuencia_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="mainfrecuencia.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="mainfrecuencia.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="mainfrecuencia.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1208973313974719857" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="86517726282838302" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5868191266023733743" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034542" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2428922186606105176" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034585" xil_pn:in_ck="-5143195225804561922" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="6927697828823620653" xil_pn:start_ts="1340034542">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="mainFrecuencia.lso"/>
+      <outfile xil_pn:name="mainFrecuencia.ngc"/>
+      <outfile xil_pn:name="mainFrecuencia.ngr"/>
+      <outfile xil_pn:name="mainFrecuencia.prj"/>
+      <outfile xil_pn:name="mainFrecuencia.stx"/>
+      <outfile xil_pn:name="mainFrecuencia.syr"/>
+      <outfile xil_pn:name="mainFrecuencia.xst"/>
+      <outfile xil_pn:name="mainFrecuencia_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034585" xil_pn:in_ck="162138854071659" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6149540717311722300" xil_pn:start_ts="1340034585">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034595" xil_pn:in_ck="3733116385163287979" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3046796590904754431" xil_pn:start_ts="1340034585">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="mainFrecuencia.bld"/>
+      <outfile xil_pn:name="mainFrecuencia.ngd"/>
+      <outfile xil_pn:name="mainFrecuencia_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034626" xil_pn:in_ck="3733162796647689932" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="1463976855095865663" xil_pn:start_ts="1340034595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="mainFrecuencia.pcf"/>
+      <outfile xil_pn:name="mainFrecuencia_map.map"/>
+      <outfile xil_pn:name="mainFrecuencia_map.mrp"/>
+      <outfile xil_pn:name="mainFrecuencia_map.ncd"/>
+      <outfile xil_pn:name="mainFrecuencia_map.ngm"/>
+      <outfile xil_pn:name="mainFrecuencia_map.xrpt"/>
+      <outfile xil_pn:name="mainFrecuencia_summary.xml"/>
+      <outfile xil_pn:name="mainFrecuencia_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034659" xil_pn:in_ck="-8042469831140355451" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1340034626">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="mainFrecuencia.ncd"/>
+      <outfile xil_pn:name="mainFrecuencia.pad"/>
+      <outfile xil_pn:name="mainFrecuencia.par"/>
+      <outfile xil_pn:name="mainFrecuencia.ptwx"/>
+      <outfile xil_pn:name="mainFrecuencia.unroutes"/>
+      <outfile xil_pn:name="mainFrecuencia.xpi"/>
+      <outfile xil_pn:name="mainFrecuencia_pad.csv"/>
+      <outfile xil_pn:name="mainFrecuencia_pad.txt"/>
+      <outfile xil_pn:name="mainFrecuencia_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034686" xil_pn:in_ck="-7896050328517691459" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="5341574683187206424" xil_pn:start_ts="1340034659">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="mainFrecuencia.ut"/>
+      <outfile xil_pn:name="mainfrecuencia.bgn"/>
+      <outfile xil_pn:name="mainfrecuencia.bit"/>
+      <outfile xil_pn:name="mainfrecuencia.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1340034659" xil_pn:in_ck="3727036480706632136" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1340034647">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="mainFrecuencia.twr"/>
+      <outfile xil_pn:name="mainFrecuencia.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

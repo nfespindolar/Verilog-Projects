@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Reloj2.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Alarma.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Alarma.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Alarma.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Alarma.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Alarma.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Alarma.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Alarma.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Alarma.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Alarma_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Alarma_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TestReloj_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TestReloj_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TestReloj_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="main.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="main.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="main.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="main.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="main.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="main_summary.html"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="relojMain.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="relojMain.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="relojMain.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="relojMain.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="relojMain.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="relojMain.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="relojMain.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="relojMain.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="relojMain_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="relojMain_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1337708389" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708389" xil_pn:in_ck="-5203312898194792076" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Alarma.v"/>
+      <outfile xil_pn:name="Codificadorsietesegmentos.v"/>
+      <outfile xil_pn:name="Codificadorsietesegmentos1.v"/>
+      <outfile xil_pn:name="Contador.v"/>
+      <outfile xil_pn:name="Control.v"/>
+      <outfile xil_pn:name="DivisorFrecuencia.v"/>
+      <outfile xil_pn:name="HoraReloj.v"/>
+      <outfile xil_pn:name="Mode.v"/>
+      <outfile xil_pn:name="SelectorDigito.v"/>
+      <outfile xil_pn:name="Selectordisplay.v"/>
+      <outfile xil_pn:name="TestReloj.v"/>
+      <outfile xil_pn:name="debounce.v"/>
+      <outfile xil_pn:name="relojMain.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708389" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="7680511781886672403" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708389" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="1478555530081377233" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708389" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="9138326377712290597" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708389" xil_pn:in_ck="-5203312898194792076" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Alarma.v"/>
+      <outfile xil_pn:name="Codificadorsietesegmentos.v"/>
+      <outfile xil_pn:name="Codificadorsietesegmentos1.v"/>
+      <outfile xil_pn:name="Contador.v"/>
+      <outfile xil_pn:name="Control.v"/>
+      <outfile xil_pn:name="DivisorFrecuencia.v"/>
+      <outfile xil_pn:name="HoraReloj.v"/>
+      <outfile xil_pn:name="Mode.v"/>
+      <outfile xil_pn:name="SelectorDigito.v"/>
+      <outfile xil_pn:name="Selectordisplay.v"/>
+      <outfile xil_pn:name="TestReloj.v"/>
+      <outfile xil_pn:name="debounce.v"/>
+      <outfile xil_pn:name="relojMain.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708394" xil_pn:in_ck="-5203312898194792076" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6942327754465919835" xil_pn:start_ts="1337708389">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TestReloj_beh.prj"/>
+      <outfile xil_pn:name="TestReloj_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1337708395" xil_pn:in_ck="-6886324235981997157" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3673522038521337336" xil_pn:start_ts="1337708394">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TestReloj_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705745" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1337705745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705970" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="1535399098267001462" xil_pn:start_ts="1337705970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705970" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="9138326377712290597" xil_pn:start_ts="1337705970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705745" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1337705745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705970" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-4068605259752274760" xil_pn:start_ts="1337705970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705745" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="1106364426758808884" xil_pn:start_ts="1337705745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337705970" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-522452119590712977" xil_pn:start_ts="1337705970">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1337707777" xil_pn:in_ck="2086787817378698580" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3571929435969794732" xil_pn:start_ts="1337707748">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="Alarma.ngr"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="relojMain.lso"/>
+      <outfile xil_pn:name="relojMain.ngc"/>
+      <outfile xil_pn:name="relojMain.ngr"/>
+      <outfile xil_pn:name="relojMain.prj"/>
+      <outfile xil_pn:name="relojMain.stx"/>
+      <outfile xil_pn:name="relojMain.syr"/>
+      <outfile xil_pn:name="relojMain.xst"/>
+      <outfile xil_pn:name="relojMain_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

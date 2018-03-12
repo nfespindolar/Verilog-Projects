@@ -1,0 +1,66 @@
+Running: C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad_isim_beh.exe -prj C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad_beh.prj work.TestVelocidad work.glbl 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/longitudToFloat.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/PulsoAImpulso.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/restar.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/restar.v" Line 6383: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/multiplicacionFloat.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/multiplicacionFloat.v" Line 6451: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/floatAFijo.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/floatAFijo.v" Line 2511: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/enterominaFloat.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/enterominaFloat.v" Line 1964: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/enteroAFloat.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/enteroAFloat.v" Line 3622: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/division.v" into library work
+WARNING:HDLCompiler:687 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/division.v" Line 7609: Illegal redeclaration of module <glbl>.
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/DivisorFrecuencia.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/velocidad.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad.v" into library work
+Analyzing Verilog file "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" into library work
+WARNING:HDLCompiler:687 - "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module <glbl>.
+Starting static elaboration
+WARNING:HDLCompiler:189 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad.v" Line 52: Size mismatch in connection of port <desplazamientof>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/velocidad.v" Line 126: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/velocidad.v" Line 136: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 124516 KB
+Fuse CPU Usage: 1029 ms
+Compiling module DivisorFrecuencia(NDELAY=10,NBIT...
+Compiling module pulsoAImpulso
+Compiling module VCC
+Compiling module GND
+Compiling module FDE
+Compiling module FD(INIT=1'b1)
+Compiling module MUXCY
+Compiling module XORCY
+Compiling module LUT2(INIT=4'b1001)
+Compiling module LUT3(INIT=8'b01010001)
+Compiling module LUT4(INIT=16'b1010101010001010)
+Compiling module LUT6(INIT=64'b010000000000)
+Compiling module LUT5(INIT=32'b111111111111111100...
+Compiling module LUT1(INIT=2'b10)
+Compiling module MUXF7
+Compiling module INV
+Compiling module SRLC16E
+Compiling module restar
+Compiling module enteroAFloat
+Compiling module division
+Compiling module enterominaFloat
+Compiling module SRL16E
+Compiling module MULT_AND
+Compiling module FDRE
+Compiling module multiplicacionFloat
+Compiling module floatAFijo
+Compiling module velocidad
+Compiling module TestVelocidad
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 324 Verilog Units
+Built simulation executable C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad_isim_beh.exe
+Fuse Memory Usage: 130004 KB
+Fuse CPU Usage: 3759 ms

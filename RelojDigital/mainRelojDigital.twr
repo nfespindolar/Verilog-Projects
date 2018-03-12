@@ -1,0 +1,97 @@
+--------------------------------------------------------------------------------
+Release 13.4 Trace  (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml mainRelojDigital.twx mainRelojDigital.ncd -o
+mainRelojDigital.twr mainRelojDigital.pcf -ucf pines.ucf
+
+Design file:              mainRelojDigital.ncd
+Physical constraint file: mainRelojDigital.pcf
+Device,package,speed:     xc6slx16,csg324,C,-3 (PRODUCTION 1.21 2012-01-07)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clock
+-------------+------------+------------+------------+------------+------------------+--------+
+             |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source       | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+-------------+------------+------------+------------+------------+------------------+--------+
+botonAumentar|    3.107(R)|      SLOW  |   -0.753(R)|      SLOW  |clock_IBUF_BUFG   |   0.000|
+botonDisplay |    2.333(R)|      SLOW  |   -0.223(R)|      SLOW  |clock_IBUF_BUFG   |   0.000|
+botonMode    |    2.458(R)|      SLOW  |   -0.367(R)|      SLOW  |clock_IBUF_BUFG   |   0.000|
+-------------+------------+------------+------------+------------+------------------+--------+
+
+Clock clock to Pad
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+displaytotal<0>|        15.274(R)|      SLOW  |         8.016(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        11.888(R)|      SLOW  |         5.263(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+displaytotal<1>|        14.900(R)|      SLOW  |         7.814(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        11.739(R)|      SLOW  |         5.150(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+displaytotal<2>|        15.033(R)|      SLOW  |         7.765(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        11.483(R)|      SLOW  |         5.471(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+displaytotal<3>|        15.893(R)|      SLOW  |         8.079(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        12.341(R)|      SLOW  |         5.329(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+displaytotal<4>|        15.281(R)|      SLOW  |         7.970(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        11.905(R)|      SLOW  |         5.068(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+displaytotal<5>|        15.254(R)|      SLOW  |         7.719(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        11.719(R)|      SLOW  |         5.181(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+displaytotal<6>|        15.223(R)|      SLOW  |         7.895(R)|      FAST  |clockTotal_BUFG   |   0.000|
+               |        11.671(R)|      SLOW  |         4.957(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+ledsAl<0>      |        14.575(R)|      SLOW  |         7.582(R)|      FAST  |clockTotal_BUFG   |   0.000|
+ledsAl<1>      |        14.332(R)|      SLOW  |         7.415(R)|      FAST  |clockTotal_BUFG   |   0.000|
+ledsAl<2>      |        14.527(R)|      SLOW  |         7.577(R)|      FAST  |clockTotal_BUFG   |   0.000|
+ledsAl<3>      |        14.694(R)|      SLOW  |         7.706(R)|      FAST  |clockTotal_BUFG   |   0.000|
+ledsModo<0>    |        10.434(R)|      SLOW  |         5.969(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+ledsModo<1>    |        10.509(R)|      SLOW  |         6.021(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+ledsModo<2>    |         9.928(R)|      SLOW  |         5.567(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+punto          |        10.415(R)|      SLOW  |         5.250(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+sw0            |         9.243(R)|      SLOW  |         5.173(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+sw1            |         9.457(R)|      SLOW  |         5.318(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+sw2            |         9.474(R)|      SLOW  |         5.307(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+sw3            |         9.487(R)|      SLOW  |         5.321(R)|      FAST  |clock_IBUF_BUFG   |   0.000|
+---------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    3.574|    3.397|    2.406|    1.648|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat May 26 12:27:58 2012 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 163 MB
+
+
+

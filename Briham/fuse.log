@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Fernando/Desktop/SimulacionesX/Briham/TestBriham_isim_beh.exe" -prj "C:/Users/Fernando/Desktop/SimulacionesX/Briham/TestBriham_beh.prj" "work.TestBriham" "work.glbl" 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Briham/BrihamDetector.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/Briham/TestBriham.v" into library work
+Analyzing Verilog file "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97588 KB
+Fuse CPU Usage: 327 ms
+Compiling module BrihamDetector
+Compiling module TestBriham
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Fernando/Desktop/SimulacionesX/Briham/TestBriham_isim_beh.exe
+Fuse Memory Usage: 102052 KB
+Fuse CPU Usage: 389 ms

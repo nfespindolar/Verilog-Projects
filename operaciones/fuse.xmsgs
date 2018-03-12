@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/restar.v" Line 6383: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/multiplicacionFloat.v" Line 6451: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/floatAFijo.v" Line 2511: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/enterominaFloat.v" Line 1964: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/enteroAFloat.v" Line 3622: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/ipcore_dir/division.v" Line 7609: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="687" delta="unknown" >"C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" Line 5: Illegal redeclaration of module &lt;<arg fmt="%s" index="1">glbl</arg>&gt;.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/TestVelocidad.v" Line 52: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">desplazamientof</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/velocidad.v" Line 126: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/Fernando/Desktop/SimulacionesX/operaciones/velocidad.v" Line 136: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+</messages>
+

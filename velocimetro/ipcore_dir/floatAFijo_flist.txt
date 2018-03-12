@@ -1,0 +1,18 @@
+# Output products list for <floatAFijo>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_floatAFijo.vhd
+floatAFijo.asy
+floatAFijo.gise
+floatAFijo.ngc
+floatAFijo.sym
+floatAFijo.v
+floatAFijo.veo
+floatAFijo.xco
+floatAFijo.xise
+floatAFijo\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+floatAFijo\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+floatAFijo\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+floatAFijo\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+floatAFijo_flist.txt
+floatAFijo_readme.txt
+floatAFijo_xmdf.tcl

@@ -1,0 +1,3 @@
+vhdtdtfi -lib work C:/Users/Fernando/Desktop/SimulacionesX/DecodificadorHexadecimal/SelectorDigito.v -lang verilog -prj DecodificadorHexadecimal -o SelectorDigito.spl -module SelectorDigito -template C:/xilinix/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family aspartan3e SelectorDigito.spl C:/Users/Fernando/Desktop/SimulacionesX/DecodificadorHexadecimal/SelectorDigito.sym 
+vhdtdtfi -lang verilog -prj DecodificadorHexadecimal -o C:/Users/Fernando/Desktop/SimulacionesX/DecodificadorHexadecimal/SelectorDigito.tfi -lib work C:/Users/Fernando/Desktop/SimulacionesX/DecodificadorHexadecimal//SelectorDigito.v -module SelectorDigito -template C:/xilinix/ISE_DS/ISE//data/tfi.tft -deleteonerror 

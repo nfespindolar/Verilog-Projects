@@ -1,0 +1,18 @@
+# Output products list for <creadorFloat>
+_xmsgs\pn_parser.xmsgs
+creadorFloat.asy
+creadorFloat.gise
+creadorFloat.ngc
+creadorFloat.sym
+creadorFloat.v
+creadorFloat.veo
+creadorFloat.xco
+creadorFloat.xise
+creadorFloat\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+creadorFloat\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+creadorFloat\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+creadorFloat\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+creadorFloat_flist.txt
+creadorFloat_readme.txt
+creadorFloat_xmdf.tcl
+demo_tb\tb_creadorFloat.vhd

@@ -1,0 +1,1817 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.65 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.66 secs
+ 
+--> Reading design: desplazamiento.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "desplazamiento.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "desplazamiento"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : desplazamiento
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\sumaDeLongitudes.v" into library work
+Parsing module <sumaDeLongitudes>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\floatAFijo.v" into library work
+Parsing module <floatAFijo>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\enteroAFloat.v" into library work
+Parsing module <enteroAFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\division.v" into library work
+Parsing module <division>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" into library work
+Parsing module <desplazamiento>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <desplazamiento>.
+
+Elaborating module <enteroAFloat>.
+
+Elaborating module <division>.
+
+Elaborating module <sumaDeLongitudes>.
+
+Elaborating module <floatAFijo>.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" Line 90: Size mismatch in connection of port <m_axis_result_tdata>. Formal port size is 24-bit while actual signal size is 21-bit.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" Line 95: Result of 8-bit expression is truncated to fit in 7-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <desplazamiento>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 33: Output port <s_axis_a_tready> of the instance <circunfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 33: Output port <m_axis_result_tvalid> of the instance <circunfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 43: Output port <s_axis_a_tready> of the instance <milfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 43: Output port <m_axis_result_tvalid> of the instance <milfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 53: Output port <s_axis_a_tready> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 53: Output port <s_axis_b_tready> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 53: Output port <m_axis_result_tvalid> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 68: Output port <s_axis_a_tready> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 68: Output port <s_axis_b_tready> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 68: Output port <m_axis_result_tvalid> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 83: Output port <s_axis_a_tready> of the instance <convertirFloatFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v" line 83: Output port <m_axis_result_tvalid> of the instance <convertirFloatFijo> is unconnected or connected to loadless signal.
+    Found 7-bit register for signal <counter>.
+    Found 1-bit register for signal <validar>.
+    Found 7-bit adder for signal <counter[6]_GND_1_o_add_2_OUT> created at line 95.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+Unit <desplazamiento> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 7-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/enteroAFloat.ngc>.
+Reading core <ipcore_dir/division.ngc>.
+Reading core <ipcore_dir/sumaDeLongitudes.ngc>.
+Reading core <ipcore_dir/floatAFijo.ngc>.
+Loading core <enteroAFloat> for timing and area information for instance <circunfAFloat>.
+Loading core <enteroAFloat> for timing and area information for instance <milfAFloat>.
+Loading core <division> for timing and area information for instance <milimetrosAmetros>.
+Loading core <sumaDeLongitudes> for timing and area information for instance <sumatotalDistancia>.
+Loading core <floatAFijo> for timing and area information for instance <convertirFloatFijo>.
+
+Synthesizing (advanced) Unit <desplazamiento>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <desplazamiento> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <desplazamiento> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block desplazamiento, actual ratio is 13.
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001ce> <blk000001d1> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cd> <blk000001cf> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cc> <blk000001d0> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001ce> <blk000001d1> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cd> <blk000001cf> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cc> <blk000001d0> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <convertirFloatFijo> is equivalent to the following 2 FFs/Latches : <blk0000014c> <blk0000014f> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <convertirFloatFijo> is equivalent to the following 2 FFs/Latches : <blk0000014b> <blk0000014d> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <convertirFloatFijo> is equivalent to the following 2 FFs/Latches : <blk0000014a> <blk0000014e> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001ce> <blk000001d1> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cd> <blk000001cf> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cc> <blk000001d0> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001ce> <blk000001d1> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cd> <blk000001cf> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000001cc> <blk000001d0> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <convertirFloatFijo> is equivalent to the following 2 FFs/Latches : <blk0000014c> <blk0000014f> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <convertirFloatFijo> is equivalent to the following 2 FFs/Latches : <blk0000014b> <blk0000014d> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <convertirFloatFijo> is equivalent to the following 2 FFs/Latches : <blk0000014a> <blk0000014e> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 8
+ Flip-Flops                                            : 8
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : desplazamiento.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3989
+#      GND                         : 6
+#      INV                         : 13
+#      LUT1                        : 4
+#      LUT2                        : 275
+#      LUT3                        : 891
+#      LUT4                        : 109
+#      LUT5                        : 271
+#      LUT6                        : 499
+#      MUXCY                       : 984
+#      MUXF7                       : 16
+#      MUXF8                       : 2
+#      VCC                         : 6
+#      XORCY                       : 913
+# FlipFlops/Latches                : 503
+#      FD                          : 96
+#      FDE                         : 406
+#      FDE_1                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 183
+#      IBUF                        : 33
+#      OBUF                        : 150
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             503  out of  18224     2%  
+ Number of Slice LUTs:                 2062  out of   9112    22%  
+    Number used as Logic:              2062  out of   9112    22%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2320
+   Number with an unused Flip Flop:    1817  out of   2320    78%  
+   Number with an unused LUT:           258  out of   2320    11%  
+   Number of fully used LUT-FF pairs:   245  out of   2320    10%  
+   Number of unique control sets:        21
+
+IO Utilization: 
+ Number of IOs:                         184
+ Number of bonded IOBs:                 184  out of    232    79%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 503   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 67.960ns (Maximum Frequency: 14.714MHz)
+   Minimum input arrival time before clock: 4.336ns
+   Maximum output required time after clock: 70.121ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 67.960ns (frequency: 14.714MHz)
+  Total number of paths / destination ports: 1284916672644447700000000000000000000000000000 / 862
+-------------------------------------------------------------------------
+Delay:               67.960ns (Levels of Logic = 688)
+  Source:            milimetrosAmetros/blk00000022 (FF)
+  Destination:       sumatotalDistancia/blk00000024 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: milimetrosAmetros/blk00000022 to sumatotalDistancia/blk00000024
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             27   0.447   1.221  blk00000022 (sig00000002)
+     LUT2:I1->O            1   0.205   0.000  blk00000899 (sig000005fb)
+     MUXCY:S->O            1   0.172   0.000  blk000000d5 (sig0000062b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000d3 (sig0000062a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000d1 (sig00000629)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cf (sig00000628)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cd (sig00000627)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cb (sig00000626)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c9 (sig00000625)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c7 (sig00000624)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c5 (sig00000623)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c3 (sig00000622)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c1 (sig00000621)
+     MUXCY:CI->O           1   0.019   0.000  blk000000bf (sig00000620)
+     MUXCY:CI->O           1   0.019   0.000  blk000000bd (sig0000061f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000bb (sig0000061e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b9 (sig0000061d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b7 (sig0000061c)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b5 (sig0000061b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b3 (sig0000061a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b1 (sig00000619)
+     MUXCY:CI->O           1   0.019   0.000  blk000000af (sig00000618)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ad (sig00000617)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ab (sig00000616)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a9 (sig00000615)
+     MUXCY:CI->O           0   0.019   0.000  blk000000a7 (sig00000614)
+     XORCY:CI->O          54   0.180   1.802  blk000000a5 (sig0000007a)
+     LUT3:I0->O            1   0.205   0.000  blk00000881 (sig000005e3)
+     MUXCY:S->O            1   0.172   0.000  blk00000104 (sig00000642)
+     MUXCY:CI->O           1   0.019   0.000  blk00000102 (sig00000641)
+     MUXCY:CI->O           1   0.019   0.000  blk00000100 (sig00000640)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fe (sig0000063f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fc (sig0000063e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fa (sig0000063d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f8 (sig0000063c)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f6 (sig0000063b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f4 (sig0000063a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f2 (sig00000639)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f0 (sig00000638)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ee (sig00000637)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ec (sig00000636)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ea (sig00000635)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e8 (sig00000634)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e6 (sig00000633)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e4 (sig00000632)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e2 (sig00000631)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e0 (sig00000630)
+     MUXCY:CI->O           1   0.019   0.000  blk000000de (sig0000062f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000dc (sig0000062e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000da (sig0000062d)
+     MUXCY:CI->O           0   0.019   0.000  blk000000d8 (sig0000062c)
+     XORCY:CI->O          27   0.180   1.449  blk000000d6 (sig00000079)
+     LUT3:I0->O            1   0.205   0.000  blk00000868 (sig000005ca)
+     MUXCY:S->O            1   0.172   0.000  blk00000135 (sig0000065a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000133 (sig00000659)
+     MUXCY:CI->O           1   0.019   0.000  blk00000131 (sig00000658)
+     MUXCY:CI->O           1   0.019   0.000  blk0000012f (sig00000657)
+     MUXCY:CI->O           1   0.019   0.000  blk0000012d (sig00000656)
+     MUXCY:CI->O           1   0.019   0.000  blk0000012b (sig00000655)
+     MUXCY:CI->O           1   0.019   0.000  blk00000129 (sig00000654)
+     MUXCY:CI->O           1   0.019   0.000  blk00000127 (sig00000653)
+     MUXCY:CI->O           1   0.019   0.000  blk00000125 (sig00000652)
+     MUXCY:CI->O           1   0.019   0.000  blk00000123 (sig00000651)
+     MUXCY:CI->O           1   0.019   0.000  blk00000121 (sig00000650)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011f (sig0000064f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011d (sig0000064e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011b (sig0000064d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000119 (sig0000064c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000117 (sig0000064b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000115 (sig0000064a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000113 (sig00000649)
+     MUXCY:CI->O           1   0.019   0.000  blk00000111 (sig00000648)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010f (sig00000647)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010d (sig00000646)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010b (sig00000645)
+     MUXCY:CI->O           0   0.019   0.000  blk00000109 (sig00000644)
+     XORCY:CI->O          28   0.180   1.463  blk00000107 (sig00000078)
+     LUT3:I0->O            1   0.205   0.000  blk0000084f (sig000005b1)
+     MUXCY:S->O            1   0.172   0.000  blk00000166 (sig00000672)
+     MUXCY:CI->O           1   0.019   0.000  blk00000164 (sig00000671)
+     MUXCY:CI->O           1   0.019   0.000  blk00000162 (sig00000670)
+     MUXCY:CI->O           1   0.019   0.000  blk00000160 (sig0000066f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000015e (sig0000066e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000015c (sig0000066d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000015a (sig0000066c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000158 (sig0000066b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000156 (sig0000066a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000154 (sig00000669)
+     MUXCY:CI->O           1   0.019   0.000  blk00000152 (sig00000668)
+     MUXCY:CI->O           1   0.019   0.000  blk00000150 (sig00000667)
+     MUXCY:CI->O           1   0.019   0.000  blk0000014e (sig00000666)
+     MUXCY:CI->O           1   0.019   0.000  blk0000014c (sig00000665)
+     MUXCY:CI->O           1   0.019   0.000  blk0000014a (sig00000664)
+     MUXCY:CI->O           1   0.019   0.000  blk00000148 (sig00000663)
+     MUXCY:CI->O           1   0.019   0.000  blk00000146 (sig00000662)
+     MUXCY:CI->O           1   0.019   0.000  blk00000144 (sig00000661)
+     MUXCY:CI->O           1   0.019   0.000  blk00000142 (sig00000660)
+     MUXCY:CI->O           1   0.019   0.000  blk00000140 (sig0000065f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000013e (sig0000065e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000013c (sig0000065d)
+     MUXCY:CI->O           0   0.019   0.000  blk0000013a (sig0000065c)
+     XORCY:CI->O          28   0.180   1.463  blk00000138 (sig00000077)
+     LUT3:I0->O            1   0.205   0.000  blk00000836 (sig00000598)
+     MUXCY:S->O            1   0.172   0.000  blk00000197 (sig0000068a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000195 (sig00000689)
+     MUXCY:CI->O           1   0.019   0.000  blk00000193 (sig00000688)
+     MUXCY:CI->O           1   0.019   0.000  blk00000191 (sig00000687)
+     MUXCY:CI->O           1   0.019   0.000  blk0000018f (sig00000686)
+     MUXCY:CI->O           1   0.019   0.000  blk0000018d (sig00000685)
+     MUXCY:CI->O           1   0.019   0.000  blk0000018b (sig00000684)
+     MUXCY:CI->O           1   0.019   0.000  blk00000189 (sig00000683)
+     MUXCY:CI->O           1   0.019   0.000  blk00000187 (sig00000682)
+     MUXCY:CI->O           1   0.019   0.000  blk00000185 (sig00000681)
+     MUXCY:CI->O           1   0.019   0.000  blk00000183 (sig00000680)
+     MUXCY:CI->O           1   0.019   0.000  blk00000181 (sig0000067f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000017f (sig0000067e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000017d (sig0000067d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000017b (sig0000067c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000179 (sig0000067b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000177 (sig0000067a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000175 (sig00000679)
+     MUXCY:CI->O           1   0.019   0.000  blk00000173 (sig00000678)
+     MUXCY:CI->O           1   0.019   0.000  blk00000171 (sig00000677)
+     MUXCY:CI->O           1   0.019   0.000  blk0000016f (sig00000676)
+     MUXCY:CI->O           1   0.019   0.000  blk0000016d (sig00000675)
+     MUXCY:CI->O           0   0.019   0.000  blk0000016b (sig00000674)
+     XORCY:CI->O          28   0.180   1.463  blk00000169 (sig00000076)
+     LUT3:I0->O            1   0.205   0.000  blk0000081d (sig0000057f)
+     MUXCY:S->O            1   0.172   0.000  blk000001c8 (sig000006a2)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c6 (sig000006a1)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c4 (sig000006a0)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c2 (sig0000069f)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c0 (sig0000069e)
+     MUXCY:CI->O           1   0.019   0.000  blk000001be (sig0000069d)
+     MUXCY:CI->O           1   0.019   0.000  blk000001bc (sig0000069c)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ba (sig0000069b)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b8 (sig0000069a)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b6 (sig00000699)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b4 (sig00000698)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b2 (sig00000697)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b0 (sig00000696)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ae (sig00000695)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ac (sig00000694)
+     MUXCY:CI->O           1   0.019   0.000  blk000001aa (sig00000693)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a8 (sig00000692)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a6 (sig00000691)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a4 (sig00000690)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a2 (sig0000068f)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a0 (sig0000068e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000019e (sig0000068d)
+     MUXCY:CI->O           0   0.019   0.000  blk0000019c (sig0000068c)
+     XORCY:CI->O          28   0.180   1.463  blk0000019a (sig00000075)
+     LUT3:I0->O            1   0.205   0.000  blk00000804 (sig00000566)
+     MUXCY:S->O            1   0.172   0.000  blk000001f9 (sig000006ba)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f7 (sig000006b9)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f5 (sig000006b8)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f3 (sig000006b7)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f1 (sig000006b6)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ef (sig000006b5)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ed (sig000006b4)
+     MUXCY:CI->O           1   0.019   0.000  blk000001eb (sig000006b3)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e9 (sig000006b2)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e7 (sig000006b1)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e5 (sig000006b0)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e3 (sig000006af)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e1 (sig000006ae)
+     MUXCY:CI->O           1   0.019   0.000  blk000001df (sig000006ad)
+     MUXCY:CI->O           1   0.019   0.000  blk000001dd (sig000006ac)
+     MUXCY:CI->O           1   0.019   0.000  blk000001db (sig000006ab)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d9 (sig000006aa)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d7 (sig000006a9)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d5 (sig000006a8)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d3 (sig000006a7)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d1 (sig000006a6)
+     MUXCY:CI->O           1   0.019   0.000  blk000001cf (sig000006a5)
+     MUXCY:CI->O           0   0.019   0.000  blk000001cd (sig000006a4)
+     XORCY:CI->O          28   0.180   1.463  blk000001cb (sig00000074)
+     LUT3:I0->O            1   0.205   0.000  blk000007eb (sig0000054d)
+     MUXCY:S->O            1   0.172   0.000  blk0000022a (sig000006d2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000228 (sig000006d1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000226 (sig000006d0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000224 (sig000006cf)
+     MUXCY:CI->O           1   0.019   0.000  blk00000222 (sig000006ce)
+     MUXCY:CI->O           1   0.019   0.000  blk00000220 (sig000006cd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000021e (sig000006cc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000021c (sig000006cb)
+     MUXCY:CI->O           1   0.019   0.000  blk0000021a (sig000006ca)
+     MUXCY:CI->O           1   0.019   0.000  blk00000218 (sig000006c9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000216 (sig000006c8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000214 (sig000006c7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000212 (sig000006c6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000210 (sig000006c5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000020e (sig000006c4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000020c (sig000006c3)
+     MUXCY:CI->O           1   0.019   0.000  blk0000020a (sig000006c2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000208 (sig000006c1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000206 (sig000006c0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000204 (sig000006bf)
+     MUXCY:CI->O           1   0.019   0.000  blk00000202 (sig000006be)
+     MUXCY:CI->O           1   0.019   0.000  blk00000200 (sig000006bd)
+     MUXCY:CI->O           0   0.019   0.000  blk000001fe (sig000006bc)
+     XORCY:CI->O          28   0.180   1.463  blk000001fc (sig00000073)
+     LUT3:I0->O            1   0.205   0.000  blk000007d2 (sig00000534)
+     MUXCY:S->O            1   0.172   0.000  blk0000025b (sig000006ea)
+     MUXCY:CI->O           1   0.019   0.000  blk00000259 (sig000006e9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000257 (sig000006e8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000255 (sig000006e7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000253 (sig000006e6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000251 (sig000006e5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000024f (sig000006e4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000024d (sig000006e3)
+     MUXCY:CI->O           1   0.019   0.000  blk0000024b (sig000006e2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000249 (sig000006e1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000247 (sig000006e0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000245 (sig000006df)
+     MUXCY:CI->O           1   0.019   0.000  blk00000243 (sig000006de)
+     MUXCY:CI->O           1   0.019   0.000  blk00000241 (sig000006dd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000023f (sig000006dc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000023d (sig000006db)
+     MUXCY:CI->O           1   0.019   0.000  blk0000023b (sig000006da)
+     MUXCY:CI->O           1   0.019   0.000  blk00000239 (sig000006d9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000237 (sig000006d8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000235 (sig000006d7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000233 (sig000006d6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000231 (sig000006d5)
+     MUXCY:CI->O           0   0.019   0.000  blk0000022f (sig000006d4)
+     XORCY:CI->O          28   0.180   1.463  blk0000022d (sig00000072)
+     LUT3:I0->O            1   0.205   0.000  blk000007b9 (sig0000051b)
+     MUXCY:S->O            1   0.172   0.000  blk0000028c (sig00000702)
+     MUXCY:CI->O           1   0.019   0.000  blk0000028a (sig00000701)
+     MUXCY:CI->O           1   0.019   0.000  blk00000288 (sig00000700)
+     MUXCY:CI->O           1   0.019   0.000  blk00000286 (sig000006ff)
+     MUXCY:CI->O           1   0.019   0.000  blk00000284 (sig000006fe)
+     MUXCY:CI->O           1   0.019   0.000  blk00000282 (sig000006fd)
+     MUXCY:CI->O           1   0.019   0.000  blk00000280 (sig000006fc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000027e (sig000006fb)
+     MUXCY:CI->O           1   0.019   0.000  blk0000027c (sig000006fa)
+     MUXCY:CI->O           1   0.019   0.000  blk0000027a (sig000006f9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000278 (sig000006f8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000276 (sig000006f7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000274 (sig000006f6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000272 (sig000006f5)
+     MUXCY:CI->O           1   0.019   0.000  blk00000270 (sig000006f4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000026e (sig000006f3)
+     MUXCY:CI->O           1   0.019   0.000  blk0000026c (sig000006f2)
+     MUXCY:CI->O           1   0.019   0.000  blk0000026a (sig000006f1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000268 (sig000006f0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000266 (sig000006ef)
+     MUXCY:CI->O           1   0.019   0.000  blk00000264 (sig000006ee)
+     MUXCY:CI->O           1   0.019   0.000  blk00000262 (sig000006ed)
+     MUXCY:CI->O           0   0.019   0.000  blk00000260 (sig000006ec)
+     XORCY:CI->O          28   0.180   1.463  blk0000025e (sig00000071)
+     LUT3:I0->O            1   0.205   0.000  blk000007a0 (sig00000502)
+     MUXCY:S->O            1   0.172   0.000  blk000002bd (sig0000071a)
+     MUXCY:CI->O           1   0.019   0.000  blk000002bb (sig00000719)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b9 (sig00000718)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b7 (sig00000717)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b5 (sig00000716)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b3 (sig00000715)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b1 (sig00000714)
+     MUXCY:CI->O           1   0.019   0.000  blk000002af (sig00000713)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ad (sig00000712)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ab (sig00000711)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a9 (sig00000710)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a7 (sig0000070f)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a5 (sig0000070e)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a3 (sig0000070d)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a1 (sig0000070c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000029f (sig0000070b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000029d (sig0000070a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000029b (sig00000709)
+     MUXCY:CI->O           1   0.019   0.000  blk00000299 (sig00000708)
+     MUXCY:CI->O           1   0.019   0.000  blk00000297 (sig00000707)
+     MUXCY:CI->O           1   0.019   0.000  blk00000295 (sig00000706)
+     MUXCY:CI->O           1   0.019   0.000  blk00000293 (sig00000705)
+     MUXCY:CI->O           0   0.019   0.000  blk00000291 (sig00000704)
+     XORCY:CI->O          28   0.180   1.463  blk0000028f (sig00000070)
+     LUT3:I0->O            1   0.205   0.000  blk00000787 (sig000004e9)
+     MUXCY:S->O            1   0.172   0.000  blk000002ee (sig00000732)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ec (sig00000731)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ea (sig00000730)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e8 (sig0000072f)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e6 (sig0000072e)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e4 (sig0000072d)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e2 (sig0000072c)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e0 (sig0000072b)
+     MUXCY:CI->O           1   0.019   0.000  blk000002de (sig0000072a)
+     MUXCY:CI->O           1   0.019   0.000  blk000002dc (sig00000729)
+     MUXCY:CI->O           1   0.019   0.000  blk000002da (sig00000728)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d8 (sig00000727)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d6 (sig00000726)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d4 (sig00000725)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d2 (sig00000724)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d0 (sig00000723)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ce (sig00000722)
+     MUXCY:CI->O           1   0.019   0.000  blk000002cc (sig00000721)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ca (sig00000720)
+     MUXCY:CI->O           1   0.019   0.000  blk000002c8 (sig0000071f)
+     MUXCY:CI->O           1   0.019   0.000  blk000002c6 (sig0000071e)
+     MUXCY:CI->O           1   0.019   0.000  blk000002c4 (sig0000071d)
+     MUXCY:CI->O           0   0.019   0.000  blk000002c2 (sig0000071c)
+     XORCY:CI->O          28   0.180   1.463  blk000002c0 (sig0000006f)
+     LUT3:I0->O            1   0.205   0.000  blk0000076e (sig000004d0)
+     MUXCY:S->O            1   0.172   0.000  blk0000031f (sig0000074a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000031d (sig00000749)
+     MUXCY:CI->O           1   0.019   0.000  blk0000031b (sig00000748)
+     MUXCY:CI->O           1   0.019   0.000  blk00000319 (sig00000747)
+     MUXCY:CI->O           1   0.019   0.000  blk00000317 (sig00000746)
+     MUXCY:CI->O           1   0.019   0.000  blk00000315 (sig00000745)
+     MUXCY:CI->O           1   0.019   0.000  blk00000313 (sig00000744)
+     MUXCY:CI->O           1   0.019   0.000  blk00000311 (sig00000743)
+     MUXCY:CI->O           1   0.019   0.000  blk0000030f (sig00000742)
+     MUXCY:CI->O           1   0.019   0.000  blk0000030d (sig00000741)
+     MUXCY:CI->O           1   0.019   0.000  blk0000030b (sig00000740)
+     MUXCY:CI->O           1   0.019   0.000  blk00000309 (sig0000073f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000307 (sig0000073e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000305 (sig0000073d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000303 (sig0000073c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000301 (sig0000073b)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ff (sig0000073a)
+     MUXCY:CI->O           1   0.019   0.000  blk000002fd (sig00000739)
+     MUXCY:CI->O           1   0.019   0.000  blk000002fb (sig00000738)
+     MUXCY:CI->O           1   0.019   0.000  blk000002f9 (sig00000737)
+     MUXCY:CI->O           1   0.019   0.000  blk000002f7 (sig00000736)
+     MUXCY:CI->O           1   0.019   0.000  blk000002f5 (sig00000735)
+     MUXCY:CI->O           0   0.019   0.000  blk000002f3 (sig00000734)
+     XORCY:CI->O          28   0.180   1.463  blk000002f1 (sig0000006e)
+     LUT3:I0->O            1   0.205   0.000  blk00000755 (sig000004b7)
+     MUXCY:S->O            1   0.172   0.000  blk00000350 (sig00000762)
+     MUXCY:CI->O           1   0.019   0.000  blk0000034e (sig00000761)
+     MUXCY:CI->O           1   0.019   0.000  blk0000034c (sig00000760)
+     MUXCY:CI->O           1   0.019   0.000  blk0000034a (sig0000075f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000348 (sig0000075e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000346 (sig0000075d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000344 (sig0000075c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000342 (sig0000075b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000340 (sig0000075a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000033e (sig00000759)
+     MUXCY:CI->O           1   0.019   0.000  blk0000033c (sig00000758)
+     MUXCY:CI->O           1   0.019   0.000  blk0000033a (sig00000757)
+     MUXCY:CI->O           1   0.019   0.000  blk00000338 (sig00000756)
+     MUXCY:CI->O           1   0.019   0.000  blk00000336 (sig00000755)
+     MUXCY:CI->O           1   0.019   0.000  blk00000334 (sig00000754)
+     MUXCY:CI->O           1   0.019   0.000  blk00000332 (sig00000753)
+     MUXCY:CI->O           1   0.019   0.000  blk00000330 (sig00000752)
+     MUXCY:CI->O           1   0.019   0.000  blk0000032e (sig00000751)
+     MUXCY:CI->O           1   0.019   0.000  blk0000032c (sig00000750)
+     MUXCY:CI->O           1   0.019   0.000  blk0000032a (sig0000074f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000328 (sig0000074e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000326 (sig0000074d)
+     MUXCY:CI->O           0   0.019   0.000  blk00000324 (sig0000074c)
+     XORCY:CI->O          28   0.180   1.463  blk00000322 (sig0000006d)
+     LUT3:I0->O            1   0.205   0.000  blk0000073c (sig0000049e)
+     MUXCY:S->O            1   0.172   0.000  blk00000381 (sig0000077a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000037f (sig00000779)
+     MUXCY:CI->O           1   0.019   0.000  blk0000037d (sig00000778)
+     MUXCY:CI->O           1   0.019   0.000  blk0000037b (sig00000777)
+     MUXCY:CI->O           1   0.019   0.000  blk00000379 (sig00000776)
+     MUXCY:CI->O           1   0.019   0.000  blk00000377 (sig00000775)
+     MUXCY:CI->O           1   0.019   0.000  blk00000375 (sig00000774)
+     MUXCY:CI->O           1   0.019   0.000  blk00000373 (sig00000773)
+     MUXCY:CI->O           1   0.019   0.000  blk00000371 (sig00000772)
+     MUXCY:CI->O           1   0.019   0.000  blk0000036f (sig00000771)
+     MUXCY:CI->O           1   0.019   0.000  blk0000036d (sig00000770)
+     MUXCY:CI->O           1   0.019   0.000  blk0000036b (sig0000076f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000369 (sig0000076e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000367 (sig0000076d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000365 (sig0000076c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000363 (sig0000076b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000361 (sig0000076a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000035f (sig00000769)
+     MUXCY:CI->O           1   0.019   0.000  blk0000035d (sig00000768)
+     MUXCY:CI->O           1   0.019   0.000  blk0000035b (sig00000767)
+     MUXCY:CI->O           1   0.019   0.000  blk00000359 (sig00000766)
+     MUXCY:CI->O           1   0.019   0.000  blk00000357 (sig00000765)
+     MUXCY:CI->O           0   0.019   0.000  blk00000355 (sig00000764)
+     XORCY:CI->O          28   0.180   1.463  blk00000353 (sig0000006c)
+     LUT3:I0->O            1   0.205   0.000  blk00000723 (sig00000485)
+     MUXCY:S->O            1   0.172   0.000  blk000003b2 (sig00000792)
+     MUXCY:CI->O           1   0.019   0.000  blk000003b0 (sig00000791)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ae (sig00000790)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ac (sig0000078f)
+     MUXCY:CI->O           1   0.019   0.000  blk000003aa (sig0000078e)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a8 (sig0000078d)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a6 (sig0000078c)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a4 (sig0000078b)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a2 (sig0000078a)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a0 (sig00000789)
+     MUXCY:CI->O           1   0.019   0.000  blk0000039e (sig00000788)
+     MUXCY:CI->O           1   0.019   0.000  blk0000039c (sig00000787)
+     MUXCY:CI->O           1   0.019   0.000  blk0000039a (sig00000786)
+     MUXCY:CI->O           1   0.019   0.000  blk00000398 (sig00000785)
+     MUXCY:CI->O           1   0.019   0.000  blk00000396 (sig00000784)
+     MUXCY:CI->O           1   0.019   0.000  blk00000394 (sig00000783)
+     MUXCY:CI->O           1   0.019   0.000  blk00000392 (sig00000782)
+     MUXCY:CI->O           1   0.019   0.000  blk00000390 (sig00000781)
+     MUXCY:CI->O           1   0.019   0.000  blk0000038e (sig00000780)
+     MUXCY:CI->O           1   0.019   0.000  blk0000038c (sig0000077f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000038a (sig0000077e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000388 (sig0000077d)
+     MUXCY:CI->O           0   0.019   0.000  blk00000386 (sig0000077c)
+     XORCY:CI->O          28   0.180   1.463  blk00000384 (sig0000006b)
+     LUT3:I0->O            1   0.205   0.000  blk0000070a (sig0000046c)
+     MUXCY:S->O            1   0.172   0.000  blk000003e3 (sig000007aa)
+     MUXCY:CI->O           1   0.019   0.000  blk000003e1 (sig000007a9)
+     MUXCY:CI->O           1   0.019   0.000  blk000003df (sig000007a8)
+     MUXCY:CI->O           1   0.019   0.000  blk000003dd (sig000007a7)
+     MUXCY:CI->O           1   0.019   0.000  blk000003db (sig000007a6)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d9 (sig000007a5)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d7 (sig000007a4)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d5 (sig000007a3)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d3 (sig000007a2)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d1 (sig000007a1)
+     MUXCY:CI->O           1   0.019   0.000  blk000003cf (sig000007a0)
+     MUXCY:CI->O           1   0.019   0.000  blk000003cd (sig0000079f)
+     MUXCY:CI->O           1   0.019   0.000  blk000003cb (sig0000079e)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c9 (sig0000079d)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c7 (sig0000079c)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c5 (sig0000079b)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c3 (sig0000079a)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c1 (sig00000799)
+     MUXCY:CI->O           1   0.019   0.000  blk000003bf (sig00000798)
+     MUXCY:CI->O           1   0.019   0.000  blk000003bd (sig00000797)
+     MUXCY:CI->O           1   0.019   0.000  blk000003bb (sig00000796)
+     MUXCY:CI->O           1   0.019   0.000  blk000003b9 (sig00000795)
+     MUXCY:CI->O           0   0.019   0.000  blk000003b7 (sig00000794)
+     XORCY:CI->O          28   0.180   1.463  blk000003b5 (sig0000006a)
+     LUT3:I0->O            1   0.205   0.000  blk000006f1 (sig00000453)
+     MUXCY:S->O            1   0.172   0.000  blk00000414 (sig000007c2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000412 (sig000007c1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000410 (sig000007c0)
+     MUXCY:CI->O           1   0.019   0.000  blk0000040e (sig000007bf)
+     MUXCY:CI->O           1   0.019   0.000  blk0000040c (sig000007be)
+     MUXCY:CI->O           1   0.019   0.000  blk0000040a (sig000007bd)
+     MUXCY:CI->O           1   0.019   0.000  blk00000408 (sig000007bc)
+     MUXCY:CI->O           1   0.019   0.000  blk00000406 (sig000007bb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000404 (sig000007ba)
+     MUXCY:CI->O           1   0.019   0.000  blk00000402 (sig000007b9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000400 (sig000007b8)
+     MUXCY:CI->O           1   0.019   0.000  blk000003fe (sig000007b7)
+     MUXCY:CI->O           1   0.019   0.000  blk000003fc (sig000007b6)
+     MUXCY:CI->O           1   0.019   0.000  blk000003fa (sig000007b5)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f8 (sig000007b4)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f6 (sig000007b3)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f4 (sig000007b2)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f2 (sig000007b1)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f0 (sig000007b0)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ee (sig000007af)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ec (sig000007ae)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ea (sig000007ad)
+     MUXCY:CI->O           0   0.019   0.000  blk000003e8 (sig000007ac)
+     XORCY:CI->O          28   0.180   1.463  blk000003e6 (sig00000069)
+     LUT3:I0->O            1   0.205   0.000  blk000006d8 (sig0000043a)
+     MUXCY:S->O            1   0.172   0.000  blk00000445 (sig000007da)
+     MUXCY:CI->O           1   0.019   0.000  blk00000443 (sig000007d9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000441 (sig000007d8)
+     MUXCY:CI->O           1   0.019   0.000  blk0000043f (sig000007d7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000043d (sig000007d6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000043b (sig000007d5)
+     MUXCY:CI->O           1   0.019   0.000  blk00000439 (sig000007d4)
+     MUXCY:CI->O           1   0.019   0.000  blk00000437 (sig000007d3)
+     MUXCY:CI->O           1   0.019   0.000  blk00000435 (sig000007d2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000433 (sig000007d1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000431 (sig000007d0)
+     MUXCY:CI->O           1   0.019   0.000  blk0000042f (sig000007cf)
+     MUXCY:CI->O           1   0.019   0.000  blk0000042d (sig000007ce)
+     MUXCY:CI->O           1   0.019   0.000  blk0000042b (sig000007cd)
+     MUXCY:CI->O           1   0.019   0.000  blk00000429 (sig000007cc)
+     MUXCY:CI->O           1   0.019   0.000  blk00000427 (sig000007cb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000425 (sig000007ca)
+     MUXCY:CI->O           1   0.019   0.000  blk00000423 (sig000007c9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000421 (sig000007c8)
+     MUXCY:CI->O           1   0.019   0.000  blk0000041f (sig000007c7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000041d (sig000007c6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000041b (sig000007c5)
+     MUXCY:CI->O           0   0.019   0.000  blk00000419 (sig000007c4)
+     XORCY:CI->O          28   0.180   1.463  blk00000417 (sig00000068)
+     LUT3:I0->O            1   0.205   0.000  blk000006bf (sig00000421)
+     MUXCY:S->O            1   0.172   0.000  blk00000476 (sig000007f2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000474 (sig000007f1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000472 (sig000007f0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000470 (sig000007ef)
+     MUXCY:CI->O           1   0.019   0.000  blk0000046e (sig000007ee)
+     MUXCY:CI->O           1   0.019   0.000  blk0000046c (sig000007ed)
+     MUXCY:CI->O           1   0.019   0.000  blk0000046a (sig000007ec)
+     MUXCY:CI->O           1   0.019   0.000  blk00000468 (sig000007eb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000466 (sig000007ea)
+     MUXCY:CI->O           1   0.019   0.000  blk00000464 (sig000007e9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000462 (sig000007e8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000460 (sig000007e7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000045e (sig000007e6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000045c (sig000007e5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000045a (sig000007e4)
+     MUXCY:CI->O           1   0.019   0.000  blk00000458 (sig000007e3)
+     MUXCY:CI->O           1   0.019   0.000  blk00000456 (sig000007e2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000454 (sig000007e1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000452 (sig000007e0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000450 (sig000007df)
+     MUXCY:CI->O           1   0.019   0.000  blk0000044e (sig000007de)
+     MUXCY:CI->O           1   0.019   0.000  blk0000044c (sig000007dd)
+     MUXCY:CI->O           0   0.019   0.000  blk0000044a (sig000007dc)
+     XORCY:CI->O          28   0.180   1.463  blk00000448 (sig00000067)
+     LUT3:I0->O            1   0.205   0.000  blk000006a6 (sig00000408)
+     MUXCY:S->O            1   0.172   0.000  blk000004a7 (sig0000080a)
+     MUXCY:CI->O           1   0.019   0.000  blk000004a5 (sig00000809)
+     MUXCY:CI->O           1   0.019   0.000  blk000004a3 (sig00000808)
+     MUXCY:CI->O           1   0.019   0.000  blk000004a1 (sig00000807)
+     MUXCY:CI->O           1   0.019   0.000  blk0000049f (sig00000806)
+     MUXCY:CI->O           1   0.019   0.000  blk0000049d (sig00000805)
+     MUXCY:CI->O           1   0.019   0.000  blk0000049b (sig00000804)
+     MUXCY:CI->O           1   0.019   0.000  blk00000499 (sig00000803)
+     MUXCY:CI->O           1   0.019   0.000  blk00000497 (sig00000802)
+     MUXCY:CI->O           1   0.019   0.000  blk00000495 (sig00000801)
+     MUXCY:CI->O           1   0.019   0.000  blk00000493 (sig00000800)
+     MUXCY:CI->O           1   0.019   0.000  blk00000491 (sig000007ff)
+     MUXCY:CI->O           1   0.019   0.000  blk0000048f (sig000007fe)
+     MUXCY:CI->O           1   0.019   0.000  blk0000048d (sig000007fd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000048b (sig000007fc)
+     MUXCY:CI->O           1   0.019   0.000  blk00000489 (sig000007fb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000487 (sig000007fa)
+     MUXCY:CI->O           1   0.019   0.000  blk00000485 (sig000007f9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000483 (sig000007f8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000481 (sig000007f7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000047f (sig000007f6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000047d (sig000007f5)
+     MUXCY:CI->O           0   0.019   0.000  blk0000047b (sig000007f4)
+     XORCY:CI->O          28   0.180   1.463  blk00000479 (sig00000066)
+     LUT3:I0->O            1   0.205   0.000  blk0000068d (sig000003ef)
+     MUXCY:S->O            1   0.172   0.000  blk000004d8 (sig00000822)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d6 (sig00000821)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d4 (sig00000820)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d2 (sig0000081f)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d0 (sig0000081e)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ce (sig0000081d)
+     MUXCY:CI->O           1   0.019   0.000  blk000004cc (sig0000081c)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ca (sig0000081b)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c8 (sig0000081a)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c6 (sig00000819)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c4 (sig00000818)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c2 (sig00000817)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c0 (sig00000816)
+     MUXCY:CI->O           1   0.019   0.000  blk000004be (sig00000815)
+     MUXCY:CI->O           1   0.019   0.000  blk000004bc (sig00000814)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ba (sig00000813)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b8 (sig00000812)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b6 (sig00000811)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b4 (sig00000810)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b2 (sig0000080f)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b0 (sig0000080e)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ae (sig0000080d)
+     MUXCY:CI->O           0   0.019   0.000  blk000004ac (sig0000080c)
+     XORCY:CI->O          28   0.180   1.463  blk000004aa (sig00000065)
+     LUT3:I0->O            1   0.205   0.000  blk00000674 (sig000003d6)
+     MUXCY:S->O            1   0.172   0.000  blk00000509 (sig0000083a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000507 (sig00000839)
+     MUXCY:CI->O           1   0.019   0.000  blk00000505 (sig00000838)
+     MUXCY:CI->O           1   0.019   0.000  blk00000503 (sig00000837)
+     MUXCY:CI->O           1   0.019   0.000  blk00000501 (sig00000836)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ff (sig00000835)
+     MUXCY:CI->O           1   0.019   0.000  blk000004fd (sig00000834)
+     MUXCY:CI->O           1   0.019   0.000  blk000004fb (sig00000833)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f9 (sig00000832)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f7 (sig00000831)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f5 (sig00000830)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f3 (sig0000082f)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f1 (sig0000082e)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ef (sig0000082d)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ed (sig0000082c)
+     MUXCY:CI->O           1   0.019   0.000  blk000004eb (sig0000082b)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e9 (sig0000082a)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e7 (sig00000829)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e5 (sig00000828)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e3 (sig00000827)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e1 (sig00000826)
+     MUXCY:CI->O           1   0.019   0.000  blk000004df (sig00000825)
+     MUXCY:CI->O           0   0.019   0.000  blk000004dd (sig00000824)
+     XORCY:CI->O          28   0.180   1.463  blk000004db (sig00000064)
+     LUT3:I0->O            1   0.205   0.000  blk0000065b (sig000003bd)
+     MUXCY:S->O            1   0.172   0.000  blk0000053a (sig00000852)
+     MUXCY:CI->O           1   0.019   0.000  blk00000538 (sig00000851)
+     MUXCY:CI->O           1   0.019   0.000  blk00000536 (sig00000850)
+     MUXCY:CI->O           1   0.019   0.000  blk00000534 (sig0000084f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000532 (sig0000084e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000530 (sig0000084d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000052e (sig0000084c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000052c (sig0000084b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000052a (sig0000084a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000528 (sig00000849)
+     MUXCY:CI->O           1   0.019   0.000  blk00000526 (sig00000848)
+     MUXCY:CI->O           1   0.019   0.000  blk00000524 (sig00000847)
+     MUXCY:CI->O           1   0.019   0.000  blk00000522 (sig00000846)
+     MUXCY:CI->O           1   0.019   0.000  blk00000520 (sig00000845)
+     MUXCY:CI->O           1   0.019   0.000  blk0000051e (sig00000844)
+     MUXCY:CI->O           1   0.019   0.000  blk0000051c (sig00000843)
+     MUXCY:CI->O           1   0.019   0.000  blk0000051a (sig00000842)
+     MUXCY:CI->O           1   0.019   0.000  blk00000518 (sig00000841)
+     MUXCY:CI->O           1   0.019   0.000  blk00000516 (sig00000840)
+     MUXCY:CI->O           1   0.019   0.000  blk00000514 (sig0000083f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000512 (sig0000083e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000510 (sig0000083d)
+     MUXCY:CI->O           0   0.019   0.000  blk0000050e (sig0000083c)
+     XORCY:CI->O          28   0.180   1.463  blk0000050c (sig00000063)
+     LUT3:I0->O            1   0.205   0.000  blk00000642 (sig000003a4)
+     MUXCY:S->O            1   0.172   0.000  blk0000056b (sig0000086a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000569 (sig00000869)
+     MUXCY:CI->O           1   0.019   0.000  blk00000567 (sig00000868)
+     MUXCY:CI->O           1   0.019   0.000  blk00000565 (sig00000867)
+     MUXCY:CI->O           1   0.019   0.000  blk00000563 (sig00000866)
+     MUXCY:CI->O           1   0.019   0.000  blk00000561 (sig00000865)
+     MUXCY:CI->O           1   0.019   0.000  blk0000055f (sig00000864)
+     MUXCY:CI->O           1   0.019   0.000  blk0000055d (sig00000863)
+     MUXCY:CI->O           1   0.019   0.000  blk0000055b (sig00000862)
+     MUXCY:CI->O           1   0.019   0.000  blk00000559 (sig00000861)
+     MUXCY:CI->O           1   0.019   0.000  blk00000557 (sig00000860)
+     MUXCY:CI->O           1   0.019   0.000  blk00000555 (sig0000085f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000553 (sig0000085e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000551 (sig0000085d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000054f (sig0000085c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000054d (sig0000085b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000054b (sig0000085a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000549 (sig00000859)
+     MUXCY:CI->O           1   0.019   0.000  blk00000547 (sig00000858)
+     MUXCY:CI->O           1   0.019   0.000  blk00000545 (sig00000857)
+     MUXCY:CI->O           1   0.019   0.000  blk00000543 (sig00000856)
+     MUXCY:CI->O           1   0.019   0.000  blk00000541 (sig00000855)
+     MUXCY:CI->O           0   0.019   0.000  blk0000053f (sig00000854)
+     XORCY:CI->O          28   0.180   1.463  blk0000053d (sig00000062)
+     LUT3:I0->O            1   0.205   0.000  blk00000629 (sig0000038b)
+     MUXCY:S->O            1   0.172   0.000  blk0000059c (sig00000882)
+     MUXCY:CI->O           1   0.019   0.000  blk0000059a (sig00000881)
+     MUXCY:CI->O           1   0.019   0.000  blk00000598 (sig00000880)
+     MUXCY:CI->O           1   0.019   0.000  blk00000596 (sig0000087f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000594 (sig0000087e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000592 (sig0000087d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000590 (sig0000087c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000058e (sig0000087b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000058c (sig0000087a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000058a (sig00000879)
+     MUXCY:CI->O           1   0.019   0.000  blk00000588 (sig00000878)
+     MUXCY:CI->O           1   0.019   0.000  blk00000586 (sig00000877)
+     MUXCY:CI->O           1   0.019   0.000  blk00000584 (sig00000876)
+     MUXCY:CI->O           1   0.019   0.000  blk00000582 (sig00000875)
+     MUXCY:CI->O           1   0.019   0.000  blk00000580 (sig00000874)
+     MUXCY:CI->O           1   0.019   0.000  blk0000057e (sig00000873)
+     MUXCY:CI->O           1   0.019   0.000  blk0000057c (sig00000872)
+     MUXCY:CI->O           1   0.019   0.000  blk0000057a (sig00000871)
+     MUXCY:CI->O           1   0.019   0.000  blk00000578 (sig00000870)
+     MUXCY:CI->O           1   0.019   0.000  blk00000576 (sig0000086f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000574 (sig0000086e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000572 (sig0000086d)
+     MUXCY:CI->O           0   0.019   0.000  blk00000570 (sig0000086c)
+     XORCY:CI->O           1   0.180   0.684  blk0000056e (sig00000061)
+     LUT3:I1->O            1   0.203   0.000  blk000008b0 (sig00000884)
+     MUXCY:S->O            1   0.172   0.000  blk0000059f (sig000008a7)
+     MUXCY:CI->O           1   0.019   0.000  blk000005d1 (sig000008bd)
+     MUXCY:CI->O           1   0.019   0.000  blk000005cf (sig000008bc)
+     MUXCY:CI->O           1   0.019   0.000  blk000005cd (sig000008bb)
+     MUXCY:CI->O           1   0.019   0.000  blk000005cb (sig000008ba)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c9 (sig000008b9)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c7 (sig000008b8)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c5 (sig000008b7)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c3 (sig000008b6)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c1 (sig000008b5)
+     MUXCY:CI->O           1   0.019   0.000  blk000005bf (sig000008b4)
+     MUXCY:CI->O           1   0.019   0.000  blk000005bd (sig000008b3)
+     MUXCY:CI->O           1   0.019   0.000  blk000005bb (sig000008a6)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b9 (sig000008b2)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b7 (sig000008b1)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b5 (sig000008b0)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b3 (sig000008af)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b1 (sig000008ae)
+     MUXCY:CI->O           1   0.019   0.000  blk000005af (sig000008ad)
+     MUXCY:CI->O           1   0.019   0.000  blk000005ad (sig000008ac)
+     MUXCY:CI->O           1   0.019   0.000  blk000005ab (sig000008ab)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a9 (sig000008aa)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a7 (sig000008a9)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a5 (sig000008a8)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a3 (sig000008a5)
+     MUXCY:CI->O           1   0.019   0.000  blk000005e0 (sig000008c4)
+     MUXCY:CI->O           1   0.019   0.000  blk000005de (sig000008c3)
+     MUXCY:CI->O           1   0.019   0.000  blk000005dc (sig000008c2)
+     MUXCY:CI->O           1   0.019   0.000  blk000005da (sig000008c1)
+     MUXCY:CI->O           1   0.019   0.000  blk000005d8 (sig000008c0)
+     MUXCY:CI->O           1   0.019   0.000  blk000005d6 (sig000008bf)
+     MUXCY:CI->O           0   0.019   0.000  blk000005d4 (sig000008be)
+     XORCY:CI->O           1   0.180   0.924  blk000005d2 (sig00000049)
+     LUT5:I0->O            3   0.203   0.755  blk000008fa (m_axis_result_tdata<30>)
+     end scope: 'milimetrosAmetros:m_axis_result_tdata<30>'
+     begin scope: 'sumatotalDistancia:s_axis_a_tdata<30>'
+     LUT3:I1->O            1   0.203   0.000  blk000001aa (sig000000b1)
+     FDE:D                     0.102          blk00000024
+    ----------------------------------------
+    Total                     67.960ns (27.468ns logic, 40.492ns route)
+                                       (40.4% logic, 59.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 207 / 200
+-------------------------------------------------------------------------
+Offset:              4.336ns (Levels of Logic = 3)
+  Source:            impulsoIman (PAD)
+  Destination:       sumatotalDistancia/blk0000004a (FF)
+  Destination Clock: clock rising
+
+  Data Path: impulsoIman to sumatotalDistancia/blk0000004a
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.222   1.297  impulsoIman_IBUF (impulsoIman_IBUF)
+     begin scope: 'sumatotalDistancia:m_axis_result_tready'
+     LUT6:I0->O           32   0.203   1.291  blk000002d7 (sig0000004d)
+     FDE:CE                    0.322          blk00000069
+    ----------------------------------------
+    Total                      4.336ns (1.747ns logic, 2.589ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 642458336322223050000000000000000000000000000 / 150
+-------------------------------------------------------------------------
+Offset:              70.121ns (Levels of Logic = 688)
+  Source:            milimetrosAmetros/blk00000022 (FF)
+  Destination:       circunfMetrosFloat<30> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: milimetrosAmetros/blk00000022 to circunfMetrosFloat<30>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             27   0.447   1.221  blk00000022 (sig00000002)
+     LUT2:I1->O            1   0.205   0.000  blk00000899 (sig000005fb)
+     MUXCY:S->O            1   0.172   0.000  blk000000d5 (sig0000062b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000d3 (sig0000062a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000d1 (sig00000629)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cf (sig00000628)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cd (sig00000627)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cb (sig00000626)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c9 (sig00000625)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c7 (sig00000624)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c5 (sig00000623)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c3 (sig00000622)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c1 (sig00000621)
+     MUXCY:CI->O           1   0.019   0.000  blk000000bf (sig00000620)
+     MUXCY:CI->O           1   0.019   0.000  blk000000bd (sig0000061f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000bb (sig0000061e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b9 (sig0000061d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b7 (sig0000061c)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b5 (sig0000061b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b3 (sig0000061a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000b1 (sig00000619)
+     MUXCY:CI->O           1   0.019   0.000  blk000000af (sig00000618)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ad (sig00000617)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ab (sig00000616)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a9 (sig00000615)
+     MUXCY:CI->O           0   0.019   0.000  blk000000a7 (sig00000614)
+     XORCY:CI->O          54   0.180   1.802  blk000000a5 (sig0000007a)
+     LUT3:I0->O            1   0.205   0.000  blk00000881 (sig000005e3)
+     MUXCY:S->O            1   0.172   0.000  blk00000104 (sig00000642)
+     MUXCY:CI->O           1   0.019   0.000  blk00000102 (sig00000641)
+     MUXCY:CI->O           1   0.019   0.000  blk00000100 (sig00000640)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fe (sig0000063f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fc (sig0000063e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fa (sig0000063d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f8 (sig0000063c)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f6 (sig0000063b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f4 (sig0000063a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f2 (sig00000639)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f0 (sig00000638)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ee (sig00000637)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ec (sig00000636)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ea (sig00000635)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e8 (sig00000634)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e6 (sig00000633)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e4 (sig00000632)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e2 (sig00000631)
+     MUXCY:CI->O           1   0.019   0.000  blk000000e0 (sig00000630)
+     MUXCY:CI->O           1   0.019   0.000  blk000000de (sig0000062f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000dc (sig0000062e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000da (sig0000062d)
+     MUXCY:CI->O           0   0.019   0.000  blk000000d8 (sig0000062c)
+     XORCY:CI->O          27   0.180   1.449  blk000000d6 (sig00000079)
+     LUT3:I0->O            1   0.205   0.000  blk00000868 (sig000005ca)
+     MUXCY:S->O            1   0.172   0.000  blk00000135 (sig0000065a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000133 (sig00000659)
+     MUXCY:CI->O           1   0.019   0.000  blk00000131 (sig00000658)
+     MUXCY:CI->O           1   0.019   0.000  blk0000012f (sig00000657)
+     MUXCY:CI->O           1   0.019   0.000  blk0000012d (sig00000656)
+     MUXCY:CI->O           1   0.019   0.000  blk0000012b (sig00000655)
+     MUXCY:CI->O           1   0.019   0.000  blk00000129 (sig00000654)
+     MUXCY:CI->O           1   0.019   0.000  blk00000127 (sig00000653)
+     MUXCY:CI->O           1   0.019   0.000  blk00000125 (sig00000652)
+     MUXCY:CI->O           1   0.019   0.000  blk00000123 (sig00000651)
+     MUXCY:CI->O           1   0.019   0.000  blk00000121 (sig00000650)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011f (sig0000064f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011d (sig0000064e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011b (sig0000064d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000119 (sig0000064c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000117 (sig0000064b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000115 (sig0000064a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000113 (sig00000649)
+     MUXCY:CI->O           1   0.019   0.000  blk00000111 (sig00000648)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010f (sig00000647)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010d (sig00000646)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010b (sig00000645)
+     MUXCY:CI->O           0   0.019   0.000  blk00000109 (sig00000644)
+     XORCY:CI->O          28   0.180   1.463  blk00000107 (sig00000078)
+     LUT3:I0->O            1   0.205   0.000  blk0000084f (sig000005b1)
+     MUXCY:S->O            1   0.172   0.000  blk00000166 (sig00000672)
+     MUXCY:CI->O           1   0.019   0.000  blk00000164 (sig00000671)
+     MUXCY:CI->O           1   0.019   0.000  blk00000162 (sig00000670)
+     MUXCY:CI->O           1   0.019   0.000  blk00000160 (sig0000066f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000015e (sig0000066e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000015c (sig0000066d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000015a (sig0000066c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000158 (sig0000066b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000156 (sig0000066a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000154 (sig00000669)
+     MUXCY:CI->O           1   0.019   0.000  blk00000152 (sig00000668)
+     MUXCY:CI->O           1   0.019   0.000  blk00000150 (sig00000667)
+     MUXCY:CI->O           1   0.019   0.000  blk0000014e (sig00000666)
+     MUXCY:CI->O           1   0.019   0.000  blk0000014c (sig00000665)
+     MUXCY:CI->O           1   0.019   0.000  blk0000014a (sig00000664)
+     MUXCY:CI->O           1   0.019   0.000  blk00000148 (sig00000663)
+     MUXCY:CI->O           1   0.019   0.000  blk00000146 (sig00000662)
+     MUXCY:CI->O           1   0.019   0.000  blk00000144 (sig00000661)
+     MUXCY:CI->O           1   0.019   0.000  blk00000142 (sig00000660)
+     MUXCY:CI->O           1   0.019   0.000  blk00000140 (sig0000065f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000013e (sig0000065e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000013c (sig0000065d)
+     MUXCY:CI->O           0   0.019   0.000  blk0000013a (sig0000065c)
+     XORCY:CI->O          28   0.180   1.463  blk00000138 (sig00000077)
+     LUT3:I0->O            1   0.205   0.000  blk00000836 (sig00000598)
+     MUXCY:S->O            1   0.172   0.000  blk00000197 (sig0000068a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000195 (sig00000689)
+     MUXCY:CI->O           1   0.019   0.000  blk00000193 (sig00000688)
+     MUXCY:CI->O           1   0.019   0.000  blk00000191 (sig00000687)
+     MUXCY:CI->O           1   0.019   0.000  blk0000018f (sig00000686)
+     MUXCY:CI->O           1   0.019   0.000  blk0000018d (sig00000685)
+     MUXCY:CI->O           1   0.019   0.000  blk0000018b (sig00000684)
+     MUXCY:CI->O           1   0.019   0.000  blk00000189 (sig00000683)
+     MUXCY:CI->O           1   0.019   0.000  blk00000187 (sig00000682)
+     MUXCY:CI->O           1   0.019   0.000  blk00000185 (sig00000681)
+     MUXCY:CI->O           1   0.019   0.000  blk00000183 (sig00000680)
+     MUXCY:CI->O           1   0.019   0.000  blk00000181 (sig0000067f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000017f (sig0000067e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000017d (sig0000067d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000017b (sig0000067c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000179 (sig0000067b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000177 (sig0000067a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000175 (sig00000679)
+     MUXCY:CI->O           1   0.019   0.000  blk00000173 (sig00000678)
+     MUXCY:CI->O           1   0.019   0.000  blk00000171 (sig00000677)
+     MUXCY:CI->O           1   0.019   0.000  blk0000016f (sig00000676)
+     MUXCY:CI->O           1   0.019   0.000  blk0000016d (sig00000675)
+     MUXCY:CI->O           0   0.019   0.000  blk0000016b (sig00000674)
+     XORCY:CI->O          28   0.180   1.463  blk00000169 (sig00000076)
+     LUT3:I0->O            1   0.205   0.000  blk0000081d (sig0000057f)
+     MUXCY:S->O            1   0.172   0.000  blk000001c8 (sig000006a2)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c6 (sig000006a1)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c4 (sig000006a0)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c2 (sig0000069f)
+     MUXCY:CI->O           1   0.019   0.000  blk000001c0 (sig0000069e)
+     MUXCY:CI->O           1   0.019   0.000  blk000001be (sig0000069d)
+     MUXCY:CI->O           1   0.019   0.000  blk000001bc (sig0000069c)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ba (sig0000069b)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b8 (sig0000069a)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b6 (sig00000699)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b4 (sig00000698)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b2 (sig00000697)
+     MUXCY:CI->O           1   0.019   0.000  blk000001b0 (sig00000696)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ae (sig00000695)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ac (sig00000694)
+     MUXCY:CI->O           1   0.019   0.000  blk000001aa (sig00000693)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a8 (sig00000692)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a6 (sig00000691)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a4 (sig00000690)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a2 (sig0000068f)
+     MUXCY:CI->O           1   0.019   0.000  blk000001a0 (sig0000068e)
+     MUXCY:CI->O           1   0.019   0.000  blk0000019e (sig0000068d)
+     MUXCY:CI->O           0   0.019   0.000  blk0000019c (sig0000068c)
+     XORCY:CI->O          28   0.180   1.463  blk0000019a (sig00000075)
+     LUT3:I0->O            1   0.205   0.000  blk00000804 (sig00000566)
+     MUXCY:S->O            1   0.172   0.000  blk000001f9 (sig000006ba)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f7 (sig000006b9)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f5 (sig000006b8)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f3 (sig000006b7)
+     MUXCY:CI->O           1   0.019   0.000  blk000001f1 (sig000006b6)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ef (sig000006b5)
+     MUXCY:CI->O           1   0.019   0.000  blk000001ed (sig000006b4)
+     MUXCY:CI->O           1   0.019   0.000  blk000001eb (sig000006b3)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e9 (sig000006b2)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e7 (sig000006b1)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e5 (sig000006b0)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e3 (sig000006af)
+     MUXCY:CI->O           1   0.019   0.000  blk000001e1 (sig000006ae)
+     MUXCY:CI->O           1   0.019   0.000  blk000001df (sig000006ad)
+     MUXCY:CI->O           1   0.019   0.000  blk000001dd (sig000006ac)
+     MUXCY:CI->O           1   0.019   0.000  blk000001db (sig000006ab)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d9 (sig000006aa)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d7 (sig000006a9)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d5 (sig000006a8)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d3 (sig000006a7)
+     MUXCY:CI->O           1   0.019   0.000  blk000001d1 (sig000006a6)
+     MUXCY:CI->O           1   0.019   0.000  blk000001cf (sig000006a5)
+     MUXCY:CI->O           0   0.019   0.000  blk000001cd (sig000006a4)
+     XORCY:CI->O          28   0.180   1.463  blk000001cb (sig00000074)
+     LUT3:I0->O            1   0.205   0.000  blk000007eb (sig0000054d)
+     MUXCY:S->O            1   0.172   0.000  blk0000022a (sig000006d2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000228 (sig000006d1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000226 (sig000006d0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000224 (sig000006cf)
+     MUXCY:CI->O           1   0.019   0.000  blk00000222 (sig000006ce)
+     MUXCY:CI->O           1   0.019   0.000  blk00000220 (sig000006cd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000021e (sig000006cc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000021c (sig000006cb)
+     MUXCY:CI->O           1   0.019   0.000  blk0000021a (sig000006ca)
+     MUXCY:CI->O           1   0.019   0.000  blk00000218 (sig000006c9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000216 (sig000006c8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000214 (sig000006c7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000212 (sig000006c6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000210 (sig000006c5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000020e (sig000006c4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000020c (sig000006c3)
+     MUXCY:CI->O           1   0.019   0.000  blk0000020a (sig000006c2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000208 (sig000006c1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000206 (sig000006c0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000204 (sig000006bf)
+     MUXCY:CI->O           1   0.019   0.000  blk00000202 (sig000006be)
+     MUXCY:CI->O           1   0.019   0.000  blk00000200 (sig000006bd)
+     MUXCY:CI->O           0   0.019   0.000  blk000001fe (sig000006bc)
+     XORCY:CI->O          28   0.180   1.463  blk000001fc (sig00000073)
+     LUT3:I0->O            1   0.205   0.000  blk000007d2 (sig00000534)
+     MUXCY:S->O            1   0.172   0.000  blk0000025b (sig000006ea)
+     MUXCY:CI->O           1   0.019   0.000  blk00000259 (sig000006e9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000257 (sig000006e8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000255 (sig000006e7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000253 (sig000006e6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000251 (sig000006e5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000024f (sig000006e4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000024d (sig000006e3)
+     MUXCY:CI->O           1   0.019   0.000  blk0000024b (sig000006e2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000249 (sig000006e1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000247 (sig000006e0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000245 (sig000006df)
+     MUXCY:CI->O           1   0.019   0.000  blk00000243 (sig000006de)
+     MUXCY:CI->O           1   0.019   0.000  blk00000241 (sig000006dd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000023f (sig000006dc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000023d (sig000006db)
+     MUXCY:CI->O           1   0.019   0.000  blk0000023b (sig000006da)
+     MUXCY:CI->O           1   0.019   0.000  blk00000239 (sig000006d9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000237 (sig000006d8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000235 (sig000006d7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000233 (sig000006d6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000231 (sig000006d5)
+     MUXCY:CI->O           0   0.019   0.000  blk0000022f (sig000006d4)
+     XORCY:CI->O          28   0.180   1.463  blk0000022d (sig00000072)
+     LUT3:I0->O            1   0.205   0.000  blk000007b9 (sig0000051b)
+     MUXCY:S->O            1   0.172   0.000  blk0000028c (sig00000702)
+     MUXCY:CI->O           1   0.019   0.000  blk0000028a (sig00000701)
+     MUXCY:CI->O           1   0.019   0.000  blk00000288 (sig00000700)
+     MUXCY:CI->O           1   0.019   0.000  blk00000286 (sig000006ff)
+     MUXCY:CI->O           1   0.019   0.000  blk00000284 (sig000006fe)
+     MUXCY:CI->O           1   0.019   0.000  blk00000282 (sig000006fd)
+     MUXCY:CI->O           1   0.019   0.000  blk00000280 (sig000006fc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000027e (sig000006fb)
+     MUXCY:CI->O           1   0.019   0.000  blk0000027c (sig000006fa)
+     MUXCY:CI->O           1   0.019   0.000  blk0000027a (sig000006f9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000278 (sig000006f8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000276 (sig000006f7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000274 (sig000006f6)
+     MUXCY:CI->O           1   0.019   0.000  blk00000272 (sig000006f5)
+     MUXCY:CI->O           1   0.019   0.000  blk00000270 (sig000006f4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000026e (sig000006f3)
+     MUXCY:CI->O           1   0.019   0.000  blk0000026c (sig000006f2)
+     MUXCY:CI->O           1   0.019   0.000  blk0000026a (sig000006f1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000268 (sig000006f0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000266 (sig000006ef)
+     MUXCY:CI->O           1   0.019   0.000  blk00000264 (sig000006ee)
+     MUXCY:CI->O           1   0.019   0.000  blk00000262 (sig000006ed)
+     MUXCY:CI->O           0   0.019   0.000  blk00000260 (sig000006ec)
+     XORCY:CI->O          28   0.180   1.463  blk0000025e (sig00000071)
+     LUT3:I0->O            1   0.205   0.000  blk000007a0 (sig00000502)
+     MUXCY:S->O            1   0.172   0.000  blk000002bd (sig0000071a)
+     MUXCY:CI->O           1   0.019   0.000  blk000002bb (sig00000719)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b9 (sig00000718)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b7 (sig00000717)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b5 (sig00000716)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b3 (sig00000715)
+     MUXCY:CI->O           1   0.019   0.000  blk000002b1 (sig00000714)
+     MUXCY:CI->O           1   0.019   0.000  blk000002af (sig00000713)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ad (sig00000712)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ab (sig00000711)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a9 (sig00000710)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a7 (sig0000070f)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a5 (sig0000070e)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a3 (sig0000070d)
+     MUXCY:CI->O           1   0.019   0.000  blk000002a1 (sig0000070c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000029f (sig0000070b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000029d (sig0000070a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000029b (sig00000709)
+     MUXCY:CI->O           1   0.019   0.000  blk00000299 (sig00000708)
+     MUXCY:CI->O           1   0.019   0.000  blk00000297 (sig00000707)
+     MUXCY:CI->O           1   0.019   0.000  blk00000295 (sig00000706)
+     MUXCY:CI->O           1   0.019   0.000  blk00000293 (sig00000705)
+     MUXCY:CI->O           0   0.019   0.000  blk00000291 (sig00000704)
+     XORCY:CI->O          28   0.180   1.463  blk0000028f (sig00000070)
+     LUT3:I0->O            1   0.205   0.000  blk00000787 (sig000004e9)
+     MUXCY:S->O            1   0.172   0.000  blk000002ee (sig00000732)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ec (sig00000731)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ea (sig00000730)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e8 (sig0000072f)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e6 (sig0000072e)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e4 (sig0000072d)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e2 (sig0000072c)
+     MUXCY:CI->O           1   0.019   0.000  blk000002e0 (sig0000072b)
+     MUXCY:CI->O           1   0.019   0.000  blk000002de (sig0000072a)
+     MUXCY:CI->O           1   0.019   0.000  blk000002dc (sig00000729)
+     MUXCY:CI->O           1   0.019   0.000  blk000002da (sig00000728)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d8 (sig00000727)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d6 (sig00000726)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d4 (sig00000725)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d2 (sig00000724)
+     MUXCY:CI->O           1   0.019   0.000  blk000002d0 (sig00000723)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ce (sig00000722)
+     MUXCY:CI->O           1   0.019   0.000  blk000002cc (sig00000721)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ca (sig00000720)
+     MUXCY:CI->O           1   0.019   0.000  blk000002c8 (sig0000071f)
+     MUXCY:CI->O           1   0.019   0.000  blk000002c6 (sig0000071e)
+     MUXCY:CI->O           1   0.019   0.000  blk000002c4 (sig0000071d)
+     MUXCY:CI->O           0   0.019   0.000  blk000002c2 (sig0000071c)
+     XORCY:CI->O          28   0.180   1.463  blk000002c0 (sig0000006f)
+     LUT3:I0->O            1   0.205   0.000  blk0000076e (sig000004d0)
+     MUXCY:S->O            1   0.172   0.000  blk0000031f (sig0000074a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000031d (sig00000749)
+     MUXCY:CI->O           1   0.019   0.000  blk0000031b (sig00000748)
+     MUXCY:CI->O           1   0.019   0.000  blk00000319 (sig00000747)
+     MUXCY:CI->O           1   0.019   0.000  blk00000317 (sig00000746)
+     MUXCY:CI->O           1   0.019   0.000  blk00000315 (sig00000745)
+     MUXCY:CI->O           1   0.019   0.000  blk00000313 (sig00000744)
+     MUXCY:CI->O           1   0.019   0.000  blk00000311 (sig00000743)
+     MUXCY:CI->O           1   0.019   0.000  blk0000030f (sig00000742)
+     MUXCY:CI->O           1   0.019   0.000  blk0000030d (sig00000741)
+     MUXCY:CI->O           1   0.019   0.000  blk0000030b (sig00000740)
+     MUXCY:CI->O           1   0.019   0.000  blk00000309 (sig0000073f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000307 (sig0000073e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000305 (sig0000073d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000303 (sig0000073c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000301 (sig0000073b)
+     MUXCY:CI->O           1   0.019   0.000  blk000002ff (sig0000073a)
+     MUXCY:CI->O           1   0.019   0.000  blk000002fd (sig00000739)
+     MUXCY:CI->O           1   0.019   0.000  blk000002fb (sig00000738)
+     MUXCY:CI->O           1   0.019   0.000  blk000002f9 (sig00000737)
+     MUXCY:CI->O           1   0.019   0.000  blk000002f7 (sig00000736)
+     MUXCY:CI->O           1   0.019   0.000  blk000002f5 (sig00000735)
+     MUXCY:CI->O           0   0.019   0.000  blk000002f3 (sig00000734)
+     XORCY:CI->O          28   0.180   1.463  blk000002f1 (sig0000006e)
+     LUT3:I0->O            1   0.205   0.000  blk00000755 (sig000004b7)
+     MUXCY:S->O            1   0.172   0.000  blk00000350 (sig00000762)
+     MUXCY:CI->O           1   0.019   0.000  blk0000034e (sig00000761)
+     MUXCY:CI->O           1   0.019   0.000  blk0000034c (sig00000760)
+     MUXCY:CI->O           1   0.019   0.000  blk0000034a (sig0000075f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000348 (sig0000075e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000346 (sig0000075d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000344 (sig0000075c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000342 (sig0000075b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000340 (sig0000075a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000033e (sig00000759)
+     MUXCY:CI->O           1   0.019   0.000  blk0000033c (sig00000758)
+     MUXCY:CI->O           1   0.019   0.000  blk0000033a (sig00000757)
+     MUXCY:CI->O           1   0.019   0.000  blk00000338 (sig00000756)
+     MUXCY:CI->O           1   0.019   0.000  blk00000336 (sig00000755)
+     MUXCY:CI->O           1   0.019   0.000  blk00000334 (sig00000754)
+     MUXCY:CI->O           1   0.019   0.000  blk00000332 (sig00000753)
+     MUXCY:CI->O           1   0.019   0.000  blk00000330 (sig00000752)
+     MUXCY:CI->O           1   0.019   0.000  blk0000032e (sig00000751)
+     MUXCY:CI->O           1   0.019   0.000  blk0000032c (sig00000750)
+     MUXCY:CI->O           1   0.019   0.000  blk0000032a (sig0000074f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000328 (sig0000074e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000326 (sig0000074d)
+     MUXCY:CI->O           0   0.019   0.000  blk00000324 (sig0000074c)
+     XORCY:CI->O          28   0.180   1.463  blk00000322 (sig0000006d)
+     LUT3:I0->O            1   0.205   0.000  blk0000073c (sig0000049e)
+     MUXCY:S->O            1   0.172   0.000  blk00000381 (sig0000077a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000037f (sig00000779)
+     MUXCY:CI->O           1   0.019   0.000  blk0000037d (sig00000778)
+     MUXCY:CI->O           1   0.019   0.000  blk0000037b (sig00000777)
+     MUXCY:CI->O           1   0.019   0.000  blk00000379 (sig00000776)
+     MUXCY:CI->O           1   0.019   0.000  blk00000377 (sig00000775)
+     MUXCY:CI->O           1   0.019   0.000  blk00000375 (sig00000774)
+     MUXCY:CI->O           1   0.019   0.000  blk00000373 (sig00000773)
+     MUXCY:CI->O           1   0.019   0.000  blk00000371 (sig00000772)
+     MUXCY:CI->O           1   0.019   0.000  blk0000036f (sig00000771)
+     MUXCY:CI->O           1   0.019   0.000  blk0000036d (sig00000770)
+     MUXCY:CI->O           1   0.019   0.000  blk0000036b (sig0000076f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000369 (sig0000076e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000367 (sig0000076d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000365 (sig0000076c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000363 (sig0000076b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000361 (sig0000076a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000035f (sig00000769)
+     MUXCY:CI->O           1   0.019   0.000  blk0000035d (sig00000768)
+     MUXCY:CI->O           1   0.019   0.000  blk0000035b (sig00000767)
+     MUXCY:CI->O           1   0.019   0.000  blk00000359 (sig00000766)
+     MUXCY:CI->O           1   0.019   0.000  blk00000357 (sig00000765)
+     MUXCY:CI->O           0   0.019   0.000  blk00000355 (sig00000764)
+     XORCY:CI->O          28   0.180   1.463  blk00000353 (sig0000006c)
+     LUT3:I0->O            1   0.205   0.000  blk00000723 (sig00000485)
+     MUXCY:S->O            1   0.172   0.000  blk000003b2 (sig00000792)
+     MUXCY:CI->O           1   0.019   0.000  blk000003b0 (sig00000791)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ae (sig00000790)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ac (sig0000078f)
+     MUXCY:CI->O           1   0.019   0.000  blk000003aa (sig0000078e)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a8 (sig0000078d)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a6 (sig0000078c)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a4 (sig0000078b)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a2 (sig0000078a)
+     MUXCY:CI->O           1   0.019   0.000  blk000003a0 (sig00000789)
+     MUXCY:CI->O           1   0.019   0.000  blk0000039e (sig00000788)
+     MUXCY:CI->O           1   0.019   0.000  blk0000039c (sig00000787)
+     MUXCY:CI->O           1   0.019   0.000  blk0000039a (sig00000786)
+     MUXCY:CI->O           1   0.019   0.000  blk00000398 (sig00000785)
+     MUXCY:CI->O           1   0.019   0.000  blk00000396 (sig00000784)
+     MUXCY:CI->O           1   0.019   0.000  blk00000394 (sig00000783)
+     MUXCY:CI->O           1   0.019   0.000  blk00000392 (sig00000782)
+     MUXCY:CI->O           1   0.019   0.000  blk00000390 (sig00000781)
+     MUXCY:CI->O           1   0.019   0.000  blk0000038e (sig00000780)
+     MUXCY:CI->O           1   0.019   0.000  blk0000038c (sig0000077f)
+     MUXCY:CI->O           1   0.019   0.000  blk0000038a (sig0000077e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000388 (sig0000077d)
+     MUXCY:CI->O           0   0.019   0.000  blk00000386 (sig0000077c)
+     XORCY:CI->O          28   0.180   1.463  blk00000384 (sig0000006b)
+     LUT3:I0->O            1   0.205   0.000  blk0000070a (sig0000046c)
+     MUXCY:S->O            1   0.172   0.000  blk000003e3 (sig000007aa)
+     MUXCY:CI->O           1   0.019   0.000  blk000003e1 (sig000007a9)
+     MUXCY:CI->O           1   0.019   0.000  blk000003df (sig000007a8)
+     MUXCY:CI->O           1   0.019   0.000  blk000003dd (sig000007a7)
+     MUXCY:CI->O           1   0.019   0.000  blk000003db (sig000007a6)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d9 (sig000007a5)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d7 (sig000007a4)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d5 (sig000007a3)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d3 (sig000007a2)
+     MUXCY:CI->O           1   0.019   0.000  blk000003d1 (sig000007a1)
+     MUXCY:CI->O           1   0.019   0.000  blk000003cf (sig000007a0)
+     MUXCY:CI->O           1   0.019   0.000  blk000003cd (sig0000079f)
+     MUXCY:CI->O           1   0.019   0.000  blk000003cb (sig0000079e)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c9 (sig0000079d)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c7 (sig0000079c)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c5 (sig0000079b)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c3 (sig0000079a)
+     MUXCY:CI->O           1   0.019   0.000  blk000003c1 (sig00000799)
+     MUXCY:CI->O           1   0.019   0.000  blk000003bf (sig00000798)
+     MUXCY:CI->O           1   0.019   0.000  blk000003bd (sig00000797)
+     MUXCY:CI->O           1   0.019   0.000  blk000003bb (sig00000796)
+     MUXCY:CI->O           1   0.019   0.000  blk000003b9 (sig00000795)
+     MUXCY:CI->O           0   0.019   0.000  blk000003b7 (sig00000794)
+     XORCY:CI->O          28   0.180   1.463  blk000003b5 (sig0000006a)
+     LUT3:I0->O            1   0.205   0.000  blk000006f1 (sig00000453)
+     MUXCY:S->O            1   0.172   0.000  blk00000414 (sig000007c2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000412 (sig000007c1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000410 (sig000007c0)
+     MUXCY:CI->O           1   0.019   0.000  blk0000040e (sig000007bf)
+     MUXCY:CI->O           1   0.019   0.000  blk0000040c (sig000007be)
+     MUXCY:CI->O           1   0.019   0.000  blk0000040a (sig000007bd)
+     MUXCY:CI->O           1   0.019   0.000  blk00000408 (sig000007bc)
+     MUXCY:CI->O           1   0.019   0.000  blk00000406 (sig000007bb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000404 (sig000007ba)
+     MUXCY:CI->O           1   0.019   0.000  blk00000402 (sig000007b9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000400 (sig000007b8)
+     MUXCY:CI->O           1   0.019   0.000  blk000003fe (sig000007b7)
+     MUXCY:CI->O           1   0.019   0.000  blk000003fc (sig000007b6)
+     MUXCY:CI->O           1   0.019   0.000  blk000003fa (sig000007b5)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f8 (sig000007b4)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f6 (sig000007b3)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f4 (sig000007b2)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f2 (sig000007b1)
+     MUXCY:CI->O           1   0.019   0.000  blk000003f0 (sig000007b0)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ee (sig000007af)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ec (sig000007ae)
+     MUXCY:CI->O           1   0.019   0.000  blk000003ea (sig000007ad)
+     MUXCY:CI->O           0   0.019   0.000  blk000003e8 (sig000007ac)
+     XORCY:CI->O          28   0.180   1.463  blk000003e6 (sig00000069)
+     LUT3:I0->O            1   0.205   0.000  blk000006d8 (sig0000043a)
+     MUXCY:S->O            1   0.172   0.000  blk00000445 (sig000007da)
+     MUXCY:CI->O           1   0.019   0.000  blk00000443 (sig000007d9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000441 (sig000007d8)
+     MUXCY:CI->O           1   0.019   0.000  blk0000043f (sig000007d7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000043d (sig000007d6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000043b (sig000007d5)
+     MUXCY:CI->O           1   0.019   0.000  blk00000439 (sig000007d4)
+     MUXCY:CI->O           1   0.019   0.000  blk00000437 (sig000007d3)
+     MUXCY:CI->O           1   0.019   0.000  blk00000435 (sig000007d2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000433 (sig000007d1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000431 (sig000007d0)
+     MUXCY:CI->O           1   0.019   0.000  blk0000042f (sig000007cf)
+     MUXCY:CI->O           1   0.019   0.000  blk0000042d (sig000007ce)
+     MUXCY:CI->O           1   0.019   0.000  blk0000042b (sig000007cd)
+     MUXCY:CI->O           1   0.019   0.000  blk00000429 (sig000007cc)
+     MUXCY:CI->O           1   0.019   0.000  blk00000427 (sig000007cb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000425 (sig000007ca)
+     MUXCY:CI->O           1   0.019   0.000  blk00000423 (sig000007c9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000421 (sig000007c8)
+     MUXCY:CI->O           1   0.019   0.000  blk0000041f (sig000007c7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000041d (sig000007c6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000041b (sig000007c5)
+     MUXCY:CI->O           0   0.019   0.000  blk00000419 (sig000007c4)
+     XORCY:CI->O          28   0.180   1.463  blk00000417 (sig00000068)
+     LUT3:I0->O            1   0.205   0.000  blk000006bf (sig00000421)
+     MUXCY:S->O            1   0.172   0.000  blk00000476 (sig000007f2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000474 (sig000007f1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000472 (sig000007f0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000470 (sig000007ef)
+     MUXCY:CI->O           1   0.019   0.000  blk0000046e (sig000007ee)
+     MUXCY:CI->O           1   0.019   0.000  blk0000046c (sig000007ed)
+     MUXCY:CI->O           1   0.019   0.000  blk0000046a (sig000007ec)
+     MUXCY:CI->O           1   0.019   0.000  blk00000468 (sig000007eb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000466 (sig000007ea)
+     MUXCY:CI->O           1   0.019   0.000  blk00000464 (sig000007e9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000462 (sig000007e8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000460 (sig000007e7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000045e (sig000007e6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000045c (sig000007e5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000045a (sig000007e4)
+     MUXCY:CI->O           1   0.019   0.000  blk00000458 (sig000007e3)
+     MUXCY:CI->O           1   0.019   0.000  blk00000456 (sig000007e2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000454 (sig000007e1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000452 (sig000007e0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000450 (sig000007df)
+     MUXCY:CI->O           1   0.019   0.000  blk0000044e (sig000007de)
+     MUXCY:CI->O           1   0.019   0.000  blk0000044c (sig000007dd)
+     MUXCY:CI->O           0   0.019   0.000  blk0000044a (sig000007dc)
+     XORCY:CI->O          28   0.180   1.463  blk00000448 (sig00000067)
+     LUT3:I0->O            1   0.205   0.000  blk000006a6 (sig00000408)
+     MUXCY:S->O            1   0.172   0.000  blk000004a7 (sig0000080a)
+     MUXCY:CI->O           1   0.019   0.000  blk000004a5 (sig00000809)
+     MUXCY:CI->O           1   0.019   0.000  blk000004a3 (sig00000808)
+     MUXCY:CI->O           1   0.019   0.000  blk000004a1 (sig00000807)
+     MUXCY:CI->O           1   0.019   0.000  blk0000049f (sig00000806)
+     MUXCY:CI->O           1   0.019   0.000  blk0000049d (sig00000805)
+     MUXCY:CI->O           1   0.019   0.000  blk0000049b (sig00000804)
+     MUXCY:CI->O           1   0.019   0.000  blk00000499 (sig00000803)
+     MUXCY:CI->O           1   0.019   0.000  blk00000497 (sig00000802)
+     MUXCY:CI->O           1   0.019   0.000  blk00000495 (sig00000801)
+     MUXCY:CI->O           1   0.019   0.000  blk00000493 (sig00000800)
+     MUXCY:CI->O           1   0.019   0.000  blk00000491 (sig000007ff)
+     MUXCY:CI->O           1   0.019   0.000  blk0000048f (sig000007fe)
+     MUXCY:CI->O           1   0.019   0.000  blk0000048d (sig000007fd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000048b (sig000007fc)
+     MUXCY:CI->O           1   0.019   0.000  blk00000489 (sig000007fb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000487 (sig000007fa)
+     MUXCY:CI->O           1   0.019   0.000  blk00000485 (sig000007f9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000483 (sig000007f8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000481 (sig000007f7)
+     MUXCY:CI->O           1   0.019   0.000  blk0000047f (sig000007f6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000047d (sig000007f5)
+     MUXCY:CI->O           0   0.019   0.000  blk0000047b (sig000007f4)
+     XORCY:CI->O          28   0.180   1.463  blk00000479 (sig00000066)
+     LUT3:I0->O            1   0.205   0.000  blk0000068d (sig000003ef)
+     MUXCY:S->O            1   0.172   0.000  blk000004d8 (sig00000822)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d6 (sig00000821)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d4 (sig00000820)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d2 (sig0000081f)
+     MUXCY:CI->O           1   0.019   0.000  blk000004d0 (sig0000081e)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ce (sig0000081d)
+     MUXCY:CI->O           1   0.019   0.000  blk000004cc (sig0000081c)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ca (sig0000081b)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c8 (sig0000081a)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c6 (sig00000819)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c4 (sig00000818)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c2 (sig00000817)
+     MUXCY:CI->O           1   0.019   0.000  blk000004c0 (sig00000816)
+     MUXCY:CI->O           1   0.019   0.000  blk000004be (sig00000815)
+     MUXCY:CI->O           1   0.019   0.000  blk000004bc (sig00000814)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ba (sig00000813)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b8 (sig00000812)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b6 (sig00000811)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b4 (sig00000810)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b2 (sig0000080f)
+     MUXCY:CI->O           1   0.019   0.000  blk000004b0 (sig0000080e)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ae (sig0000080d)
+     MUXCY:CI->O           0   0.019   0.000  blk000004ac (sig0000080c)
+     XORCY:CI->O          28   0.180   1.463  blk000004aa (sig00000065)
+     LUT3:I0->O            1   0.205   0.000  blk00000674 (sig000003d6)
+     MUXCY:S->O            1   0.172   0.000  blk00000509 (sig0000083a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000507 (sig00000839)
+     MUXCY:CI->O           1   0.019   0.000  blk00000505 (sig00000838)
+     MUXCY:CI->O           1   0.019   0.000  blk00000503 (sig00000837)
+     MUXCY:CI->O           1   0.019   0.000  blk00000501 (sig00000836)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ff (sig00000835)
+     MUXCY:CI->O           1   0.019   0.000  blk000004fd (sig00000834)
+     MUXCY:CI->O           1   0.019   0.000  blk000004fb (sig00000833)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f9 (sig00000832)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f7 (sig00000831)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f5 (sig00000830)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f3 (sig0000082f)
+     MUXCY:CI->O           1   0.019   0.000  blk000004f1 (sig0000082e)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ef (sig0000082d)
+     MUXCY:CI->O           1   0.019   0.000  blk000004ed (sig0000082c)
+     MUXCY:CI->O           1   0.019   0.000  blk000004eb (sig0000082b)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e9 (sig0000082a)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e7 (sig00000829)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e5 (sig00000828)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e3 (sig00000827)
+     MUXCY:CI->O           1   0.019   0.000  blk000004e1 (sig00000826)
+     MUXCY:CI->O           1   0.019   0.000  blk000004df (sig00000825)
+     MUXCY:CI->O           0   0.019   0.000  blk000004dd (sig00000824)
+     XORCY:CI->O          28   0.180   1.463  blk000004db (sig00000064)
+     LUT3:I0->O            1   0.205   0.000  blk0000065b (sig000003bd)
+     MUXCY:S->O            1   0.172   0.000  blk0000053a (sig00000852)
+     MUXCY:CI->O           1   0.019   0.000  blk00000538 (sig00000851)
+     MUXCY:CI->O           1   0.019   0.000  blk00000536 (sig00000850)
+     MUXCY:CI->O           1   0.019   0.000  blk00000534 (sig0000084f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000532 (sig0000084e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000530 (sig0000084d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000052e (sig0000084c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000052c (sig0000084b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000052a (sig0000084a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000528 (sig00000849)
+     MUXCY:CI->O           1   0.019   0.000  blk00000526 (sig00000848)
+     MUXCY:CI->O           1   0.019   0.000  blk00000524 (sig00000847)
+     MUXCY:CI->O           1   0.019   0.000  blk00000522 (sig00000846)
+     MUXCY:CI->O           1   0.019   0.000  blk00000520 (sig00000845)
+     MUXCY:CI->O           1   0.019   0.000  blk0000051e (sig00000844)
+     MUXCY:CI->O           1   0.019   0.000  blk0000051c (sig00000843)
+     MUXCY:CI->O           1   0.019   0.000  blk0000051a (sig00000842)
+     MUXCY:CI->O           1   0.019   0.000  blk00000518 (sig00000841)
+     MUXCY:CI->O           1   0.019   0.000  blk00000516 (sig00000840)
+     MUXCY:CI->O           1   0.019   0.000  blk00000514 (sig0000083f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000512 (sig0000083e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000510 (sig0000083d)
+     MUXCY:CI->O           0   0.019   0.000  blk0000050e (sig0000083c)
+     XORCY:CI->O          28   0.180   1.463  blk0000050c (sig00000063)
+     LUT3:I0->O            1   0.205   0.000  blk00000642 (sig000003a4)
+     MUXCY:S->O            1   0.172   0.000  blk0000056b (sig0000086a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000569 (sig00000869)
+     MUXCY:CI->O           1   0.019   0.000  blk00000567 (sig00000868)
+     MUXCY:CI->O           1   0.019   0.000  blk00000565 (sig00000867)
+     MUXCY:CI->O           1   0.019   0.000  blk00000563 (sig00000866)
+     MUXCY:CI->O           1   0.019   0.000  blk00000561 (sig00000865)
+     MUXCY:CI->O           1   0.019   0.000  blk0000055f (sig00000864)
+     MUXCY:CI->O           1   0.019   0.000  blk0000055d (sig00000863)
+     MUXCY:CI->O           1   0.019   0.000  blk0000055b (sig00000862)
+     MUXCY:CI->O           1   0.019   0.000  blk00000559 (sig00000861)
+     MUXCY:CI->O           1   0.019   0.000  blk00000557 (sig00000860)
+     MUXCY:CI->O           1   0.019   0.000  blk00000555 (sig0000085f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000553 (sig0000085e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000551 (sig0000085d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000054f (sig0000085c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000054d (sig0000085b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000054b (sig0000085a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000549 (sig00000859)
+     MUXCY:CI->O           1   0.019   0.000  blk00000547 (sig00000858)
+     MUXCY:CI->O           1   0.019   0.000  blk00000545 (sig00000857)
+     MUXCY:CI->O           1   0.019   0.000  blk00000543 (sig00000856)
+     MUXCY:CI->O           1   0.019   0.000  blk00000541 (sig00000855)
+     MUXCY:CI->O           0   0.019   0.000  blk0000053f (sig00000854)
+     XORCY:CI->O          28   0.180   1.463  blk0000053d (sig00000062)
+     LUT3:I0->O            1   0.205   0.000  blk00000629 (sig0000038b)
+     MUXCY:S->O            1   0.172   0.000  blk0000059c (sig00000882)
+     MUXCY:CI->O           1   0.019   0.000  blk0000059a (sig00000881)
+     MUXCY:CI->O           1   0.019   0.000  blk00000598 (sig00000880)
+     MUXCY:CI->O           1   0.019   0.000  blk00000596 (sig0000087f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000594 (sig0000087e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000592 (sig0000087d)
+     MUXCY:CI->O           1   0.019   0.000  blk00000590 (sig0000087c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000058e (sig0000087b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000058c (sig0000087a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000058a (sig00000879)
+     MUXCY:CI->O           1   0.019   0.000  blk00000588 (sig00000878)
+     MUXCY:CI->O           1   0.019   0.000  blk00000586 (sig00000877)
+     MUXCY:CI->O           1   0.019   0.000  blk00000584 (sig00000876)
+     MUXCY:CI->O           1   0.019   0.000  blk00000582 (sig00000875)
+     MUXCY:CI->O           1   0.019   0.000  blk00000580 (sig00000874)
+     MUXCY:CI->O           1   0.019   0.000  blk0000057e (sig00000873)
+     MUXCY:CI->O           1   0.019   0.000  blk0000057c (sig00000872)
+     MUXCY:CI->O           1   0.019   0.000  blk0000057a (sig00000871)
+     MUXCY:CI->O           1   0.019   0.000  blk00000578 (sig00000870)
+     MUXCY:CI->O           1   0.019   0.000  blk00000576 (sig0000086f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000574 (sig0000086e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000572 (sig0000086d)
+     MUXCY:CI->O           0   0.019   0.000  blk00000570 (sig0000086c)
+     XORCY:CI->O           1   0.180   0.684  blk0000056e (sig00000061)
+     LUT3:I1->O            1   0.203   0.000  blk000008b0 (sig00000884)
+     MUXCY:S->O            1   0.172   0.000  blk0000059f (sig000008a7)
+     MUXCY:CI->O           1   0.019   0.000  blk000005d1 (sig000008bd)
+     MUXCY:CI->O           1   0.019   0.000  blk000005cf (sig000008bc)
+     MUXCY:CI->O           1   0.019   0.000  blk000005cd (sig000008bb)
+     MUXCY:CI->O           1   0.019   0.000  blk000005cb (sig000008ba)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c9 (sig000008b9)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c7 (sig000008b8)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c5 (sig000008b7)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c3 (sig000008b6)
+     MUXCY:CI->O           1   0.019   0.000  blk000005c1 (sig000008b5)
+     MUXCY:CI->O           1   0.019   0.000  blk000005bf (sig000008b4)
+     MUXCY:CI->O           1   0.019   0.000  blk000005bd (sig000008b3)
+     MUXCY:CI->O           1   0.019   0.000  blk000005bb (sig000008a6)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b9 (sig000008b2)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b7 (sig000008b1)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b5 (sig000008b0)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b3 (sig000008af)
+     MUXCY:CI->O           1   0.019   0.000  blk000005b1 (sig000008ae)
+     MUXCY:CI->O           1   0.019   0.000  blk000005af (sig000008ad)
+     MUXCY:CI->O           1   0.019   0.000  blk000005ad (sig000008ac)
+     MUXCY:CI->O           1   0.019   0.000  blk000005ab (sig000008ab)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a9 (sig000008aa)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a7 (sig000008a9)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a5 (sig000008a8)
+     MUXCY:CI->O           1   0.019   0.000  blk000005a3 (sig000008a5)
+     MUXCY:CI->O           1   0.019   0.000  blk000005e0 (sig000008c4)
+     MUXCY:CI->O           1   0.019   0.000  blk000005de (sig000008c3)
+     MUXCY:CI->O           1   0.019   0.000  blk000005dc (sig000008c2)
+     MUXCY:CI->O           1   0.019   0.000  blk000005da (sig000008c1)
+     MUXCY:CI->O           1   0.019   0.000  blk000005d8 (sig000008c0)
+     MUXCY:CI->O           1   0.019   0.000  blk000005d6 (sig000008bf)
+     MUXCY:CI->O           0   0.019   0.000  blk000005d4 (sig000008be)
+     XORCY:CI->O           1   0.180   0.924  blk000005d2 (sig00000049)
+     LUT5:I0->O            3   0.203   0.650  blk000008fa (m_axis_result_tdata<30>)
+     end scope: 'milimetrosAmetros:m_axis_result_tdata<30>'
+     OBUF:I->O                 2.571          circunfMetrosFloat_30_OBUF (circunfMetrosFloat<30>)
+    ----------------------------------------
+    Total                     70.121ns (29.734ns logic, 40.387ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |   67.960|    3.531|    3.631|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.67 secs
+ 
+--> 
+
+Total memory usage is 190072 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :   31 (   0 filtered)
+

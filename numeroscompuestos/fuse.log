@@ -1,0 +1,24 @@
+Running: C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Fernando/Desktop/SimulacionesX/numeroscompuestos/Prueba_isim_beh.exe -prj C:/Users/Fernando/Desktop/SimulacionesX/numeroscompuestos/Prueba_beh.prj work.Prueba work.glbl 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/numeroscompuestos/Prueba.v" into library work
+Analyzing Verilog file "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Parsing VHDL file "C:/Users/Fernando/Desktop/SimulacionesX/numeroscompuestos/Comparador.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 97264 KB
+Fuse CPU Usage: 685 ms
+Compiling module Prueba
+Compiling module glbl
+Compiling package standard
+Compiling package std_logic_1164
+Compiling architecture behavioral of entity Comparador [comparador_default]
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable C:/Users/Fernando/Desktop/SimulacionesX/numeroscompuestos/Prueba_isim_beh.exe
+Fuse Memory Usage: 108256 KB
+Fuse CPU Usage: 888 ms

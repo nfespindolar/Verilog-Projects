@@ -1,0 +1,951 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.80 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.81 secs
+ 
+--> Reading design: mainRelojDigital.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mainRelojDigital.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mainRelojDigital"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : mainRelojDigital
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorModo.v" into library work
+Parsing module <selectorModo>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorFunciones.v" into library work
+Parsing module <selectorFunciones>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorDisplayActual.v" into library work
+Parsing module <selectorDisplayActual>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\Selectordisplay.v" into library work
+Parsing module <Selectordisplay>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\SelectorDigito.v" into library work
+Parsing module <Selectordigito>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\modoDisplay.v" into library work
+Parsing module <modoDisplay>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\divisorFrecuenciaSeg.v" into library work
+Parsing module <divisorFrecuenciaSeg>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\DivisorFrecuencia.v" into library work
+Parsing module <divisorFrecuenciaMedSeg>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\debounce.v" into library work
+Parsing module <antirrebote>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorSeg.v" into library work
+Parsing module <contadorSeg>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorMinutos.v" into library work
+Parsing module <contadorMinutos>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorHoras.v" into library work
+Parsing module <contadorHoras>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\comparadorAlarma.v" into library work
+Parsing module <comparadorAlarma>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\codificadorModo.v" into library work
+Parsing module <codificadorModo>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\codificadorMinutos.v" into library work
+Parsing module <codificadorMinutos>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\codificadorHoras.v" into library work
+Parsing module <codificadorHoras>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\JuegoLED\PulsoAImpulso.v" into library work
+Parsing module <pulsoAImpulso>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\mainRelojDigital.v" into library work
+Parsing module <mainRelojDigital>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <mainRelojDigital>.
+
+Elaborating module <divisorFrecuenciaSeg>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\divisorFrecuenciaSeg.v" Line 32: Result of 27-bit expression is truncated to fit in 26-bit target.
+
+Elaborating module <divisorFrecuenciaMedSeg>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\DivisorFrecuencia.v" Line 32: Result of 26-bit expression is truncated to fit in 25-bit target.
+
+Elaborating module <antirrebote>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\debounce.v" Line 40: Result of 22-bit expression is truncated to fit in 21-bit target.
+
+Elaborating module <pulsoAImpulso>.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\JuegoLED\PulsoAImpulso.v" Line 29: Assignment to valorNuevo ignored, since the identifier is never used
+
+Elaborating module <selectorModo>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorModo.v" Line 32: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <selectorDisplayActual>.
+
+Elaborating module <selectorFunciones>.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorFunciones.v" Line 29: Signal <clockSeg> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorFunciones.v" Line 30: Signal <clock> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorFunciones.v" Line 31: Signal <clock> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\selectorFunciones.v" Line 32: Signal <clockSeg> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <contadorSeg>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorSeg.v" Line 30: Result of 7-bit expression is truncated to fit in 6-bit target.
+
+Elaborating module <contadorMinutos>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorMinutos.v" Line 38: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorMinutos.v" Line 40: Result of 4-bit expression is truncated to fit in 3-bit target.
+
+Elaborating module <contadorHoras>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\contadorHoras.v" Line 33: Result of 6-bit expression is truncated to fit in 5-bit target.
+
+Elaborating module <modoDisplay>.
+
+Elaborating module <codificadorMinutos>.
+
+Elaborating module <codificadorHoras>.
+
+Elaborating module <Selectordigito>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\SelectorDigito.v" Line 37: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\SelectorDigito.v" Line 41: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Selectordisplay>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\Selectordisplay.v" Line 35: Result of 27-bit expression is truncated to fit in 26-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\RelojDigital\Selectordisplay.v" Line 39: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <codificadorModo>.
+
+Elaborating module <comparadorAlarma>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mainRelojDigital>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/mainrelojdigital.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/relojdigital/mainrelojdigital.v" line 81: Output port <modifHor> of the instance <contMinAl> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <mainRelojDigital> synthesized.
+
+Synthesizing Unit <divisorFrecuenciaSeg>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/divisorfrecuenciaseg.v".
+    Found 1-bit register for signal <freq>.
+    Found 26-bit register for signal <count>.
+    Found 26-bit adder for signal <count[25]_GND_2_o_add_2_OUT> created at line 32.
+    Found 26-bit comparator greater for signal <count[25]_PWR_2_o_LessThan_2_o> created at line 30
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <divisorFrecuenciaSeg> synthesized.
+
+Synthesizing Unit <divisorFrecuenciaMedSeg>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/divisorfrecuencia.v".
+    Found 1-bit register for signal <freq>.
+    Found 25-bit register for signal <count>.
+    Found 25-bit adder for signal <count[24]_GND_3_o_add_2_OUT> created at line 32.
+    Found 25-bit comparator greater for signal <count[24]_PWR_3_o_LessThan_2_o> created at line 30
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <divisorFrecuenciaMedSeg> synthesized.
+
+Synthesizing Unit <antirrebote>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/debounce.v".
+        NDELAY = 2000000
+        NBITS = 21
+    Found 21-bit register for signal <count>.
+    Found 1-bit register for signal <clean>.
+    Found 1-bit register for signal <xnew>.
+    Found 21-bit adder for signal <count[20]_GND_4_o_add_3_OUT> created at line 40.
+    Found 1-bit comparator equal for signal <n0000> created at line 38
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <antirrebote> synthesized.
+
+Synthesizing Unit <pulsoAImpulso>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/juegoled/pulsoaimpulso.v".
+    Found 1-bit register for signal <valorAntiguo>.
+    Found 1-bit register for signal <impulso>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pulsoAImpulso> synthesized.
+
+Synthesizing Unit <selectorModo>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/selectormodo.v".
+    Found 2-bit register for signal <modo>.
+    Found 2-bit adder for signal <modo[1]_GND_6_o_add_2_OUT> created at line 32.
+    Found 2-bit comparator lessequal for signal <modo[1]_PWR_6_o_LessThan_2_o> created at line 32
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <selectorModo> synthesized.
+
+Synthesizing Unit <selectorDisplayActual>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/selectordisplayactual.v".
+    Found 1-bit register for signal <displayActual>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <selectorDisplayActual> synthesized.
+
+Synthesizing Unit <selectorFunciones>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/selectorfunciones.v".
+    Found 1-bit 4-to-1 multiplexer for signal <aumentarMin> created at line 28.
+    Found 1-bit 4-to-1 multiplexer for signal <aumentarHor> created at line 28.
+    Summary:
+	inferred   9 Multiplexer(s).
+Unit <selectorFunciones> synthesized.
+
+Synthesizing Unit <contadorSeg>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/contadorseg.v".
+    Found 1-bit register for signal <modifMin>.
+    Found 6-bit register for signal <segundos>.
+    Found 6-bit adder for signal <segundos[5]_GND_9_o_add_2_OUT> created at line 30.
+    Found 6-bit comparator greater for signal <segundos[5]_PWR_9_o_LessThan_2_o> created at line 30
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <contadorSeg> synthesized.
+
+Synthesizing Unit <contadorMinutos>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/contadorminutos.v".
+    Found 3-bit register for signal <decenas>.
+    Found 1-bit register for signal <modifHor>.
+    Found 4-bit register for signal <unidades>.
+    Found 4-bit adder for signal <unidades[3]_GND_10_o_add_2_OUT> created at line 38.
+    Found 3-bit adder for signal <decenas[2]_GND_10_o_add_4_OUT> created at line 40.
+    Found 4-bit comparator greater for signal <unidades[3]_PWR_10_o_LessThan_2_o> created at line 38
+    Found 3-bit comparator lessequal for signal <decenas[2]_PWR_10_o_LessThan_4_o> created at line 39
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <contadorMinutos> synthesized.
+
+Synthesizing Unit <contadorHoras>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/contadorhoras.v".
+    Found 5-bit register for signal <contador>.
+    Found 5-bit adder for signal <contador[4]_GND_11_o_add_2_OUT> created at line 33.
+    Found 5-bit comparator lessequal for signal <contador[4]_PWR_11_o_LessThan_2_o> created at line 33
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <contadorHoras> synthesized.
+
+Synthesizing Unit <modoDisplay>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/mododisplay.v".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <modoDisplay> synthesized.
+
+Synthesizing Unit <codificadorMinutos>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/codificadorminutos.v".
+    Found 8x7-bit Read Only RAM for signal <displayD>
+    Found 16x7-bit Read Only RAM for signal <displayU>
+    Summary:
+	inferred   2 RAM(s).
+Unit <codificadorMinutos> synthesized.
+
+Synthesizing Unit <codificadorHoras>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/codificadorhoras.v".
+    Found 32x14-bit Read Only RAM for signal <_n0037>
+    Summary:
+	inferred   1 RAM(s).
+Unit <codificadorHoras> synthesized.
+
+Synthesizing Unit <Selectordigito>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/selectordigito.v".
+    Found 2-bit register for signal <digito>.
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_15_o_add_2_OUT> created at line 37.
+    Found 2-bit adder for signal <digito[1]_GND_15_o_add_3_OUT> created at line 41.
+    Found 4x4-bit Read Only RAM for signal <Switch>
+    Found 26-bit comparator greater for signal <counter[25]_GND_15_o_LessThan_2_o> created at line 36
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Selectordigito> synthesized.
+
+Synthesizing Unit <Selectordisplay>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/selectordisplay.v".
+    Found 2-bit register for signal <digito>.
+    Found 26-bit register for signal <counter>.
+    Found 26-bit adder for signal <counter[25]_GND_16_o_add_2_OUT> created at line 35.
+    Found 2-bit adder for signal <digito[1]_GND_16_o_add_3_OUT> created at line 39.
+    Found 7-bit 3-to-1 multiplexer for signal <digito[1]_display3[6]_wide_mux_11_OUT> created at line 66.
+    Found 7-bit 3-to-1 multiplexer for signal <digito[1]_PWR_16_o_wide_mux_12_OUT> created at line 78.
+    Found 7-bit 4-to-1 multiplexer for signal <digito[1]_display3[6]_wide_mux_14_OUT> created at line 92.
+    Found 26-bit comparator greater for signal <counter[25]_GND_16_o_LessThan_2_o> created at line 34
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   6 Multiplexer(s).
+Unit <Selectordisplay> synthesized.
+
+Synthesizing Unit <codificadorModo>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/codificadormodo.v".
+    Found 4x3-bit Read Only RAM for signal <ledsModo>
+    Summary:
+	inferred   1 RAM(s).
+Unit <codificadorModo> synthesized.
+
+Synthesizing Unit <comparadorAlarma>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/relojdigital/comparadoralarma.v".
+    Found 7-bit comparator equal for signal <minutos[6]_minutosAl[6]_equal_1_o> created at line 29
+    Found 5-bit comparator equal for signal <horas[4]_horasAl[4]_equal_2_o> created at line 29
+    Summary:
+	inferred   2 Comparator(s).
+Unit <comparadorAlarma> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x7-bit single-port Read Only RAM                    : 1
+ 32x14-bit single-port Read Only RAM                   : 1
+ 4x3-bit single-port Read Only RAM                     : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+ 8x7-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 17
+ 2-bit adder                                           : 3
+ 21-bit adder                                          : 3
+ 25-bit adder                                          : 1
+ 26-bit adder                                          : 3
+ 3-bit adder                                           : 2
+ 4-bit adder                                           : 2
+ 5-bit adder                                           : 2
+ 6-bit adder                                           : 1
+# Registers                                            : 35
+ 1-bit register                                        : 18
+ 2-bit register                                        : 3
+ 21-bit register                                       : 3
+ 25-bit register                                       : 1
+ 26-bit register                                       : 3
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+ 6-bit register                                        : 1
+# Comparators                                          : 17
+ 1-bit comparator equal                                : 3
+ 2-bit comparator lessequal                            : 1
+ 25-bit comparator greater                             : 1
+ 26-bit comparator greater                             : 3
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator greater                              : 2
+ 5-bit comparator equal                                : 1
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator greater                              : 1
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 4-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 4
+ 7-bit 3-to-1 multiplexer                              : 2
+ 7-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Selectordigito>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <digito>: 1 register on signal <digito>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Switch> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <digito>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Switch>        |          |
+    -----------------------------------------------------------------------
+Unit <Selectordigito> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Selectordisplay>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <digito>: 1 register on signal <digito>.
+Unit <Selectordisplay> synthesized (advanced).
+
+Synthesizing (advanced) Unit <antirrebote>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <antirrebote> synthesized (advanced).
+
+Synthesizing (advanced) Unit <codificadorHoras>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0037> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 14-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <contador>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <codificadorHoras> synthesized (advanced).
+
+Synthesizing (advanced) Unit <codificadorMinutos>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_displayD> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 7-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <decenas>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <displayD>      |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_displayU> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <unidades>      |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <displayU>      |          |
+    -----------------------------------------------------------------------
+Unit <codificadorMinutos> synthesized (advanced).
+
+Synthesizing (advanced) Unit <codificadorModo>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_ledsModo> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 3-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <modo>          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <ledsModo>      |          |
+    -----------------------------------------------------------------------
+Unit <codificadorModo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <contadorHoras>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <contadorHoras> synthesized (advanced).
+
+Synthesizing (advanced) Unit <contadorMinutos>.
+The following registers are absorbed into counter <decenas>: 1 register on signal <decenas>.
+The following registers are absorbed into counter <unidades>: 1 register on signal <unidades>.
+Unit <contadorMinutos> synthesized (advanced).
+
+Synthesizing (advanced) Unit <contadorSeg>.
+The following registers are absorbed into counter <segundos>: 1 register on signal <segundos>.
+Unit <contadorSeg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divisorFrecuenciaMedSeg>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <divisorFrecuenciaMedSeg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <divisorFrecuenciaSeg>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <divisorFrecuenciaSeg> synthesized (advanced).
+
+Synthesizing (advanced) Unit <selectorModo>.
+The following registers are absorbed into counter <modo>: 1 register on signal <modo>.
+Unit <selectorModo> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 5
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 32x14-bit single-port distributed Read Only RAM       : 1
+ 4x3-bit single-port distributed Read Only RAM         : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+ 8x7-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 17
+ 2-bit up counter                                      : 3
+ 21-bit up counter                                     : 3
+ 25-bit up counter                                     : 1
+ 26-bit up counter                                     : 3
+ 3-bit up counter                                      : 2
+ 4-bit up counter                                      : 2
+ 5-bit up counter                                      : 2
+ 6-bit up counter                                      : 1
+# Registers                                            : 18
+ Flip-Flops                                            : 18
+# Comparators                                          : 17
+ 1-bit comparator equal                                : 3
+ 2-bit comparator lessequal                            : 1
+ 25-bit comparator greater                             : 1
+ 26-bit comparator greater                             : 3
+ 3-bit comparator lessequal                            : 2
+ 4-bit comparator greater                              : 2
+ 5-bit comparator equal                                : 1
+ 5-bit comparator lessequal                            : 2
+ 6-bit comparator greater                              : 1
+ 7-bit comparator equal                                : 1
+# Multiplexers                                         : 17
+ 1-bit 2-to-1 multiplexer                              : 7
+ 1-bit 4-to-1 multiplexer                              : 2
+ 5-bit 2-to-1 multiplexer                              : 1
+ 7-bit 2-to-1 multiplexer                              : 4
+ 7-bit 3-to-1 multiplexer                              : 2
+ 7-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <contMinAl/modifHor> of sequential type is unconnected in block <mainRelojDigital>.
+
+Optimizing unit <mainRelojDigital> ...
+
+Optimizing unit <antirrebote> ...
+
+Optimizing unit <Selectordisplay> ...
+WARNING:Xst:1293 - FF/Latch <controlDisplay/counter_17> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_18> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_19> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_20> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_21> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_22> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_23> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_24> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlDisplay/counter_25> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_25> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_24> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_23> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_22> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_21> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_20> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_19> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_18> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <controlSwitch/counter_17> has a constant value of 0 in block <mainRelojDigital>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <controlSwitch/digito_0> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/digito_0> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/digito_1> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/digito_1> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_10> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_10> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_11> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_11> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_12> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_12> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_13> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_13> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_14> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_14> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_15> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_15> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_16> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_16> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_0> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_0> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_1> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_1> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_2> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_2> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_3> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_3> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_4> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_4> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_5> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_5> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_6> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_6> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_7> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_7> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_8> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_8> 
+INFO:Xst:2261 - The FF/Latch <controlSwitch/counter_9> in Unit <mainRelojDigital> is equivalent to the following FF/Latch, which will be removed : <controlDisplay/counter_9> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mainRelojDigital, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 182
+ Flip-Flops                                            : 182
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mainRelojDigital.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 548
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 125
+#      LUT2                        : 24
+#      LUT3                        : 12
+#      LUT4                        : 32
+#      LUT5                        : 24
+#      LUT6                        : 58
+#      MUXCY                       : 130
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 131
+# FlipFlops/Latches                : 182
+#      FD                          : 17
+#      FD_1                        : 8
+#      FDE                         : 14
+#      FDR                         : 74
+#      FDRE                        : 69
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 23
+#      IBUF                        : 4
+#      OBUF                        : 19
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             182  out of  18224     0%  
+ Number of Slice LUTs:                  284  out of   9112     3%  
+    Number used as Logic:               284  out of   9112     3%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    286
+   Number with an unused Flip Flop:     104  out of    286    36%  
+   Number with an unused LUT:             2  out of    286     0%  
+   Number of fully used LUT-FF pairs:   180  out of    286    62%  
+   Number of unique control sets:        18
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    232     9%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------+--------------------------------+-------+
+Clock Signal                             | Clock buffer(FF name)          | Load  |
+-----------------------------------------+--------------------------------+-------+
+clock                                    | IBUF+BUFG                      | 150   |
+relojSeg/freq                            | NONE(contadorSegundos/modifMin)| 7     |
+clockTotal(funciones/Mmux_clockTotal11:O)| BUFG(*)(contadorMin/modifHor)  | 25    |
+-----------------------------------------+--------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.193ns (Maximum Frequency: 192.560MHz)
+   Minimum input arrival time before clock: 3.723ns
+   Maximum output required time after clock: 8.448ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 4.831ns (frequency: 206.993MHz)
+  Total number of paths / destination ports: 4391 / 347
+-------------------------------------------------------------------------
+Delay:               4.831ns (Levels of Logic = 3)
+  Source:            relojSeg/count_8 (FF)
+  Destination:       relojSeg/count_0 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: relojSeg/count_8 to relojSeg/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.447   0.961  relojSeg/count_8 (relojSeg/count_8)
+     LUT5:I0->O            1   0.203   0.580  relojSeg/count[25]_PWR_2_o_LessThan_2_o_inv2 (relojSeg/count[25]_PWR_2_o_LessThan_2_o_inv2)
+     LUT6:I5->O            1   0.205   0.580  relojSeg/count[25]_PWR_2_o_LessThan_2_o_inv3 (relojSeg/count[25]_PWR_2_o_LessThan_2_o_inv3)
+     LUT6:I5->O           27   0.205   1.220  relojSeg/count[25]_PWR_2_o_LessThan_2_o_inv4 (relojSeg/count[25]_PWR_2_o_LessThan_2_o_inv)
+     FDR:R                     0.430          relojSeg/count_0
+    ----------------------------------------
+    Total                      4.831ns (1.490ns logic, 3.341ns route)
+                                       (30.8% logic, 69.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'relojSeg/freq'
+  Clock period: 3.837ns (frequency: 260.613MHz)
+  Total number of paths / destination ports: 63 / 13
+-------------------------------------------------------------------------
+Delay:               1.919ns (Levels of Logic = 1)
+  Source:            contadorSegundos/segundos_0 (FF)
+  Destination:       contadorSegundos/modifMin (FF)
+  Source Clock:      relojSeg/freq rising
+  Destination Clock: relojSeg/freq falling
+
+  Data Path: contadorSegundos/segundos_0 to contadorSegundos/modifMin
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.447   1.167  contadorSegundos/segundos_0 (contadorSegundos/segundos_0)
+     LUT6:I0->O            2   0.203   0.000  contMinAl/GND_10_o_GND_10_o_equal_16_o1 (contMinAl/GND_10_o_GND_10_o_equal_16_o)
+     FD_1:D                    0.102          contadorSegundos/modifMin
+    ----------------------------------------
+    Total                      1.919ns (0.752ns logic, 1.167ns route)
+                                       (39.2% logic, 60.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clockTotal'
+  Clock period: 5.193ns (frequency: 192.560MHz)
+  Total number of paths / destination ports: 182 / 33
+-------------------------------------------------------------------------
+Delay:               2.597ns (Levels of Logic = 2)
+  Source:            contadorMin/unidades_1 (FF)
+  Destination:       contadorMin/modifHor (FF)
+  Source Clock:      clockTotal rising
+  Destination Clock: clockTotal falling
+
+  Data Path: contadorMin/unidades_1 to contadorMin/modifHor
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             9   0.447   1.058  contadorMin/unidades_1 (contadorMin/unidades_1)
+     LUT3:I0->O            1   0.205   0.580  contadorMin/GND_10_o_GND_10_o_AND_3_o_SW0 (N14)
+     LUT6:I5->O            1   0.205   0.000  contadorMin/GND_10_o_GND_10_o_AND_3_o (contadorMin/GND_10_o_GND_10_o_AND_3_o)
+     FD_1:D                    0.102          contadorMin/modifHor
+    ----------------------------------------
+    Total                      2.597ns (0.959ns logic, 1.638ns route)
+                                       (36.9% logic, 63.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 69 / 69
+-------------------------------------------------------------------------
+Offset:              3.723ns (Levels of Logic = 2)
+  Source:            botonDisplay (PAD)
+  Destination:       antirreboteSelDisplay/count_20 (FF)
+  Destination Clock: clock rising
+
+  Data Path: botonDisplay to antirreboteSelDisplay/count_20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  botonDisplay_IBUF (botonDisplay_IBUF)
+     LUT2:I0->O           21   0.203   1.113  antirreboteSelDisplay/n0000_inv1 (antirreboteSelDisplay/n0000_inv)
+     FDRE:R                    0.430          antirreboteSelDisplay/count_0
+    ----------------------------------------
+    Total                      3.723ns (1.855ns logic, 1.868ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 269 / 15
+-------------------------------------------------------------------------
+Offset:              8.448ns (Levels of Logic = 5)
+  Source:            contadorModo/modo_0 (FF)
+  Destination:       displaytotal<6> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: contadorModo/modo_0 to displaytotal<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            29   0.447   1.478  contadorModo/modo_0 (contadorModo/modo_0)
+     LUT4:I1->O           11   0.205   1.130  modoADisplay/Mmux_horasTotal51 (horasTotal<4>)
+     LUT4:I0->O            1   0.203   0.808  codifHor/Mram__n003721 (codifHor/Mram__n00372)
+     LUT6:I3->O            2   0.205   0.617  controlDisplay/Mmux_displaytotal72 (controlDisplay/Mmux_displaytotal41)
+     LUT4:I3->O            1   0.205   0.579  controlDisplay/Mmux_displaytotal46 (displaytotal_3_OBUF)
+     OBUF:I->O                 2.571          displaytotal_3_OBUF (displaytotal<3>)
+    ----------------------------------------
+    Total                      8.448ns (3.836ns logic, 4.612ns route)
+                                       (45.4% logic, 54.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clockTotal'
+  Total number of paths / destination ports: 294 / 11
+-------------------------------------------------------------------------
+Offset:              7.989ns (Levels of Logic = 5)
+  Source:            contadorHor/contador_4 (FF)
+  Destination:       displaytotal<6> (PAD)
+  Source Clock:      clockTotal rising
+
+  Data Path: contadorHor/contador_4 to displaytotal<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.447   1.021  contadorHor/contador_4 (contadorHor/contador_4)
+     LUT4:I0->O           11   0.203   1.130  modoADisplay/Mmux_horasTotal51 (horasTotal<4>)
+     LUT4:I0->O            1   0.203   0.808  codifHor/Mram__n003721 (codifHor/Mram__n00372)
+     LUT6:I3->O            2   0.205   0.617  controlDisplay/Mmux_displaytotal72 (controlDisplay/Mmux_displaytotal41)
+     LUT4:I3->O            1   0.205   0.579  controlDisplay/Mmux_displaytotal46 (displaytotal_3_OBUF)
+     OBUF:I->O                 2.571          displaytotal_3_OBUF (displaytotal<3>)
+    ----------------------------------------
+    Total                      7.989ns (3.834ns logic, 4.155ns route)
+                                       (48.0% logic, 52.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.831|    2.350|    1.507|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clockTotal
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |    4.759|    4.169|         |         |
+clockTotal     |    3.698|    2.308|    2.597|         |
+relojSeg/freq  |         |    3.975|    3.103|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock relojSeg/freq
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+relojSeg/freq  |    2.903|         |    1.919|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.44 secs
+ 
+--> 
+
+Total memory usage is 184824 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   36 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

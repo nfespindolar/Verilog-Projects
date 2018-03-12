@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Practica2/compuertas.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Practica2/compuertas.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a8-csg324-3 compuertas.ngc compuertas.ngd  
+map -intstyle ise -p xc7a8-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o compuertas_map.ncd compuertas.ngd compuertas.pcf 

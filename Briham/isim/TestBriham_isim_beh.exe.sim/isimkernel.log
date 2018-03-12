@@ -1,0 +1,29 @@
+Command line:
+   TestBriham_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50458
+
+Tue Aug 28 21:44:31 2012
+
+
+ Elaboration Time: 0.0936 sec
+
+ Current Memory Usage: 345.883 Meg
+
+ Total Signals          : 19
+ Total Nets             : 22
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 111
+Total Line Count : 38
+
+ Total Simulation Time: 0.156001 sec
+
+ Current Memory Usage: 345.883 Meg
+
+Tue Aug 28 21:51:52 2012
+

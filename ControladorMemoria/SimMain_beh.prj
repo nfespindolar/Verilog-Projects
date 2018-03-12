@@ -1,0 +1,7 @@
+verilog work "PulsoAImpulso.v"
+verilog work "ipcore_dir/ram4.v"
+verilog work "memoria4K.v"
+verilog work "Controlador.v"
+verilog work "mainMemoria.v"
+verilog work "SimMain.v"
+verilog work "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

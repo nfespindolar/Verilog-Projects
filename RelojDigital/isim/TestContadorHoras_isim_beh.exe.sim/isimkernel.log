@@ -1,0 +1,29 @@
+Command line:
+   TestContadorHoras_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49573
+
+Fri May 25 20:00:14 2012
+
+
+ Elaboration Time: 0.0468 sec
+
+ Current Memory Usage: 345.817 Meg
+
+ Total Signals          : 16
+ Total Nets             : 20
+ Total Signal Drivers   : 8
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 13
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 107
+Total Line Count : 84
+
+ Total Simulation Time: 0.1092 sec
+
+ Current Memory Usage: 345.817 Meg
+
+Fri May 25 20:00:47 2012
+

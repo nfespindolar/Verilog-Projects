@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/Fernando/Desktop/SimulacionesX/DecodificadorHexadecimal/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Fernando/Desktop/SimulacionesX/DecodificadorHexadecimal/xst"
+elaborate
+-ifn SelectorDigito.prj
+-ifmt mixed

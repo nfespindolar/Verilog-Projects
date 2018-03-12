@@ -1,0 +1,5 @@
+verilog work "hvsync_generator.v"
+verilog work "DivisorFrecuencia.v"
+verilog work "mainVGA.v"
+verilog work "TestMain.v"
+verilog work "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

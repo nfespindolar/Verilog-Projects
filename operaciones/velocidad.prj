@@ -1,0 +1,6 @@
+verilog work "ipcore_dir/restar.v"
+verilog work "ipcore_dir/multiplicacionFloat.v"
+verilog work "ipcore_dir/floatAFijo.v"
+verilog work "ipcore_dir/enteroAFloat.v"
+verilog work "ipcore_dir/division.v"
+verilog work "velocidad.v"

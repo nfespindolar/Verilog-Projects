@@ -1,0 +1,18 @@
+# Output products list for <restar>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_restar.vhd
+restar.asy
+restar.gise
+restar.ngc
+restar.sym
+restar.v
+restar.veo
+restar.xco
+restar.xise
+restar\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+restar\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+restar\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+restar\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+restar_flist.txt
+restar_readme.txt
+restar_xmdf.tcl

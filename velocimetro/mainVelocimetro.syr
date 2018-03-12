@@ -1,0 +1,1720 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.99 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 1.00 secs
+ 
+--> Reading design: mainVelocimetro.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "mainVelocimetro.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "mainVelocimetro"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : mainVelocimetro
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\relojSegundos.v" into library work
+Parsing module <relojSegundos>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\PulsoAImpulso.v" into library work
+Parsing module <pulsoAImpulso>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\ram1x30000.v" into library work
+Parsing module <ram1x30000>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\sumaDeLongitudes.v" into library work
+Parsing module <sumaDeLongitudes>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\restar.v" into library work
+Parsing module <restar>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\multiplicacionFloat.v" into library work
+Parsing module <multiplicacionFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romVelocidadT.v" into library work
+Parsing module <romVelocidadT>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romUno50x72.v" into library work
+Parsing module <romUno50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romTres50x72.v" into library work
+Parsing module <romTres50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romSiete50x72.v" into library work
+Parsing module <romSiete50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romSeis50x72.v" into library work
+Parsing module <romSeis50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romPunto25x72.v" into library work
+Parsing module <romPunto25x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romOcho50x72.v" into library work
+Parsing module <romOcho50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romNueve50x72.v" into library work
+Parsing module <romNueve50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romDos50x72.v" into library work
+Parsing module <romDos50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romDesplazamientoT.v" into library work
+Parsing module <romDesplazamientoT>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCuatro50x72.v" into library work
+Parsing module <romCuatro50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCinco50x72.v" into library work
+Parsing module <romCinco50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCero50x72.v" into library work
+Parsing module <romCero50x72>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romAceleracionT.v" into library work
+Parsing module <romAceleracionT>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" into library work
+Parsing module <graficaVelocidad>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" into library work
+Parsing module <graficaDesplazamiento>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\floatAFijo.v" into library work
+Parsing module <floatAFijo>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\enterominaFloat.v" into library work
+Parsing module <enterominaFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\enteroAFloat.v" into library work
+Parsing module <enteroAFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\division.v" into library work
+Parsing module <division>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" into library work
+Parsing module <codificadorNumero>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" into library work
+Parsing module <velocidad>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\generarCircunferencia.v" into library work
+Parsing module <generarCircunferencia>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\desplazamiento.v" into library work
+Parsing module <desplazamiento>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\debounce.v" into library work
+Parsing module <debounce>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" into library work
+Parsing module <controlador>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\Contador1Bit.v" into library work
+Parsing module <Contador1Bit>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" into library work
+Parsing module <colorpixel>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" into library work
+Parsing module <codifBinDec>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\adaptadorEntero.v" into library work
+Parsing module <adaptadorEntero>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" into library work
+Parsing module <mainVelocimetro>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" Line 43: Port circunferenciaF is not connected to this instance
+WARNING:HDLCompiler:1016 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" Line 49: Port desplazfAntg is not connected to this instance
+
+Elaborating module <mainVelocimetro>.
+
+Elaborating module <debounce>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\debounce.v" Line 35: Result of 20-bit expression is truncated to fit in 19-bit target.
+
+Elaborating module <pulsoAImpulso>.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\PulsoAImpulso.v" Line 29: Assignment to valorNuevo ignored, since the identifier is never used
+
+Elaborating module <desplazamiento>.
+
+Elaborating module <enterominaFloat>.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\desplazamiento.v" Line 51: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <division>.
+
+Elaborating module <sumaDeLongitudes>.
+
+Elaborating module <floatAFijo>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\desplazamiento.v" Line 96: Result of 8-bit expression is truncated to fit in 7-bit target.
+
+Elaborating module <velocidad>.
+
+Elaborating module <restar>.
+
+Elaborating module <enteroAFloat>.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" Line 125: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" Line 135: Size mismatch in connection of port <s_axis_a_tdata>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <multiplicacionFloat>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\velocidad.v" Line 206: Result of 8-bit expression is truncated to fit in 7-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\mainVelocimetro.v" Line 51: Assignment to velocidadFloat ignored, since the identifier is never used
+
+Elaborating module <generarCircunferencia>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\generarCircunferencia.v" Line 21: Empty module <generarCircunferencia> remains a black box.
+
+Elaborating module <adaptadorEntero>.
+
+Elaborating module <codifBinDec>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 26: Result of 16-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 27: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 28: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codifBin7segDec.v" Line 29: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <colorpixel>.
+
+Elaborating module <romCero50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCero50x72.v" Line 39: Empty module <romCero50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 47: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romUno50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romUno50x72.v" Line 39: Empty module <romUno50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 53: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romDos50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romDos50x72.v" Line 39: Empty module <romDos50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 59: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romTres50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romTres50x72.v" Line 39: Empty module <romTres50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 65: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romCuatro50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCuatro50x72.v" Line 39: Empty module <romCuatro50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 71: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romCinco50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romCinco50x72.v" Line 39: Empty module <romCinco50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 77: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romSeis50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romSeis50x72.v" Line 39: Empty module <romSeis50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 83: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romSiete50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romSiete50x72.v" Line 39: Empty module <romSiete50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 89: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romOcho50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romOcho50x72.v" Line 39: Empty module <romOcho50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 95: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romNueve50x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romNueve50x72.v" Line 39: Empty module <romNueve50x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 101: Size mismatch in connection of port <addra>. Formal port size is 11-bit while actual signal size is 15-bit.
+
+Elaborating module <romPunto25x72>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romPunto25x72.v" Line 39: Empty module <romPunto25x72> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 107: Size mismatch in connection of port <addra>. Formal port size is 10-bit while actual signal size is 15-bit.
+
+Elaborating module <romDesplazamientoT>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romDesplazamientoT.v" Line 39: Empty module <romDesplazamientoT> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 113: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 15-bit.
+
+Elaborating module <romVelocidadT>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romVelocidadT.v" Line 39: Empty module <romVelocidadT> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 119: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 15-bit.
+
+Elaborating module <romAceleracionT>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\romAceleracionT.v" Line 39: Empty module <romAceleracionT> remains a black box.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 125: Size mismatch in connection of port <addra>. Formal port size is 13-bit while actual signal size is 15-bit.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 126: Assignment to AdataTitulo ignored, since the identifier is never used
+
+Elaborating module <codificadorNumero>.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 33: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 34: Signal <dataUno> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 35: Signal <dataDos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 36: Signal <dataTres> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 37: Signal <dataCuatro> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 38: Signal <dataCinco> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 39: Signal <dataSeis> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 40: Signal <dataSiete> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 41: Signal <dataOcho> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 42: Signal <dataNueve> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 43: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 52: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 53: Signal <dataUno> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 54: Signal <dataDos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 55: Signal <dataTres> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 56: Signal <dataCuatro> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 57: Signal <dataCinco> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 58: Signal <dataSeis> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 59: Signal <dataSiete> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 60: Signal <dataOcho> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 61: Signal <dataNueve> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 62: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 71: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 72: Signal <dataUno> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 73: Signal <dataDos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 74: Signal <dataTres> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 75: Signal <dataCuatro> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 76: Signal <dataCinco> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 77: Signal <dataSeis> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 78: Signal <dataSiete> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 79: Signal <dataOcho> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 80: Signal <dataNueve> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 81: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 90: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 91: Signal <dataUno> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 92: Signal <dataDos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 93: Signal <dataTres> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 94: Signal <dataCuatro> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 95: Signal <dataCinco> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 96: Signal <dataSeis> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 97: Signal <dataSiete> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 98: Signal <dataOcho> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 99: Signal <dataNueve> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 100: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 109: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 110: Signal <dataUno> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 111: Signal <dataUno> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 112: Signal <dataDos> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 113: Signal <dataTres> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 114: Signal <dataTres> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 115: Signal <dataCuatro> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 116: Signal <dataCuatro> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 117: Signal <dataCinco> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 118: Signal <dataSeis> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 119: Signal <dataSeis> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 120: Signal <dataSiete> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 121: Signal <dataOcho> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 122: Signal <dataOcho> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 123: Signal <dataNueve> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 124: Signal <dataNueve> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\codificadorNumero.v" Line 125: Signal <dataCero> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+
+Elaborating module <graficaVelocidad>.
+WARNING:HDLCompiler:872 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 27: Using initial value of escribir since it is never assigned
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 28: Assignment to escribirW ignored, since the identifier is never used
+
+Elaborating module <relojSegundos>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\relojSegundos.v" Line 32: Result of 27-bit expression is truncated to fit in 26-bit target.
+
+Elaborating module <ram1x30000>.
+WARNING:HDLCompiler:1499 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\ipcore_dir\ram1x30000.v" Line 39: Empty module <ram1x30000> remains a black box.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 63: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 64: Result of 32-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaVelocidad.v" Line 94: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:189 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 174: Size mismatch in connection of port <entera>. Formal port size is 16-bit while actual signal size is 32-bit.
+
+Elaborating module <graficaDesplazamiento>.
+WARNING:HDLCompiler:872 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 27: Using initial value of escribir since it is never assigned
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 28: Assignment to escribirW ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 63: Result of 16-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 64: Result of 32-bit expression is truncated to fit in 15-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\graficaDesplazamiento.v" Line 94: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 201: Assignment to addrapunto ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 227: Assignment to AtituloActivo ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 231: Result of 15-bit expression is truncated to fit in 1-bit target.
+WARNING:HDLCompiler:1127 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 231: Assignment to GraficaActivadoD ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 237: Result of 15-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\colorpixel.v" Line 268: Result of 32-bit expression is truncated to fit in 15-bit target.
+
+Elaborating module <Contador1Bit>.
+
+Elaborating module <controlador>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 42: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 45: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 50: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\velocimetro\controlador.v" Line 53: Result of 11-bit expression is truncated to fit in 10-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <mainVelocimetro>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 43: Output port <circunferenciaF> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 43: Output port <milFloat> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 43: Output port <circunfMetrosFloat> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 43: Output port <validar> of the instance <desplazamiento1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <velocidadFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <desplazfAntg> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <millonSeg> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <contadorFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <diferencialDesp> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <diferencialTiemp> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <milFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <tresmilFloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <constantekmh> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <velocidadkmhfloat> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <contadorW> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <validar> of the instance <velocidad1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/mainvelocimetro.v" line 49: Output port <impulsoW> of the instance <velocidad1> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <mainVelocimetro> synthesized.
+
+Synthesizing Unit <debounce>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/debounce.v".
+        NDELAY = 300000
+        NBITS = 19
+    Found 19-bit register for signal <count>.
+    Found 1-bit register for signal <clean>.
+    Found 1-bit register for signal <xnew>.
+    Found 19-bit adder for signal <count[18]_GND_2_o_add_3_OUT> created at line 35.
+    Found 1-bit comparator equal for signal <n0000> created at line 33
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  21 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <debounce> synthesized.
+
+Synthesizing Unit <pulsoAImpulso>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/pulsoaimpulso.v".
+    Found 1-bit register for signal <valorAntiguo>.
+    Found 1-bit register for signal <impulso>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <pulsoAImpulso> synthesized.
+
+Synthesizing Unit <desplazamiento>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 35: Output port <s_axis_a_tready> of the instance <circunfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 35: Output port <m_axis_result_tvalid> of the instance <circunfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 46: Output port <s_axis_a_tready> of the instance <milfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 46: Output port <m_axis_result_tvalid> of the instance <milfAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 57: Output port <s_axis_a_tready> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 57: Output port <s_axis_b_tready> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 57: Output port <m_axis_result_tvalid> of the instance <milimetrosAmetros> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 71: Output port <s_axis_a_tready> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 71: Output port <s_axis_b_tready> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 71: Output port <m_axis_result_tvalid> of the instance <sumatotalDistancia> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 84: Output port <s_axis_a_tready> of the instance <convertirDespAFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/desplazamiento.v" line 84: Output port <m_axis_result_tvalid> of the instance <convertirDespAFijo> is unconnected or connected to loadless signal.
+    Found 7-bit register for signal <counter>.
+    Found 1-bit register for signal <validarReg>.
+    Found 7-bit adder for signal <counter[6]_GND_4_o_add_2_OUT> created at line 96.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   8 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <desplazamiento> synthesized.
+
+Synthesizing Unit <velocidad>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 62: Output port <s_axis_a_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 62: Output port <s_axis_b_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 62: Output port <m_axis_result_tvalid> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 75: Output port <s_axis_a_tready> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 75: Output port <m_axis_result_tvalid> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 85: Output port <s_axis_a_tready> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 85: Output port <m_axis_result_tvalid> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 95: Output port <s_axis_a_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 95: Output port <s_axis_b_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 95: Output port <m_axis_result_tvalid> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 108: Output port <s_axis_a_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 108: Output port <s_axis_b_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 108: Output port <m_axis_result_tvalid> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 121: Output port <s_axis_a_tready> of the instance <milAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 121: Output port <m_axis_result_tvalid> of the instance <milAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 131: Output port <s_axis_a_tready> of the instance <tresmilAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 131: Output port <m_axis_result_tvalid> of the instance <tresmilAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 141: Output port <s_axis_a_tready> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 141: Output port <s_axis_b_tready> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 141: Output port <m_axis_result_tvalid> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 154: Output port <s_axis_a_tready> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 154: Output port <s_axis_b_tready> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 154: Output port <m_axis_result_tvalid> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 167: Output port <s_axis_a_tready> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/velocidad.v" line 167: Output port <m_axis_result_tvalid> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+    Found 16-bit register for signal <desplazamientofNuevo>.
+    Found 1-bit register for signal <impulso>.
+    Found 32-bit register for signal <contadorAcumulado>.
+    Found 32-bit register for signal <contador>.
+    Found 1-bit register for signal <validarReg>.
+    Found 7-bit register for signal <counter>.
+    Found 16-bit register for signal <desplazamientofAntg>.
+    Found 32-bit adder for signal <contador[31]_GND_9_o_add_5_OUT> created at line 191.
+    Found 7-bit adder for signal <counter[6]_GND_9_o_add_20_OUT> created at line 206.
+    Found 16-bit comparator equal for signal <desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o> created at line 181
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 105 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <velocidad> synthesized.
+
+Synthesizing Unit <generarCircunferencia>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/generarcircunferencia.v".
+WARNING:Xst:2935 - Signal 'circunferencia', unconnected in block 'generarCircunferencia', is tied to its initial value (0000100100010110).
+    Summary:
+	no macro.
+Unit <generarCircunferencia> synthesized.
+
+Synthesizing Unit <adaptadorEntero>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/adaptadorentero.v".
+WARNING:Xst:647 - Input <fixedPoint<23:20>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <adaptadorEntero> synthesized.
+
+Synthesizing Unit <codifBinDec>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/codifbin7segdec.v".
+    Found 17-bit subtractor for signal <GND_15_o_GND_15_o_sub_3_OUT> created at line 27.
+    Found 17-bit subtractor for signal <GND_15_o_GND_15_o_sub_8_OUT> created at line 28.
+    Found 15-bit adder for signal <n0035[14:0]> created at line 28.
+    Found 12-bit adder for signal <n0038[11:0]> created at line 29.
+    Found 15-bit adder for signal <n0041> created at line 29.
+    Found 4-bit subtractor for signal <unidades> created at line 23.
+    Found 10x4-bit multiplier for signal <PWR_15_o_numero[15]_MuLt_1_OUT> created at line 27.
+    Found 7x4-bit multiplier for signal <PWR_15_o_GND_15_o_MuLt_5_OUT> created at line 28.
+    Found 4x4-bit multiplier for signal <PWR_15_o_GND_15_o_MuLt_11_OUT> created at line 29.
+    Summary:
+	inferred   3 Multiplier(s).
+	inferred   6 Adder/Subtractor(s).
+Unit <codifBinDec> synthesized.
+
+Synthesizing Unit <div_16u_10u>.
+    Related source file is "".
+    Found 26-bit adder for signal <GND_16_o_b[9]_add_1_OUT> created at line 0.
+    Found 25-bit adder for signal <GND_16_o_b[9]_add_3_OUT> created at line 0.
+    Found 24-bit adder for signal <GND_16_o_b[9]_add_5_OUT> created at line 0.
+    Found 23-bit adder for signal <GND_16_o_b[9]_add_7_OUT> created at line 0.
+    Found 22-bit adder for signal <GND_16_o_b[9]_add_9_OUT> created at line 0.
+    Found 21-bit adder for signal <GND_16_o_b[9]_add_11_OUT> created at line 0.
+    Found 20-bit adder for signal <GND_16_o_b[9]_add_13_OUT> created at line 0.
+    Found 19-bit adder for signal <GND_16_o_b[9]_add_15_OUT> created at line 0.
+    Found 18-bit adder for signal <GND_16_o_b[9]_add_17_OUT> created at line 0.
+    Found 17-bit adder for signal <GND_16_o_b[9]_add_19_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_b[9]_add_21_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_16_o_add_23_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_16_o_add_25_OUT> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_16_o_add_27_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_16_o_add_29_OUT[15:0]> created at line 0.
+    Found 16-bit adder for signal <a[15]_GND_16_o_add_31_OUT[15:0]> created at line 0.
+    Found 26-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 25-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 24-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 23-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 22-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 21-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 20-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 19-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 18-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 17-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 16-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Summary:
+	inferred  16 Adder/Subtractor(s).
+	inferred  17 Comparator(s).
+	inferred 211 Multiplexer(s).
+Unit <div_16u_10u> synthesized.
+
+Synthesizing Unit <div_32u_7u>.
+    Related source file is "".
+    Found 39-bit adder for signal <GND_18_o_b[6]_add_1_OUT> created at line 0.
+    Found 38-bit adder for signal <GND_18_o_b[6]_add_3_OUT> created at line 0.
+    Found 37-bit adder for signal <GND_18_o_b[6]_add_5_OUT> created at line 0.
+    Found 36-bit adder for signal <GND_18_o_b[6]_add_7_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_18_o_b[6]_add_9_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_18_o_b[6]_add_11_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_18_o_b[6]_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[6]_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_18_o_add_63_OUT[31:0]> created at line 0.
+    Found 39-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 38-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 37-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 36-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_7u> synthesized.
+
+Synthesizing Unit <div_32u_4u>.
+    Related source file is "".
+    Found 36-bit adder for signal <GND_20_o_b[3]_add_1_OUT> created at line 0.
+    Found 35-bit adder for signal <GND_20_o_b[3]_add_3_OUT> created at line 0.
+    Found 34-bit adder for signal <GND_20_o_b[3]_add_5_OUT> created at line 0.
+    Found 33-bit adder for signal <GND_20_o_b[3]_add_7_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_b[3]_add_9_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_11_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_13_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_15_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_17_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_19_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_21_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_23_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_25_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_27_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_29_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_31_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_33_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_35_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_37_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_39_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_41_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_43_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_45_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_47_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_49_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_51_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_53_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_55_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_57_OUT> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_59_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_61_OUT[31:0]> created at line 0.
+    Found 32-bit adder for signal <a[31]_GND_20_o_add_63_OUT[31:0]> created at line 0.
+    Found 36-bit comparator lessequal for signal <BUS_0001> created at line 0
+    Found 35-bit comparator lessequal for signal <BUS_0002> created at line 0
+    Found 34-bit comparator lessequal for signal <BUS_0003> created at line 0
+    Found 33-bit comparator lessequal for signal <BUS_0004> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0005> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0006> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0007> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0008> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0009> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0010> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0011> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0012> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0013> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0014> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0015> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0016> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0017> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0018> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0019> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0020> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0021> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0022> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0023> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0024> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0025> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0026> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0027> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0028> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0029> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0030> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0031> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0032> created at line 0
+    Found 32-bit comparator lessequal for signal <BUS_0033> created at line 0
+    Summary:
+	inferred  32 Adder/Subtractor(s).
+	inferred  33 Comparator(s).
+	inferred 931 Multiplexer(s).
+Unit <div_32u_4u> synthesized.
+
+Synthesizing Unit <colorpixel>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/colorpixel.v".
+WARNING:Xst:647 - Input <Amiles<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Acentenas<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Adecenas<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Aunidades<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Adecimales<3:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <desplazamientoEnt<15:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/velocimetro/colorpixel.v" line 123: Output port <douta> of the instance <ramAceleracion> is unconnected or connected to loadless signal.
+    Found 15-bit register for signal <addrareg>.
+    Found 8-bit register for signal <coloresreg>.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_120_OUT> created at line 268.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_122_OUT> created at line 268.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_127_OUT> created at line 269.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_133_OUT> created at line 270.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_139_OUT> created at line 271.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_145_OUT> created at line 272.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_151_OUT> created at line 273.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_155_OUT> created at line 282.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_191_OUT> created at line 289.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_193_OUT> created at line 289.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_197_OUT> created at line 292.
+    Found 11-bit subtractor for signal <GND_22_o_GND_22_o_sub_203_OUT> created at line 293.
+    Found 9-bit adder for signal <n0412[8:0]> created at line 174.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_122_OUT> created at line 268.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_127_OUT> created at line 269.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_133_OUT> created at line 270.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_139_OUT> created at line 271.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_145_OUT> created at line 272.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_151_OUT> created at line 273.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_157_OUT> created at line 282.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_163_OUT> created at line 283.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_169_OUT> created at line 284.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_175_OUT> created at line 285.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_181_OUT> created at line 286.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_187_OUT> created at line 287.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_193_OUT> created at line 289.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_199_OUT> created at line 292.
+    Found 32-bit adder for signal <GND_22_o_GND_22_o_add_205_OUT> created at line 293.
+    Found 4x4-bit multiplier for signal <Dcentenas[3]_PWR_20_o_MuLt_0_OUT> created at line 174.
+    Found 32x6-bit multiplier for signal <n0261> created at line 268.
+    Found 32x5-bit multiplier for signal <n0277> created at line 272.
+    Found 32x6-bit multiplier for signal <n0287> created at line 282.
+    Found 32x5-bit multiplier for signal <n0300> created at line 286.
+    Found 32x9-bit multiplier for signal <n0308> created at line 289.
+    Found 32x8-bit multiplier for signal <n0314> created at line 292.
+    Found 32x8-bit multiplier for signal <n0319> created at line 293.
+    Found 10-bit comparator greater for signal <GND_22_o_vcount[9]_LessThan_6_o> created at line 204
+    Found 10-bit comparator greater for signal <vcount[9]_GND_22_o_LessThan_7_o> created at line 204
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_8_o> created at line 204
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_9_o> created at line 204
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_12_o> created at line 205
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_13_o> created at line 205
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_16_o> created at line 206
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_17_o> created at line 206
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_20_o> created at line 207
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_21_o> created at line 207
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_24_o> created at line 208
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_25_o> created at line 208
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_28_o> created at line 209
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_29_o> created at line 209
+    Found 10-bit comparator greater for signal <GND_22_o_vcount[9]_LessThan_30_o> created at line 218
+    Found 10-bit comparator greater for signal <vcount[9]_GND_22_o_LessThan_31_o> created at line 218
+    Found 10-bit comparator greater for signal <GND_22_o_vcount[9]_LessThan_54_o> created at line 225
+    Found 10-bit comparator greater for signal <vcount[9]_GND_22_o_LessThan_55_o> created at line 225
+    Found 10-bit comparator greater for signal <hcount[9]_GND_22_o_LessThan_57_o> created at line 225
+    Found 10-bit comparator greater for signal <GND_22_o_vcount[9]_LessThan_58_o> created at line 226
+    Found 10-bit comparator greater for signal <vcount[9]_GND_22_o_LessThan_59_o> created at line 226
+    Found 10-bit comparator greater for signal <vcount[9]_GND_22_o_LessThan_67_o> created at line 229
+    Found 10-bit comparator greater for signal <GND_22_o_hcount[9]_LessThan_68_o> created at line 229
+    Found 10-bit comparator greater for signal <hcount[9]_PWR_20_o_LessThan_69_o> created at line 229
+    Found 10-bit comparator greater for signal <GND_22_o_vcount[9]_LessThan_84_o> created at line 233
+    Found 10-bit comparator greater for signal <vcount[9]_GND_22_o_LessThan_85_o> created at line 233
+    Summary:
+	inferred   8 Multiplier(s).
+	inferred  28 Adder/Subtractor(s).
+	inferred  23 D-type flip-flop(s).
+	inferred  26 Comparator(s).
+Unit <colorpixel> synthesized.
+
+Synthesizing Unit <codificadorNumero>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/codificadornumero.v".
+    Found 8-bit 12-to-1 multiplexer for signal <dataMiles> created at line 31.
+    Found 8-bit 12-to-1 multiplexer for signal <dataCentenas> created at line 50.
+    Found 8-bit 12-to-1 multiplexer for signal <dataDecenas> created at line 69.
+    Found 8-bit 12-to-1 multiplexer for signal <dataUnidades> created at line 88.
+    Found 8-bit 12-to-1 multiplexer for signal <dataDecimal> created at line 107.
+    Summary:
+	inferred   5 Multiplexer(s).
+Unit <codificadorNumero> synthesized.
+
+Synthesizing Unit <graficaVelocidad>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/graficavelocidad.v".
+WARNING:Xst:647 - Input <entera<15:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 15-bit register for signal <addressWrite>.
+    Found 10-bit register for signal <hcountWriteReg>.
+    Found 1-bit register for signal <datain>.
+    Found 20-bit subtractor for signal <GND_38_o_GND_38_o_sub_3_OUT> created at line 64.
+    Found 32-bit adder for signal <n0020> created at line 64.
+    Found 10-bit adder for signal <hcountWriteReg[9]_GND_38_o_add_9_OUT> created at line 94.
+    Found 9x10-bit multiplier for signal <PWR_36_o_entera[9]_MuLt_1_OUT> created at line 64.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <graficaVelocidad> synthesized.
+
+Synthesizing Unit <relojSegundos>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/relojsegundos.v".
+    Found 1-bit register for signal <freq>.
+    Found 26-bit register for signal <count>.
+    Found 26-bit adder for signal <count[25]_GND_39_o_add_2_OUT> created at line 32.
+    Found 26-bit comparator greater for signal <count[25]_GND_39_o_LessThan_2_o> created at line 30
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <relojSegundos> synthesized.
+
+Synthesizing Unit <graficaDesplazamiento>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/graficadesplazamiento.v".
+WARNING:Xst:647 - Input <entera<15:10>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 15-bit register for signal <addressWrite>.
+    Found 10-bit register for signal <hcountWriteReg>.
+    Found 1-bit register for signal <datain>.
+    Found 20-bit subtractor for signal <GND_42_o_GND_42_o_sub_3_OUT> created at line 64.
+    Found 32-bit adder for signal <n0020> created at line 64.
+    Found 10-bit adder for signal <hcountWriteReg[9]_GND_42_o_add_9_OUT> created at line 94.
+    Found 9x10-bit multiplier for signal <PWR_40_o_entera[9]_MuLt_1_OUT> created at line 64.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <graficaDesplazamiento> synthesized.
+
+Synthesizing Unit <Contador1Bit>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/contador1bit.v".
+    Found 1-bit register for signal <count>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <Contador1Bit> synthesized.
+
+Synthesizing Unit <controlador>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/velocimetro/controlador.v".
+    Found 1-bit register for signal <hs>.
+    Found 10-bit register for signal <x>.
+    Found 10-bit register for signal <conty>.
+    Found 1-bit register for signal <vs>.
+    Found 10-bit register for signal <y>.
+    Found 10-bit register for signal <contx>.
+    Found 10-bit adder for signal <_n0064> created at line 42.
+    Found 10-bit adder for signal <x[9]_GND_48_o_add_5_OUT> created at line 45.
+    Found 10-bit adder for signal <_n0067> created at line 50.
+    Found 10-bit adder for signal <y[9]_GND_48_o_add_12_OUT> created at line 53.
+    Found 10-bit comparator greater for signal <contx[9]_INV_2621_o> created at line 43
+    Found 10-bit comparator lessequal for signal <n0005> created at line 45
+    Found 10-bit comparator lessequal for signal <n0007> created at line 45
+    Found 10-bit comparator greater for signal <conty[9]_INV_2622_o> created at line 51
+    Found 10-bit comparator lessequal for signal <n0017> created at line 53
+    Found 10-bit comparator lessequal for signal <n0019> created at line 53
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  42 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+Unit <controlador> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 16
+ 10x4-bit multiplier                                   : 2
+ 10x9-bit multiplier                                   : 2
+ 32x5-bit multiplier                                   : 2
+ 32x6-bit multiplier                                   : 2
+ 32x8-bit multiplier                                   : 2
+ 32x9-bit multiplier                                   : 1
+ 4x4-bit multiplier                                    : 3
+ 7x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 216
+ 10-bit adder                                          : 6
+ 11-bit subtractor                                     : 12
+ 12-bit adder                                          : 2
+ 15-bit adder                                          : 4
+ 16-bit adder                                          : 12
+ 17-bit adder                                          : 2
+ 17-bit subtractor                                     : 4
+ 18-bit adder                                          : 2
+ 19-bit adder                                          : 3
+ 20-bit adder                                          : 2
+ 20-bit subtractor                                     : 2
+ 21-bit adder                                          : 2
+ 22-bit adder                                          : 2
+ 23-bit adder                                          : 2
+ 24-bit adder                                          : 2
+ 25-bit adder                                          : 2
+ 26-bit adder                                          : 4
+ 32-bit adder                                          : 124
+ 33-bit adder                                          : 4
+ 34-bit adder                                          : 4
+ 35-bit adder                                          : 4
+ 36-bit adder                                          : 4
+ 37-bit adder                                          : 2
+ 38-bit adder                                          : 2
+ 39-bit adder                                          : 2
+ 4-bit subtractor                                      : 2
+ 7-bit adder                                           : 2
+ 9-bit adder                                           : 1
+# Registers                                            : 38
+ 1-bit register                                        : 19
+ 10-bit register                                       : 6
+ 15-bit register                                       : 3
+ 16-bit register                                       : 2
+ 19-bit register                                       : 1
+ 26-bit register                                       : 2
+ 32-bit register                                       : 2
+ 7-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 202
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 28
+ 10-bit comparator lessequal                           : 4
+ 16-bit comparator equal                               : 1
+ 16-bit comparator lessequal                           : 14
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 22-bit comparator lessequal                           : 2
+ 23-bit comparator lessequal                           : 2
+ 24-bit comparator lessequal                           : 2
+ 25-bit comparator lessequal                           : 2
+ 26-bit comparator greater                             : 2
+ 26-bit comparator lessequal                           : 2
+ 32-bit comparator lessequal                           : 110
+ 33-bit comparator lessequal                           : 4
+ 34-bit comparator lessequal                           : 4
+ 35-bit comparator lessequal                           : 4
+ 36-bit comparator lessequal                           : 4
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 2
+# Multiplexers                                         : 4160
+ 1-bit 2-to-1 multiplexer                              : 4130
+ 15-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 12
+ 8-bit 12-to-1 multiplexer                             : 10
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/enterominaFloat.ngc>.
+Reading core <ipcore_dir/division.ngc>.
+Reading core <ipcore_dir/sumaDeLongitudes.ngc>.
+Reading core <ipcore_dir/floatAFijo.ngc>.
+Reading core <ipcore_dir/restar.ngc>.
+Reading core <ipcore_dir/enteroAFloat.ngc>.
+Reading core <ipcore_dir/multiplicacionFloat.ngc>.
+Reading core <ipcore_dir/romCero50x72.ngc>.
+Reading core <ipcore_dir/romUno50x72.ngc>.
+Reading core <ipcore_dir/romDos50x72.ngc>.
+Reading core <ipcore_dir/romTres50x72.ngc>.
+Reading core <ipcore_dir/romCuatro50x72.ngc>.
+Reading core <ipcore_dir/romCinco50x72.ngc>.
+Reading core <ipcore_dir/romSeis50x72.ngc>.
+Reading core <ipcore_dir/romSiete50x72.ngc>.
+Reading core <ipcore_dir/romOcho50x72.ngc>.
+Reading core <ipcore_dir/romNueve50x72.ngc>.
+Reading core <ipcore_dir/romPunto25x72.ngc>.
+Reading core <ipcore_dir/romDesplazamientoT.ngc>.
+Reading core <ipcore_dir/romVelocidadT.ngc>.
+Reading core <ipcore_dir/romAceleracionT.ngc>.
+Reading core <ipcore_dir/ram1x30000.ngc>.
+Loading core <enterominaFloat> for timing and area information for instance <circunfAFloat>.
+Loading core <enterominaFloat> for timing and area information for instance <milfAFloat>.
+Loading core <division> for timing and area information for instance <milimetrosAmetros>.
+Loading core <sumaDeLongitudes> for timing and area information for instance <sumatotalDistancia>.
+Loading core <floatAFijo> for timing and area information for instance <convertirDespAFijo>.
+Loading core <restar> for timing and area information for instance <restarDesp>.
+Loading core <enteroAFloat> for timing and area information for instance <millonAseg>.
+Loading core <enteroAFloat> for timing and area information for instance <contadorAfloat>.
+Loading core <division> for timing and area information for instance <contadorASeg>.
+Loading core <division> for timing and area information for instance <cocienteVelocidad>.
+Loading core <enterominaFloat> for timing and area information for instance <milAFloat>.
+Loading core <enterominaFloat> for timing and area information for instance <tresmilAFloat>.
+Loading core <division> for timing and area information for instance <hallarConstanteKmh>.
+Loading core <multiplicacionFloat> for timing and area information for instance <productokmh>.
+Loading core <floatAFijo> for timing and area information for instance <convertirVelAFijo>.
+Loading core <romCero50x72> for timing and area information for instance <ramCero>.
+Loading core <romUno50x72> for timing and area information for instance <ramUno>.
+Loading core <romDos50x72> for timing and area information for instance <ramDos>.
+Loading core <romTres50x72> for timing and area information for instance <ramTres>.
+Loading core <romCuatro50x72> for timing and area information for instance <ramCuatro>.
+Loading core <romCinco50x72> for timing and area information for instance <ramCinco>.
+Loading core <romSeis50x72> for timing and area information for instance <ramSeis>.
+Loading core <romSiete50x72> for timing and area information for instance <ramSiete>.
+Loading core <romOcho50x72> for timing and area information for instance <ramOcho>.
+Loading core <romNueve50x72> for timing and area information for instance <ramNueve>.
+Loading core <romPunto25x72> for timing and area information for instance <ramPunto>.
+Loading core <romDesplazamientoT> for timing and area information for instance <ramDesplazamiento>.
+Loading core <romVelocidadT> for timing and area information for instance <ramVelocidad>.
+Loading core <romAceleracionT> for timing and area information for instance <ramAceleracion>.
+Loading core <ram1x30000> for timing and area information for instance <ramPuntos>.
+Loading core <ram1x30000> for timing and area information for instance <ramPuntos>.
+WARNING:Xst:1426 - The value init of the FF/Latch datain hinder the constant cleaning in the block graficarDes.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch datain hinder the constant cleaning in the block graficar.
+   You should achieve better results by setting this init to 1.
+
+Synthesizing (advanced) Unit <codifBinDec>.
+	Multiplier <Mmult_PWR_15_o_GND_15_o_MuLt_11_OUT> in block <codifBinDec> and adder/subtractor <Madd_n0038[11:0]_Madd> in block <codifBinDec> are combined into a MAC<Maddsub_PWR_15_o_GND_15_o_MuLt_11_OUT>.
+Unit <codifBinDec> synthesized (advanced).
+
+Synthesizing (advanced) Unit <colorpixel>.
+	Multiplier <Mmult_Dcentenas[3]_PWR_20_o_MuLt_0_OUT> in block <colorpixel> and adder/subtractor <Madd_n0412[8:0]> in block <colorpixel> are combined into a MAC<Maddsub_Dcentenas[3]_PWR_20_o_MuLt_0_OUT>.
+Unit <colorpixel> synthesized (advanced).
+
+Synthesizing (advanced) Unit <controlador>.
+The following registers are absorbed into counter <contx>: 1 register on signal <contx>.
+The following registers are absorbed into counter <conty>: 1 register on signal <conty>.
+The following registers are absorbed into counter <x>: 1 register on signal <x>.
+The following registers are absorbed into counter <y>: 1 register on signal <y>.
+Unit <controlador> synthesized (advanced).
+
+Synthesizing (advanced) Unit <debounce>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <desplazamiento>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <desplazamiento> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graficaDesplazamiento>.
+The following registers are absorbed into counter <hcountWriteReg>: 1 register on signal <hcountWriteReg>.
+	Multiplier <Mmult_PWR_40_o_entera[9]_MuLt_1_OUT> in block <graficaDesplazamiento> and adder/subtractor <Msub_GND_42_o_GND_42_o_sub_3_OUT_Madd> in block <graficaDesplazamiento> are combined into a MAC<Maddsub_PWR_40_o_entera[9]_MuLt_1_OUT>.
+Unit <graficaDesplazamiento> synthesized (advanced).
+
+Synthesizing (advanced) Unit <graficaVelocidad>.
+The following registers are absorbed into counter <hcountWriteReg>: 1 register on signal <hcountWriteReg>.
+	Multiplier <Mmult_PWR_36_o_entera[9]_MuLt_1_OUT> in block <graficaVelocidad> and adder/subtractor <Msub_GND_38_o_GND_38_o_sub_3_OUT_Madd> in block <graficaVelocidad> are combined into a MAC<Maddsub_PWR_36_o_entera[9]_MuLt_1_OUT>.
+Unit <graficaVelocidad> synthesized (advanced).
+
+Synthesizing (advanced) Unit <relojSegundos>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <relojSegundos> synthesized (advanced).
+
+Synthesizing (advanced) Unit <velocidad>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <velocidad> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 5
+ 10x9-to-15-bit MAC                                    : 2
+ 4x4-to-4-bit MAC                                      : 2
+ 4x4-to-9-bit MAC                                      : 1
+# Multipliers                                          : 11
+ 10x4-bit multiplier                                   : 2
+ 32x5-bit multiplier                                   : 2
+ 32x6-bit multiplier                                   : 2
+ 32x8-bit multiplier                                   : 2
+ 32x9-bit multiplier                                   : 1
+ 7x4-bit multiplier                                    : 2
+# Adders/Subtractors                                   : 201
+ 10-bit adder                                          : 2
+ 11-bit subtractor                                     : 12
+ 15-bit adder                                          : 19
+ 16-bit adder                                          : 32
+ 17-bit subtractor                                     : 4
+ 32-bit adder                                          : 128
+ 4-bit adder                                           : 2
+ 4-bit subtractor                                      : 2
+# Counters                                             : 12
+ 10-bit up counter                                     : 6
+ 19-bit up counter                                     : 1
+ 26-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 7-bit up counter                                      : 2
+# Registers                                            : 136
+ Flip-Flops                                            : 136
+# Comparators                                          : 202
+ 1-bit comparator equal                                : 1
+ 10-bit comparator greater                             : 28
+ 10-bit comparator lessequal                           : 4
+ 16-bit comparator equal                               : 1
+ 16-bit comparator lessequal                           : 14
+ 17-bit comparator lessequal                           : 2
+ 18-bit comparator lessequal                           : 2
+ 19-bit comparator lessequal                           : 2
+ 20-bit comparator lessequal                           : 2
+ 21-bit comparator lessequal                           : 2
+ 22-bit comparator lessequal                           : 2
+ 23-bit comparator lessequal                           : 2
+ 24-bit comparator lessequal                           : 2
+ 25-bit comparator lessequal                           : 2
+ 26-bit comparator greater                             : 2
+ 26-bit comparator lessequal                           : 2
+ 32-bit comparator lessequal                           : 110
+ 33-bit comparator lessequal                           : 4
+ 34-bit comparator lessequal                           : 4
+ 35-bit comparator lessequal                           : 4
+ 36-bit comparator lessequal                           : 4
+ 37-bit comparator lessequal                           : 2
+ 38-bit comparator lessequal                           : 2
+ 39-bit comparator lessequal                           : 2
+# Multiplexers                                         : 4159
+ 1-bit 2-to-1 multiplexer                              : 4129
+ 15-bit 2-to-1 multiplexer                             : 2
+ 16-bit 2-to-1 multiplexer                             : 6
+ 32-bit 2-to-1 multiplexer                             : 12
+ 8-bit 12-to-1 multiplexer                             : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch datain hinder the constant cleaning in the block graficaDesplazamiento.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch datain hinder the constant cleaning in the block graficaVelocidad.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2677 - Node <Mmult_n02611> of sequential type is unconnected in block <colorpixel>.
+WARNING:Xst:2677 - Node <Mmult_n03001> of sequential type is unconnected in block <colorpixel>.
+WARNING:Xst:2677 - Node <Mmult_n02771> of sequential type is unconnected in block <colorpixel>.
+WARNING:Xst:2677 - Node <Mmult_n02871> of sequential type is unconnected in block <colorpixel>.
+WARNING:Xst:2677 - Node <Mmult_n03191> of sequential type is unconnected in block <colorpixel>.
+WARNING:Xst:2677 - Node <Mmult_n03081> of sequential type is unconnected in block <colorpixel>.
+WARNING:Xst:2677 - Node <Mmult_n03141> of sequential type is unconnected in block <colorpixel>.
+
+Optimizing unit <mainVelocimetro> ...
+
+Optimizing unit <debounce> ...
+
+Optimizing unit <desplazamiento> ...
+
+Optimizing unit <velocidad> ...
+
+Optimizing unit <colorpixel> ...
+
+Optimizing unit <graficaDesplazamiento> ...
+
+Optimizing unit <graficaVelocidad> ...
+
+Optimizing unit <codifBinDec> ...
+
+Optimizing unit <div_16u_10u> ...
+
+Optimizing unit <controlador> ...
+WARNING:Xst:2677 - Node <velocidad1/counter_6> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/counter_5> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/counter_4> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/counter_3> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/counter_2> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/counter_1> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/counter_0> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/impulso> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:2677 - Node <velocidad1/validarReg> of sequential type is unconnected in block <mainVelocimetro>.
+WARNING:Xst:1293 - FF/Latch <asignarcolores/graficarDes/relojSeg/count_25> has a constant value of 0 in block <mainVelocimetro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <asignarcolores/graficarDes/relojSeg/count_24> has a constant value of 0 in block <mainVelocimetro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <asignarcolores/graficar/relojSeg/count_25> has a constant value of 0 in block <mainVelocimetro>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <asignarcolores/graficar/relojSeg/count_24> has a constant value of 0 in block <mainVelocimetro>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/freq> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/freq> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_10> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_10> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_11> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_11> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_12> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_12> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_13> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_13> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_14> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_14> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_20> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_20> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_15> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_15> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_21> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_21> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_16> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_16> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_22> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_22> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_17> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_17> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_23> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_23> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_18> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_18> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_19> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_19> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_0> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_0> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_1> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_1> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_2> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_2> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_3> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_3> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_4> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_4> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_5> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_5> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_6> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_6> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_7> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_7> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_8> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_8> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/relojSeg/count_9> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/relojSeg/count_9> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/pulsoIman/valorAntiguo> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/pulsoIman/valorAntiguo> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/pulsoIman/impulso> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/pulsoIman/impulso> 
+INFO:Xst:2261 - The FF/Latch <asignarcolores/graficarDes/datain> in Unit <mainVelocimetro> is equivalent to the following FF/Latch, which will be removed : <asignarcolores/graficar/datain> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block mainVelocimetro, actual ratio is 95.
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/tresmilAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/milAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/hallarConstanteKmh> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/cocienteVelocidad> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/contadorASeg> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <desplazamiento1/milimetrosAmetros> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/restarDesp> is equivalent to the following 3 FFs/Latches : <blk000002a0> <blk000002a1> <blk000002a3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/productokmh> is equivalent to the following 3 FFs/Latches : <blk000002cd> <blk000002cf> <blk000002d1> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/tresmilAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/tresmilAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <velocidad1/milAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <velocidad1/milAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/milfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/milfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk00000011> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following 2 FFs/Latches : <blk000000c5> <blk000000c8> 
+INFO:Xst:2260 - The FF/Latch <blk00000012> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c6> 
+INFO:Xst:2260 - The FF/Latch <blk00000013> in Unit <desplazamiento1/circunfAFloat> is equivalent to the following FF/Latch : <blk000000c7> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/hallarConstanteKmh> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/cocienteVelocidad> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/contadorASeg> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <desplazamiento1/milimetrosAmetros> is equivalent to the following 3 FFs/Latches : <blk0000034b> <blk0000034c> <blk00000350> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <velocidad1/convertirVelAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000000b> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 4 FFs/Latches : <blk000000f6> <blk000000f9> <blk000000fb> <blk00000100> 
+INFO:Xst:2260 - The FF/Latch <blk0000000a> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f7> <blk000000fc> <blk000000fe> 
+INFO:Xst:2260 - The FF/Latch <blk00000009> in Unit <desplazamiento1/convertirDespAFijo> is equivalent to the following 3 FFs/Latches : <blk000000f8> <blk000000fd> <blk000000ff> 
+INFO:Xst:2260 - The FF/Latch <blk0000004a> in Unit <velocidad1/restarDesp> is equivalent to the following 3 FFs/Latches : <blk000002a0> <blk000002a1> <blk000002a3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/contadorAfloat> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018b> <blk0000018e> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk0000018a> <blk0000018c> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <velocidad1/millonAseg> is equivalent to the following 2 FFs/Latches : <blk00000189> <blk0000018d> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <velocidad1/productokmh> is equivalent to the following 3 FFs/Latches : <blk000002cd> <blk000002cf> <blk000002d1> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 272
+ Flip-Flops                                            : 272
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : mainVelocimetro.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 14196
+#      GND                         : 32
+#      INV                         : 139
+#      LUT1                        : 154
+#      LUT2                        : 813
+#      LUT3                        : 1869
+#      LUT4                        : 563
+#      LUT5                        : 2318
+#      LUT6                        : 1957
+#      MULT_AND                    : 40
+#      MUXCY                       : 3201
+#      MUXF7                       : 90
+#      VCC                         : 32
+#      XORCY                       : 2988
+# FlipFlops/Latches                : 2812
+#      FD                          : 340
+#      FD_1                        : 5
+#      FDE                         : 2318
+#      FDR                         : 54
+#      FDR_1                       : 2
+#      FDRE                        : 93
+# RAMS                             : 24
+#      RAMB16BWER                  : 23
+#      RAMB8BWER                   : 1
+# Shift Registers                  : 121
+#      SRL16E                      : 1
+#      SRLC16E                     : 120
+# Clock Buffers                    : 4
+#      BUFG                        : 3
+#      BUFGP                       : 1
+# IO Buffers                       : 12
+#      IBUF                        : 1
+#      OBUF                        : 11
+# DSPs                             : 15
+#      DSP48A1                     : 15
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            2812  out of  18224    15%  
+ Number of Slice LUTs:                 7934  out of   9112    87%  
+    Number used as Logic:              7813  out of   9112    85%  
+    Number used as Memory:              121  out of   2176     5%  
+       Number used as SRL:              121
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   8925
+   Number with an unused Flip Flop:    6113  out of   8925    68%  
+   Number with an unused LUT:           991  out of   8925    11%  
+   Number of fully used LUT-FF pairs:  1821  out of   8925    20%  
+   Number of unique control sets:       161
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               24  out of     32    75%  
+    Number using Block RAM only:         24
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+ Number of DSP48A1s:                     15  out of     32    46%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Clock Signal                                | Clock buffer(FF name)                                                                                                                                           | Load  |
+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+clock                                       | BUFGP                                                                                                                                                           | 2814  |
+reloj/count                                 | BUFG                                                                                                                                                            | 50    |
+asignarcolores/graficar/relojSeg/count<24>  | NONE(asignarcolores/graficarDes/Madd_n0020_Madd1)                                                                                                               | 4     |
+asignarcolores/graficarDes/pulsoIman/impulso| BUFG                                                                                                                                                            | 53    |
+reloj1/count                                | BUFG                                                                                                                                                            | 42    |
+asignarcolores/ramCero/N1                   | NONE(asignarcolores/ramCero/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)                | 1     |
+asignarcolores/ramUno/N1                    | NONE(asignarcolores/ramUno/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)                 | 1     |
+asignarcolores/ramDos/N1                    | NONE(asignarcolores/ramDos/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)                 | 1     |
+asignarcolores/ramTres/N1                   | NONE(asignarcolores/ramTres/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)                | 1     |
+asignarcolores/ramCuatro/N1                 | NONE(asignarcolores/ramCuatro/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)              | 1     |
+asignarcolores/ramCinco/N1                  | NONE(asignarcolores/ramCinco/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)               | 1     |
+asignarcolores/ramSeis/N1                   | NONE(asignarcolores/ramSeis/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)                | 1     |
+asignarcolores/ramSiete/N1                  | NONE(asignarcolores/ramSiete/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)               | 1     |
+asignarcolores/ramOcho/N1                   | NONE(asignarcolores/ramOcho/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)                | 1     |
+asignarcolores/ramNueve/N1                  | NONE(asignarcolores/ramNueve/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)               | 1     |
+asignarcolores/ramPunto/N1                  | NONE(asignarcolores/ramPunto/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram)                | 1     |
+asignarcolores/ramDesplazamiento/N1         | NONE(asignarcolores/ramDesplazamiento/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)      | 3     |
+asignarcolores/ramVelocidad/N1              | NONE(asignarcolores/ramVelocidad/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)           | 3     |
+asignarcolores/ramAceleracion/N1            | NONE(asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram)         | 3     |
+asignarcolores/graficar/ramPuntos/N1        | NONE(asignarcolores/graficar/ramPuntos/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)   | 2     |
+asignarcolores/graficarDes/ramPuntos/N1     | NONE(asignarcolores/graficarDes/ramPuntos/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_noinit.ram/SP.SIMPLE_PRIM18.ram)| 2     |
+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 20.304ns (Maximum Frequency: 49.251MHz)
+   Minimum input arrival time before clock: 3.703ns
+   Maximum output required time after clock: 4.887ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 20.304ns (frequency: 49.251MHz)
+  Total number of paths / destination ports: 19051375963 / 5382
+-------------------------------------------------------------------------
+Delay:               20.304ns (Levels of Logic = 50)
+  Source:            desplazamiento1/sumatotalDistancia/blk00000011 (FF)
+  Destination:       velocidad1/contador_30 (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: desplazamiento1/sumatotalDistancia/blk00000011 to velocidad1/contador_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.447   1.021  blk00000011 (sig00000005)
+     LUT4:I0->O            1   0.203   0.000  blk00000115 (sig00000115)
+     MUXCY:S->O            1   0.172   0.000  blk0000007d (sig0000011c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000007c (sig0000011b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000007b (sig0000011a)
+     MUXCY:CI->O           1   0.019   0.000  blk0000007a (sig00000119)
+     MUXCY:CI->O           1   0.019   0.000  blk00000079 (sig00000118)
+     MUXCY:CI->O           1   0.019   0.000  blk00000078 (sig00000117)
+     MUXCY:CI->O           1   0.019   0.000  blk00000077 (sig00000116)
+     MUXCY:CI->O          20   0.213   1.437  blk00000076 (sig00000105)
+     LUT6:I1->O            4   0.203   0.931  blk000000fa (sig000000c4)
+     LUT4:I0->O            1   0.203   0.000  blk0000011f (sig00000125)
+     MUXCY:S->O            2   0.172   0.981  blk0000008e (sig00000127)
+     LUT6:I0->O            2   0.203   0.617  blk00000154 (sig0000017c)
+     LUT6:I5->O            1   0.205   0.000  blk00000155 (sig000000ca)
+     MUXCY:S->O            1   0.172   0.000  blk00000090 (sig00000135)
+     MUXCY:CI->O           1   0.019   0.000  blk0000009b (sig0000013a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000099 (sig00000139)
+     MUXCY:CI->O           1   0.019   0.000  blk00000097 (sig00000138)
+     MUXCY:CI->O           1   0.019   0.000  blk00000095 (sig00000137)
+     MUXCY:CI->O           1   0.019   0.000  blk00000093 (sig00000134)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a8 (sig00000140)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a6 (sig0000013f)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a4 (sig0000013e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a2 (sig0000013d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000a0 (sig0000013c)
+     MUXCY:CI->O           0   0.019   0.000  blk0000009e (sig0000013b)
+     XORCY:CI->O           5   0.180   0.962  blk0000009c (sig000000cf)
+     LUT4:I0->O            1   0.203   0.000  blk00000129 (sig00000142)
+     MUXCY:S->O           17   0.172   0.000  blk000000aa (sig00000146)
+     MUXCY:CI->O          22   0.213   1.134  blk000000ab (sig00000095)
+     LUT3:I2->O            2   0.205   0.981  blk00000127 (sig00000141)
+     LUT6:I0->O           13   0.203   0.933  blk0000015d (sig00000098)
+     LUT2:I1->O            1   0.205   0.000  blk0000005f (sig00000085)
+     MUXCY:S->O            1   0.172   0.000  blk0000005e (sig00000084)
+     MUXCY:CI->O           1   0.019   0.000  blk0000005b (sig00000082)
+     MUXCY:CI->O           1   0.019   0.000  blk00000059 (sig00000080)
+     MUXCY:CI->O           1   0.019   0.000  blk00000056 (sig0000007e)
+     MUXCY:CI->O           1   0.019   0.000  blk00000054 (sig0000007c)
+     MUXCY:CI->O           1   0.019   0.000  blk00000052 (sig0000007a)
+     MUXCY:CI->O           0   0.019   0.000  blk00000050 (sig00000078)
+     XORCY:CI->O           3   0.180   0.898  blk0000004e (sig000000dc)
+     LUT6:I2->O            8   0.203   1.147  blk0000013d (sig000000dd)
+     LUT6:I1->O            4   0.203   0.912  blk00000173 (sig00000168)
+     LUT4:I1->O            8   0.205   0.803  blk00000138 (m_axis_result_tdata<11>)
+     end scope: 'desplazamiento1/sumatotalDistancia:m_axis_result_tdata<11>'
+     LUT6:I5->O            1   0.205   0.000  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_lut<3> (velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_lut<3>)
+     MUXCY:S->O            1   0.172   0.000  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<3> (velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<4> (velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<4>)
+     MUXCY:CI->O          96   0.019   1.851  velocidad1/Mcompar_desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o_cy<5> (velocidad1/desplazamientofNuevo[15]_desplazamientof[15]_equal_4_o)
+     LUT5:I4->O            1   0.205   0.000  velocidad1/contadorAcumulado_31_rstpot (velocidad1/contadorAcumulado_31_rstpot)
+     FD:D                      0.102          velocidad1/contadorAcumulado_31
+    ----------------------------------------
+    Total                     20.304ns (5.696ns logic, 14.608ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reloj/count'
+  Clock period: 7.149ns (frequency: 139.886MHz)
+  Total number of paths / destination ports: 1018 / 249
+-------------------------------------------------------------------------
+Delay:               7.149ns (Levels of Logic = 6)
+  Source:            asignarcolores/ramCero/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
+  Destination:       asignarcolores/coloresreg_7 (FF)
+  Source Clock:      reloj/count rising
+  Destination Clock: reloj/count rising
+
+  Data Path: asignarcolores/ramCero/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to asignarcolores/coloresreg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     RAMB16BWER:CLKA->DOA7   11   1.850   1.130  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<7>)
+     end scope: 'asignarcolores/ramCero:douta<7>'
+     LUT4:I0->O            1   0.203   0.580  asignarcolores/n0259<7>7 (asignarcolores/n0259<7>7)
+     LUT6:I5->O            1   0.205   0.944  asignarcolores/n0259<7>8 (asignarcolores/n0259<7>8)
+     LUT6:I0->O            1   0.203   0.580  asignarcolores/n0259<7>10 (asignarcolores/n0259<7>10)
+     LUT5:I4->O            1   0.205   0.944  asignarcolores/n0259<7>12_SW0 (N98)
+     LUT6:I0->O            1   0.203   0.000  asignarcolores/n0259<7>12 (asignarcolores/n0259<7>)
+     FD:D                      0.102          asignarcolores/coloresreg_7
+    ----------------------------------------
+    Total                      7.149ns (2.971ns logic, 4.178ns route)
+                                       (41.6% logic, 58.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'asignarcolores/graficarDes/pulsoIman/impulso'
+  Clock period: 7.506ns (frequency: 133.229MHz)
+  Total number of paths / destination ports: 1880 / 92
+-------------------------------------------------------------------------
+Delay:               7.506ns (Levels of Logic = 1)
+  Source:            asignarcolores/graficarDes/Maddsub_PWR_40_o_entera[9]_MuLt_1_OUT (DSP)
+  Destination:       asignarcolores/graficarDes/addressWrite_14 (FF)
+  Source Clock:      asignarcolores/graficarDes/pulsoIman/impulso rising
+  Destination Clock: asignarcolores/graficarDes/pulsoIman/impulso rising
+
+  Data Path: asignarcolores/graficarDes/Maddsub_PWR_40_o_entera[9]_MuLt_1_OUT to asignarcolores/graficarDes/addressWrite_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     DSP48A1:CLK->PCOUT47    1   3.114   0.000  asignarcolores/graficarDes/Maddsub_PWR_40_o_entera[9]_MuLt_1_OUT (asignarcolores/graficarDes/Maddsub_PWR_40_o_entera[9]_MuLt_1_OUT_PCOUT_to_Madd_n0020_Madd1_PCIN_47)
+     DSP48A1:PCIN47->P14    1   2.264   0.579  asignarcolores/graficarDes/Madd_n0020_Madd1 (asignarcolores/graficarDes/n0020<14>)
+     FD:D                      0.102          asignarcolores/graficarDes/addressWrite_14
+    ----------------------------------------
+    Total                      7.506ns (6.927ns logic, 0.579ns route)
+                                       (92.3% logic, 7.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'reloj1/count'
+  Clock period: 6.509ns (frequency: 153.636MHz)
+  Total number of paths / destination ports: 1307 / 113
+-------------------------------------------------------------------------
+Delay:               6.509ns (Levels of Logic = 4)
+  Source:            sincronizador/contx_2 (FF)
+  Destination:       sincronizador/conty_9 (FF)
+  Source Clock:      reloj1/count rising
+  Destination Clock: reloj1/count rising
+
+  Data Path: sincronizador/contx_2 to sincronizador/conty_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.447   1.028  sincronizador/contx_2 (sincronizador/contx_2)
+     LUT5:I0->O            1   0.203   0.808  sincronizador/_n00701_SW0 (N86)
+     LUT6:I3->O           33   0.205   1.306  sincronizador/_n00701 (sincronizador/_n00701)
+     LUT6:I5->O            1   0.205   0.580  sincronizador/_n0070_SW0 (N88)
+     LUT6:I5->O           20   0.205   1.092  sincronizador/_n0070 (sincronizador/_n0070)
+     FDRE:R                    0.430          sincronizador/y_0
+    ----------------------------------------
+    Total                      6.509ns (1.695ns logic, 4.814ns route)
+                                       (26.0% logic, 74.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 22 / 22
+-------------------------------------------------------------------------
+Offset:              3.703ns (Levels of Logic = 2)
+  Source:            iman (PAD)
+  Destination:       limpiarIman/count_18 (FF)
+  Destination Clock: clock rising
+
+  Data Path: iman to limpiarIman/count_18
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.755  iman_IBUF (iman_IBUF)
+     LUT2:I0->O           20   0.203   1.092  limpiarIman/n0000_inv1 (limpiarIman/n0000_inv)
+     FDRE:R                    0.430          limpiarIman/count_0
+    ----------------------------------------
+    Total                      3.703ns (1.855ns logic, 1.847ns route)
+                                       (50.1% logic, 49.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reloj1/count'
+  Total number of paths / destination ports: 20 / 11
+-------------------------------------------------------------------------
+Offset:              4.887ns (Levels of Logic = 2)
+  Source:            sincronizador/hs (FF)
+  Destination:       colores<7> (PAD)
+  Source Clock:      reloj1/count rising
+
+  Data Path: sincronizador/hs to colores<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              10   0.447   1.085  sincronizador/hs (sincronizador/hs)
+     LUT3:I0->O            1   0.205   0.579  colores<0>1 (colores_0_OBUF)
+     OBUF:I->O                 2.571          colores_0_OBUF (colores<0>)
+    ----------------------------------------
+    Total                      4.887ns (3.223ns logic, 1.664ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'reloj/count'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.382ns (Levels of Logic = 2)
+  Source:            asignarcolores/coloresreg_7 (FF)
+  Destination:       colores<7> (PAD)
+  Source Clock:      reloj/count rising
+
+  Data Path: asignarcolores/coloresreg_7 to colores<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.447   0.580  asignarcolores/coloresreg_7 (asignarcolores/coloresreg_7)
+     LUT3:I2->O            1   0.205   0.579  colores<7>1 (colores_7_OBUF)
+     OBUF:I->O                 2.571          colores_7_OBUF (colores<7>)
+    ----------------------------------------
+    Total                      4.382ns (3.223ns logic, 1.159ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock asignarcolores/graficar/relojSeg/count<24>
+--------------------------------------------+---------+---------+---------+---------+
+                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------+---------+---------+---------+---------+
+asignarcolores/graficarDes/pulsoIman/impulso|    4.561|         |         |         |
+clock                                       |  207.079|         |         |         |
+--------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock asignarcolores/graficarDes/pulsoIman/impulso
+--------------------------------------------+---------+---------+---------+---------+
+                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------+---------+---------+---------+---------+
+asignarcolores/graficarDes/pulsoIman/impulso|    7.506|         |         |         |
+clock                                       |  205.933|         |         |         |
+--------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clock
+--------------------------------------------+---------+---------+---------+---------+
+                                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------+---------+---------+---------+---------+
+asignarcolores/graficarDes/pulsoIman/impulso|    2.887|         |         |         |
+clock                                       |   20.304|    4.641|    3.716|         |
+reloj/count                                 |    3.026|         |         |         |
+--------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reloj/count
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |  224.478|    8.536|         |         |
+reloj/count    |    7.149|         |    1.913|         |
+reloj1/count   |   19.823|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reloj1/count
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+reloj1/count   |    6.509|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 125.00 secs
+Total CPU time to Xst completion: 124.37 secs
+ 
+--> 
+
+Total memory usage is 222136 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  164 (   0 filtered)
+Number of infos    :  145 (   0 filtered)
+

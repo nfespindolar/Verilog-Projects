@@ -1,0 +1,29 @@
+Command line:
+   TestVelocidad_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54226
+
+Sat Jun 02 20:28:32 2012
+
+
+ Elaboration Time: 1.02961 sec
+
+ Current Memory Usage: 395.321 Meg
+
+ Total Signals          : 29324
+ Total Nets             : 9567
+ Total Signal Drivers   : 10873
+ Total Blocks           : 7412
+ Total Primitive Blocks : 5644
+ Total Processes        : 19823
+ Total Traceable Variables  : 15705
+ Total Scalar Nets and Variables : 84753
+Total Line Count : 68901
+
+ Total Simulation Time: 3.43202 sec
+
+ Current Memory Usage: 395.321 Meg
+
+Sat Jun 02 20:30:06 2012
+

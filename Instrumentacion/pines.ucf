@@ -1,0 +1,17 @@
+net "clock" loc = V10 |  IOSTANDARD=LVCMOS33;
+net "pulsos" loc = T12  |  IOSTANDARD=LVCMOS33;
+
+net "displaytotal[6]" loc = T17  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[5]" loc = T18  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[4]" loc = U17  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[3]" loc = U18  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[2]" loc = M14  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[1]" loc = N14  |  IOSTANDARD=LVCMOS33;
+net "displaytotal[0]" loc = L14  |  IOSTANDARD=LVCMOS33;
+
+net "Sw0" loc = N16  |  IOSTANDARD=LVCMOS33;
+net "Sw1" loc = N15  |  IOSTANDARD=LVCMOS33;
+net "Sw2" loc = P18  |  IOSTANDARD=LVCMOS33;
+net "Sw3" loc = P17  |  IOSTANDARD=LVCMOS33;
+
+net "led" loc = U16	  |  IOSTANDARD=LVCMOS33;

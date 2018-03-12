@@ -1,0 +1,33 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 13.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : compuertas.vf
+// /___/   /\     Timestamp : 03/19/2012 21:05:44
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family artix7 -verilog C:/Users/Fernando/Desktop/SimulacionesX/Practica2/compuertas.vf -w C:/Users/Fernando/Desktop/SimulacionesX/Practica2/compuertas.sch
+//Design Name: compuertas
+//Device: artix7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module compuertas();
+
+   
+   wire XLXN_1;
+   
+   AND2  XLXI_1 (.I0(XLXN_1), 
+                .I1(XLXN_1), 
+                .O());
+   VCC  XLXI_2 (.P(XLXN_1));
+   GND  XLXI_3 (.G());
+endmodule

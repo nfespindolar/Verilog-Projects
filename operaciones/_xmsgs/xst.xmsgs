@@ -1,0 +1,853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="0" delta="new" >Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 36: Port <arg fmt="%s" index="1">circunferenciaF</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 37: Port <arg fmt="%s" index="1">desplazfAntg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1016" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 38: Port <arg fmt="%s" index="1">desplazfAntg</arg> is not connected to this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\debounce.v" Line 35: Result of <arg fmt="%d" index="1">20</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">19</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PulsoAImpulso.v" Line 29: Assignment to <arg fmt="%s" index="1">valorNuevo</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" Line 51: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\desplazamiento.v" Line 96: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\DivisorFrecuencia.v" Line 37: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 126: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 136: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">s_axis_a_tdata</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">32</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 207: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\aceleracion.v" Line 156: Result of <arg fmt="%d" index="1">8</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">7</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\PruebaVelocidad.v" Line 38: Assignment to <arg fmt="%s" index="1">aceleracionFloat</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 26: Result of <arg fmt="%d" index="1">16</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 27: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 28: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\codifBin7segDec.v" Line 29: Result of <arg fmt="%d" index="1">32</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\SelectorDigito.v" Line 37: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\SelectorDigito.v" Line 41: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\Selectordisplay.v" Line 34: Result of <arg fmt="%d" index="1">27</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">26</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\operaciones\Selectordisplay.v" Line 38: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">despFixed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">circunferenciaF</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">milFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">circunfMetrosFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">36</arg>: Output port &lt;<arg fmt="%s" index="3">validar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">desplazamiento1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">desplazfAntg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">millonSeg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">contadorFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">diferencialDesp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">diferencialTiemp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">milFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">tresmilFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">constantekmh</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">velocidadkmhfloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">contadorW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">validar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">impulsoW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">clock20M</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">37</arg>: Output port &lt;<arg fmt="%s" index="3">impulso20M</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">velocidad1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">aceleracionFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">aceleracionFixed</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">desplazfAntg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">millonSeg</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">contadorFloat</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">diferencialDesp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">diferencialTiemp</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">contadorW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">validar</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">impulsoW</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">clock20M</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/pruebavelocidad.v</arg>&quot; line <arg fmt="%s" index="2">38</arg>: Output port &lt;<arg fmt="%s" index="3">impulso20M</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">aceleracion1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">35</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">circunfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">35</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">circunfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">46</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">46</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milfAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milimetrosAmetros</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milimetrosAmetros</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">57</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milimetrosAmetros</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">71</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sumatotalDistancia</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">71</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sumatotalDistancia</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">71</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">sumatotalDistancia</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">84</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirDespAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/desplazamiento.v</arg>&quot; line <arg fmt="%s" index="2">84</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirDespAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">63</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">63</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">63</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">millonAseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">76</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">millonAseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorAfloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">86</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorAfloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">96</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">109</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">122</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">milAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tresmilAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">132</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">tresmilAFloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">142</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hallarConstanteKmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">142</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hallarConstanteKmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">142</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">hallarConstanteKmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">productokmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">productokmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">155</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">productokmh</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">168</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirVelAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v</arg>&quot; line <arg fmt="%s" index="2">168</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirVelAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">59</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">restarDesp</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">millonAseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">72</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">millonAseg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorAfloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">82</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorAfloat</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">92</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">92</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">92</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">contadorASeg</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_b_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">105</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">cocienteVelocidad</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">119</arg>: Output port &lt;<arg fmt="%s" index="3">s_axis_a_tready</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirVelAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">c:/users/fernando/desktop/simulacionesx/operaciones/aceleracion.v</arg>&quot; line <arg fmt="%s" index="2">119</arg>: Output port &lt;<arg fmt="%s" index="3">m_axis_result_tvalid</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">convertirVelAFijo</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fixedPoint&lt;23:20&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="old" >Input &lt;<arg fmt="%s" index="1">fixedPoint&lt;3:0&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="2935" delta="old" >Signal &apos;<arg fmt="%s" index="1">circunferencia</arg>&apos;, unconnected in block &apos;<arg fmt="%s" index="2">adapatadorEntero</arg>&apos;, is tied to its initial value (<arg fmt="%s" index="3">0000100100010110</arg>).
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">reloj25M</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">velocidad1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">pulso</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">velocidad1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">reloj25M</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">aceleracion1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="old" >Hierarchical block &lt;<arg fmt="%s" index="1">pulso</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">aceleracion1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_Codificar</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="old" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_Switch</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/reloj25M/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/reloj25M/count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/reloj25M/count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/reloj25M/count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/reloj25M/freq</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/pulso/valorAntiguo</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/pulso/impulso</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/impulso</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">velocidad1/validarReg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/reloj25M/count_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/reloj25M/count_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/reloj25M/count_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/reloj25M/count_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/reloj25M/freq</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/pulso/valorAntiguo</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/pulso/impulso</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/impulso</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">aceleracion1/validarReg</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">aceleracion1/contador_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">aceleracion1/contador_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">aceleracion1/contador_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">velocidad1/contador_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">velocidad1/contador_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">velocidad1/contador_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">seleccionDisplay/counter_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_25</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_24</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_23</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_22</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_21</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_20</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_19</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_18</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_17</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">aceleracion1/contadorAcumulado_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">aceleracion1/contadorAcumulado_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">aceleracion1/contadorAcumulado_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">velocidad1/contadorAcumulado_29</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">velocidad1/contadorAcumulado_30</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">velocidad1/contadorAcumulado_31</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">PruebaVelocidad</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/digito_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/digito_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/digito_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/digito_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_0&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_2&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_4&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_5</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_5&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_6</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_7</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_8</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_10</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_9</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_9&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_11</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_11&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_12</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_12&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_13</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_13&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_14</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_14&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_15&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">switchactual/counter_16</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">PruebaVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;seleccionDisplay/counter_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/cocienteVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorASeg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/hallarConstanteKmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/cocienteVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorASeg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milimetrosAmetros</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/restarDesp</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002a0&gt; &lt;blk000002a1&gt; &lt;blk000002a3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/restarDesp</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002a0&gt; &lt;blk000002a1&gt; &lt;blk000002a3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/productokmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002cd&gt; &lt;blk000002cf&gt; &lt;blk000002d1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/tresmilAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/milAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000011</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000c5&gt; &lt;blk000000c8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000012</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c6&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000013</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/circunfAFloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg> : <arg fmt="%s" index="4">&lt;blk000000c7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/cocienteVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorASeg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/hallarConstanteKmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/cocienteVelocidad</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorASeg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/milimetrosAmetros</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000034b&gt; &lt;blk0000034c&gt; &lt;blk00000350&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/convertirVelAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000b</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">4 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f6&gt; &lt;blk000000f9&gt; &lt;blk000000fb&gt; &lt;blk00000100&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000000a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f7&gt; &lt;blk000000fc&gt; &lt;blk000000fe&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000009</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">desplazamiento1/convertirDespAFijo</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000000f8&gt; &lt;blk000000fd&gt; &lt;blk000000ff&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/restarDesp</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002a0&gt; &lt;blk000002a1&gt; &lt;blk000002a3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk0000004a</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/restarDesp</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002a0&gt; &lt;blk000002a1&gt; &lt;blk000002a3&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">aceleracion1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/contadorAfloat</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018b&gt; &lt;blk0000018e&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000004</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk0000018a&gt; &lt;blk0000018c&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000005</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/millonAseg</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk00000189&gt; &lt;blk0000018d&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2260" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">blk00000003</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">velocidad1/productokmh</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg> : <arg fmt="%s" index="4">&lt;blk000002cd&gt; &lt;blk000002cf&gt; &lt;blk000002d1&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

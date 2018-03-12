@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a8-csg324-3 truthtable.ngc truthtable.ngd  
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim truthtable.ngc truthtable_synthesis.v 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim truthtable.ngc truthtable_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a8-csg324-3 truthtable.ngc truthtable.ngd  
+map -intstyle ise -p xc7a8-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o truthtable_map.ncd truthtable.ngd truthtable.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/ASCII/truthtable.syr" 

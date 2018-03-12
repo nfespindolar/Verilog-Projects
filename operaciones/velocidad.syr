@@ -1,0 +1,640 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.65 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.66 secs
+ 
+--> Reading design: velocidad.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "velocidad.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "velocidad"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : velocidad
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+INFO:Xst - Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\restar.v" into library work
+Parsing module <restar>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\multiplicacionFloat.v" into library work
+Parsing module <multiplicacionFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\floatAFijo.v" into library work
+Parsing module <floatAFijo>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\enteroAFloat.v" into library work
+Parsing module <enteroAFloat>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\ipcore_dir\division.v" into library work
+Parsing module <division>.
+Analyzing Verilog file "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" into library work
+Parsing module <velocidad>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <velocidad>.
+
+Elaborating module <restar>.
+
+Elaborating module <enteroAFloat>.
+
+Elaborating module <division>.
+
+Elaborating module <multiplicacionFloat>.
+
+Elaborating module <floatAFijo>.
+WARNING:HDLCompiler:413 - "C:\Users\Fernando\Desktop\SimulacionesX\operaciones\velocidad.v" Line 170: Result of 8-bit expression is truncated to fit in 7-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <velocidad>.
+    Related source file is "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v".
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 39: Output port <s_axis_a_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 39: Output port <s_axis_b_tready> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 39: Output port <m_axis_result_tvalid> of the instance <restarDesp> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 52: Output port <s_axis_a_tready> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 52: Output port <m_axis_result_tvalid> of the instance <millonAseg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 62: Output port <s_axis_a_tready> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 62: Output port <m_axis_result_tvalid> of the instance <contadorAfloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 72: Output port <s_axis_a_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 72: Output port <s_axis_b_tready> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 72: Output port <m_axis_result_tvalid> of the instance <contadorASeg> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 85: Output port <s_axis_a_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 85: Output port <s_axis_b_tready> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 85: Output port <m_axis_result_tvalid> of the instance <cocienteVelocidad> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 98: Output port <s_axis_a_tready> of the instance <milAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 98: Output port <m_axis_result_tvalid> of the instance <milAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 108: Output port <s_axis_a_tready> of the instance <tresmilAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 108: Output port <m_axis_result_tvalid> of the instance <tresmilAFloat> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 118: Output port <s_axis_a_tready> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 118: Output port <s_axis_b_tready> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 118: Output port <m_axis_result_tvalid> of the instance <hallarConstanteKmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 131: Output port <s_axis_a_tready> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 131: Output port <s_axis_b_tready> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 131: Output port <m_axis_result_tvalid> of the instance <productokmh> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 144: Output port <s_axis_a_tready> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/fernando/desktop/simulacionesx/operaciones/velocidad.v" line 144: Output port <m_axis_result_tvalid> of the instance <convertirVelAFijo> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <impulso>.
+    Found 32-bit register for signal <desplazamientofAntg>.
+    Found 1-bit register for signal <validarReg>.
+    Found 7-bit register for signal <counter>.
+    Found 32-bit register for signal <contador>.
+    Found 32-bit adder for signal <contador[31]_GND_1_o_add_4_OUT> created at line 160.
+    Found 7-bit adder for signal <counter[6]_GND_1_o_add_9_OUT> created at line 170.
+    Found 32-bit comparator equal for signal <desplazamientofAntg[31]_desplazamientof[31]_equal_3_o> created at line 158
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  73 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <velocidad> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 1
+ 7-bit adder                                           : 1
+# Registers                                            : 5
+ 1-bit register                                        : 2
+ 32-bit register                                       : 2
+ 7-bit register                                        : 1
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/restar.ngc>.
+Reading core <ipcore_dir/enteroAFloat.ngc>.
+Reading core <ipcore_dir/division.ngc>.
+Reading core <ipcore_dir/multiplicacionFloat.ngc>.
+Reading core <ipcore_dir/floatAFijo.ngc>.
+Loading core <restar> for timing and area information for instance <restarDesp>.
+Loading core <enteroAFloat> for timing and area information for instance <millonAseg>.
+Loading core <enteroAFloat> for timing and area information for instance <contadorAfloat>.
+Loading core <division> for timing and area information for instance <contadorASeg>.
+Loading core <division> for timing and area information for instance <cocienteVelocidad>.
+Loading core <enteroAFloat> for timing and area information for instance <milAFloat>.
+Loading core <enteroAFloat> for timing and area information for instance <tresmilAFloat>.
+Loading core <division> for timing and area information for instance <hallarConstanteKmh>.
+Loading core <multiplicacionFloat> for timing and area information for instance <productokmh>.
+Loading core <floatAFijo> for timing and area information for instance <convertirVelAFijo>.
+
+Synthesizing (advanced) Unit <velocidad>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <contador>: 1 register on signal <contador>.
+Unit <velocidad> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 32-bit up counter                                     : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 34
+ Flip-Flops                                            : 34
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <velocidad> ...
+WARNING:Xst:1710 - FF/Latch <contador_29> (without init value) has a constant value of 0 in block <velocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <contador_30> (without init value) has a constant value of 0 in block <velocidad>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <contador_31> (without init value) has a constant value of 0 in block <velocidad>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block velocidad, actual ratio is 50.
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <tresmilAFloat> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <tresmilAFloat> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <milAFloat> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <milAFloat> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <contadorAfloat> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <contadorAfloat> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <millonAseg> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <millonAseg> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <hallarConstanteKmh> is equivalent to the following FF/Latch : <blk00000ee9> 
+INFO:Xst:2260 - The FF/Latch <blk00000045> in Unit <hallarConstanteKmh> is equivalent to the following FF/Latch : <blk00000ee7> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <hallarConstanteKmh> is equivalent to the following 10 FFs/Latches : <blk00000e5d> <blk00000e5e> <blk00000e5f> <blk00000e72> <blk00000e8f> <blk00000e9c> <blk00000e9d> <blk00000ec4> <blk00000ee8> <blk00000eea> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <cocienteVelocidad> is equivalent to the following FF/Latch : <blk00000ee9> 
+INFO:Xst:2260 - The FF/Latch <blk00000045> in Unit <cocienteVelocidad> is equivalent to the following FF/Latch : <blk00000ee7> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <cocienteVelocidad> is equivalent to the following 10 FFs/Latches : <blk00000e5d> <blk00000e5e> <blk00000e5f> <blk00000e72> <blk00000e8f> <blk00000e9c> <blk00000e9d> <blk00000ec4> <blk00000ee8> <blk00000eea> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <contadorASeg> is equivalent to the following FF/Latch : <blk00000ee9> 
+INFO:Xst:2260 - The FF/Latch <blk00000045> in Unit <contadorASeg> is equivalent to the following FF/Latch : <blk00000ee7> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <contadorASeg> is equivalent to the following 10 FFs/Latches : <blk00000e5d> <blk00000e5e> <blk00000e5f> <blk00000e72> <blk00000e8f> <blk00000e9c> <blk00000e9d> <blk00000ec4> <blk00000ee8> <blk00000eea> 
+INFO:Xst:2260 - The FF/Latch <blk00000043> in Unit <productokmh> is equivalent to the following FF/Latch : <blk00000b14> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <productokmh> is equivalent to the following 2 FFs/Latches : <blk00000b36> <blk00000b38> 
+INFO:Xst:2260 - The FF/Latch <blk00000049> in Unit <productokmh> is equivalent to the following FF/Latch : <blk00000b37> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <productokmh> is equivalent to the following 6 FFs/Latches : <blk00000ac2> <blk00000ac3> <blk00000aed> <blk00000aee> <blk00000aef> <blk00000b13> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <convertirVelAFijo> is equivalent to the following 2 FFs/Latches : <blk0000014c> <blk0000014f> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <convertirVelAFijo> is equivalent to the following 2 FFs/Latches : <blk0000014b> <blk0000014d> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <convertirVelAFijo> is equivalent to the following 2 FFs/Latches : <blk0000014a> <blk0000014e> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <tresmilAFloat> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <tresmilAFloat> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <milAFloat> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <milAFloat> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <contadorAfloat> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <contadorAfloat> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000025> in Unit <millonAseg> is equivalent to the following FF/Latch : <blk000002b3> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <millonAseg> is equivalent to the following 3 FFs/Latches : <blk000002b1> <blk000002b2> <blk000002b4> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <hallarConstanteKmh> is equivalent to the following FF/Latch : <blk00000ee9> 
+INFO:Xst:2260 - The FF/Latch <blk00000045> in Unit <hallarConstanteKmh> is equivalent to the following FF/Latch : <blk00000ee7> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <hallarConstanteKmh> is equivalent to the following 10 FFs/Latches : <blk00000e5d> <blk00000e5e> <blk00000e5f> <blk00000e72> <blk00000e8f> <blk00000e9c> <blk00000e9d> <blk00000ec4> <blk00000ee8> <blk00000eea> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <cocienteVelocidad> is equivalent to the following FF/Latch : <blk00000ee9> 
+INFO:Xst:2260 - The FF/Latch <blk00000045> in Unit <cocienteVelocidad> is equivalent to the following FF/Latch : <blk00000ee7> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <cocienteVelocidad> is equivalent to the following 10 FFs/Latches : <blk00000e5d> <blk00000e5e> <blk00000e5f> <blk00000e72> <blk00000e8f> <blk00000e9c> <blk00000e9d> <blk00000ec4> <blk00000ee8> <blk00000eea> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <contadorASeg> is equivalent to the following FF/Latch : <blk00000ee9> 
+INFO:Xst:2260 - The FF/Latch <blk00000045> in Unit <contadorASeg> is equivalent to the following FF/Latch : <blk00000ee7> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <contadorASeg> is equivalent to the following 10 FFs/Latches : <blk00000e5d> <blk00000e5e> <blk00000e5f> <blk00000e72> <blk00000e8f> <blk00000e9c> <blk00000e9d> <blk00000ec4> <blk00000ee8> <blk00000eea> 
+INFO:Xst:2260 - The FF/Latch <blk00000043> in Unit <productokmh> is equivalent to the following FF/Latch : <blk00000b14> 
+INFO:Xst:2260 - The FF/Latch <blk00000044> in Unit <productokmh> is equivalent to the following 2 FFs/Latches : <blk00000b36> <blk00000b38> 
+INFO:Xst:2260 - The FF/Latch <blk00000049> in Unit <productokmh> is equivalent to the following FF/Latch : <blk00000b37> 
+INFO:Xst:2260 - The FF/Latch <blk0000008a> in Unit <productokmh> is equivalent to the following 6 FFs/Latches : <blk00000ac2> <blk00000ac3> <blk00000aed> <blk00000aee> <blk00000aef> <blk00000b13> 
+INFO:Xst:2260 - The FF/Latch <blk00000003> in Unit <convertirVelAFijo> is equivalent to the following 2 FFs/Latches : <blk0000014c> <blk0000014f> 
+INFO:Xst:2260 - The FF/Latch <blk00000004> in Unit <convertirVelAFijo> is equivalent to the following 2 FFs/Latches : <blk0000014b> <blk0000014d> 
+INFO:Xst:2260 - The FF/Latch <blk00000005> in Unit <convertirVelAFijo> is equivalent to the following 2 FFs/Latches : <blk0000014a> <blk0000014e> 
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : velocidad.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 11774
+#      GND                         : 11
+#      INV                         : 15
+#      LUT1                        : 41
+#      LUT2                        : 946
+#      LUT3                        : 3097
+#      LUT4                        : 430
+#      LUT5                        : 402
+#      LUT6                        : 642
+#      MULT_AND                    : 225
+#      MUXCY                       : 3008
+#      MUXF7                       : 14
+#      MUXF8                       : 2
+#      VCC                         : 11
+#      XORCY                       : 2930
+# FlipFlops/Latches                : 6858
+#      FD                          : 288
+#      FDE                         : 6307
+#      FDRE                        : 263
+# Shift Registers                  : 178
+#      SRL16E                      : 29
+#      SRLC16E                     : 86
+#      SRLC32E                     : 63
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 88
+#      IBUF                        : 32
+#      OBUF                        : 56
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            6858  out of  18224    37%  
+ Number of Slice LUTs:                 5751  out of   9112    63%  
+    Number used as Logic:              5573  out of   9112    61%  
+    Number used as Memory:              178  out of   2176     8%  
+       Number used as SRL:              178
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   8097
+   Number with an unused Flip Flop:    1239  out of   8097    15%  
+   Number with an unused LUT:          2346  out of   8097    28%  
+   Number of fully used LUT-FF pairs:  4512  out of   8097    55%  
+   Number of unique control sets:       339
+
+IO Utilization: 
+ Number of IOs:                          89
+ Number of bonded IOBs:                  89  out of    232    38%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clock                              | BUFGP                  | 7036  |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 22.100ns (Maximum Frequency: 45.249MHz)
+   Minimum input arrival time before clock: 6.331ns
+   Maximum output required time after clock: 12.485ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 22.100ns (frequency: 45.249MHz)
+  Total number of paths / destination ports: 63725366072 / 13870
+-------------------------------------------------------------------------
+Delay:               22.100ns (Levels of Logic = 82)
+  Source:            restarDesp/blk00000021 (FF)
+  Destination:       cocienteVelocidad/blk0000006c (FF)
+  Source Clock:      clock rising
+  Destination Clock: clock rising
+
+  Data Path: restarDesp/blk00000021 to cocienteVelocidad/blk0000006c
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.447   1.050  blk00000021 (sig00000005)
+     LUT4:I0->O            1   0.203   0.000  blk0000021e (sig000001ff)
+     MUXCY:S->O            1   0.172   0.000  blk000000ce (sig0000020e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cd (sig0000020d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cc (sig0000020c)
+     MUXCY:CI->O           1   0.019   0.000  blk000000cb (sig0000020b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ca (sig0000020a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c9 (sig00000209)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c8 (sig00000208)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c7 (sig00000207)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c6 (sig00000206)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c5 (sig00000205)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c4 (sig00000204)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c3 (sig00000203)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c2 (sig00000202)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c1 (sig00000201)
+     MUXCY:CI->O           1   0.019   0.000  blk000000c0 (sig00000200)
+     MUXCY:CI->O          58   0.213   1.945  blk000000bf (sig000001d1)
+     LUT6:I1->O            3   0.203   0.995  blk000001c1 (sig000000d3)
+     LUT6:I1->O            1   0.203   0.000  blk000002dc (sig00000227)
+     MUXCY:S->O            2   0.172   0.000  blk000000e3 (sig00000221)
+     MUXCY:CI->O           2   0.019   0.000  blk000000e4 (sig00000220)
+     MUXCY:CI->O           2   0.019   0.000  blk000000e5 (sig0000021f)
+     MUXCY:CI->O           2   0.019   0.000  blk000000e6 (sig0000021b)
+     MUXCY:CI->O           2   0.019   0.961  blk000000e7 (sig0000021e)
+     LUT5:I0->O            1   0.203   0.924  blk00000293 (sig000002e0)
+     LUT6:I1->O            1   0.203   0.000  blk00000295 (sig00000219)
+     MUXF7:I1->O           1   0.140   0.000  blk000000e2 (sig00000218)
+     MUXF8:I0->O           3   0.144   0.651  blk000000e0 (sig0000018f)
+     LUT1:I0->O            1   0.205   0.000  blk000002cb (sig00000317)
+     MUXCY:S->O            1   0.172   0.000  blk000000ea (sig00000243)
+     MUXCY:CI->O           1   0.019   0.000  blk00000105 (sig00000250)
+     MUXCY:CI->O           1   0.019   0.000  blk00000103 (sig0000024f)
+     MUXCY:CI->O           1   0.019   0.000  blk00000101 (sig0000024e)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ff (sig0000024d)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fd (sig0000024c)
+     MUXCY:CI->O           1   0.019   0.000  blk000000fb (sig0000024b)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f9 (sig0000024a)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f7 (sig00000249)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f5 (sig00000248)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f3 (sig00000247)
+     MUXCY:CI->O           1   0.019   0.000  blk000000f1 (sig00000246)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ef (sig00000245)
+     MUXCY:CI->O           1   0.019   0.000  blk000000ed (sig00000242)
+     MUXCY:CI->O           1   0.019   0.000  blk00000120 (sig0000025d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011e (sig0000025c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011c (sig0000025b)
+     MUXCY:CI->O           1   0.019   0.000  blk0000011a (sig0000025a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000118 (sig00000259)
+     MUXCY:CI->O           1   0.019   0.000  blk00000116 (sig00000258)
+     MUXCY:CI->O           1   0.019   0.000  blk00000114 (sig00000257)
+     MUXCY:CI->O           1   0.019   0.000  blk00000112 (sig00000256)
+     MUXCY:CI->O           1   0.019   0.000  blk00000110 (sig00000255)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010e (sig00000254)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010c (sig00000253)
+     MUXCY:CI->O           1   0.019   0.000  blk0000010a (sig00000252)
+     MUXCY:CI->O           0   0.019   0.000  blk00000108 (sig00000251)
+     XORCY:CI->O           4   0.180   0.788  blk00000106 (sig0000012f)
+     LUT2:I0->O            1   0.203   0.000  blk0000023a (sig0000025e)
+     MUXCY:S->O            3   0.172   0.000  blk0000012e (sig00000275)
+     MUXCY:CI->O           6   0.019   0.000  blk0000012d (sig00000276)
+     MUXCY:CI->O           3   0.019   0.000  blk0000012c (sig00000277)
+     MUXCY:CI->O          24   0.019   0.000  blk0000012b (sig00000278)
+     MUXCY:CI->O           3   0.019   0.000  blk0000012a (sig00000272)
+     MUXCY:CI->O           6   0.019   0.000  blk00000129 (sig00000273)
+     MUXCY:CI->O           3   0.019   0.000  blk00000128 (sig00000274)
+     MUXCY:CI->O          48   0.213   1.864  blk00000127 (sig0000012a)
+     LUT5:I0->O           39   0.203   1.620  blk000002bf (sig0000012c)
+     LUT3:I0->O            2   0.205   0.845  blk000001f8 (sig000000e6)
+     LUT6:I3->O            1   0.205   0.808  blk0000031a (sig000002ca)
+     LUT5:I2->O            2   0.205   0.721  blk000002f1 (sig0000014e)
+     LUT3:I1->O            1   0.203   0.000  blk0000024c (sig0000027e)
+     MUXCY:S->O            1   0.172   0.000  blk0000013f (sig0000029d)
+     MUXCY:CI->O           1   0.019   0.000  blk0000013d (sig0000029c)
+     MUXCY:CI->O           1   0.019   0.000  blk0000013b (sig0000029b)
+     MUXCY:CI->O           1   0.019   0.000  blk00000139 (sig0000029a)
+     MUXCY:CI->O           1   0.019   0.000  blk00000137 (sig00000299)
+     MUXCY:CI->O           1   0.019   0.000  blk00000135 (sig00000298)
+     XORCY:CI->O           5   0.180   0.819  blk00000132 (sig00000291)
+     LUT4:I2->O            4   0.203   0.684  blk00000260 (sig000002b5)
+     LUT4:I3->O            2   0.205   0.845  blk0000025b (m_axis_result_tdata<26>)
+     end scope: 'restarDesp:m_axis_result_tdata<26>'
+     begin scope: 'cocienteVelocidad:s_axis_a_tdata<26>'
+     LUT3:I0->O            1   0.205   0.000  blk00000ee0 (sig00000ee5)
+     FDE:D                     0.102          blk0000006f
+    ----------------------------------------
+    Total                     22.100ns (6.581ns logic, 15.519ns route)
+                                       (29.8% logic, 70.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 3008 / 187
+-------------------------------------------------------------------------
+Offset:              6.331ns (Levels of Logic = 14)
+  Source:            desplazamientof<0> (PAD)
+  Destination:       contador_0 (FF)
+  Destination Clock: clock rising
+
+  Data Path: desplazamientof<0> to contador_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   1.028  desplazamientof_0_IBUF (desplazamientof_0_IBUF)
+     LUT6:I1->O            1   0.203   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_lut<0> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<0> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<1> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<2> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<3> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<4> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<5> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<6> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<7> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<8> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<9> (Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<9>)
+     MUXCY:CI->O          32   0.258   1.396  Mcompar_desplazamientofAntg[31]_desplazamientof[31]_equal_3_o_cy<10> (desplazamientofAntg[31]_desplazamientof[31]_equal_3_o)
+     LUT2:I0->O           29   0.203   1.249  _n00481 (_n0048)
+     FDRE:R                    0.430          contador_0
+    ----------------------------------------
+    Total                      6.331ns (2.659ns logic, 3.672ns route)
+                                       (42.0% logic, 58.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 59785 / 56
+-------------------------------------------------------------------------
+Offset:              12.485ns (Levels of Logic = 30)
+  Source:            convertirVelAFijo/blk000000ae (FF)
+  Destination:       velocidadFixed<23> (PAD)
+  Source Clock:      clock rising
+
+  Data Path: convertirVelAFijo/blk000000ae to velocidadFixed<23>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              46   0.447   1.595  blk000000ae (sig0000001a)
+     LUT5:I3->O           25   0.203   1.557  blk00000144 (sig00000057)
+     LUT6:I0->O            1   0.203   0.580  blk0000009a (sig000000e8)
+     LUT6:I5->O            4   0.205   0.931  blk0000009b (sig000000ac)
+     LUT6:I2->O            1   0.203   0.808  blk00000132 (sig00000081)
+     LUT4:I1->O            1   0.205   0.000  blk00000063 (sig0000004f)
+     MUXCY:S->O            1   0.172   0.000  blk00000061 (sig000000ce)
+     MUXCY:CI->O           1   0.019   0.000  blk0000005f (sig000000cd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000005d (sig000000cc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000005b (sig000000cb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000059 (sig000000ca)
+     MUXCY:CI->O           1   0.019   0.000  blk00000057 (sig000000c9)
+     MUXCY:CI->O           1   0.019   0.000  blk00000055 (sig000000c8)
+     MUXCY:CI->O           1   0.019   0.000  blk00000053 (sig000000c7)
+     MUXCY:CI->O           1   0.019   0.000  blk00000051 (sig000000c6)
+     MUXCY:CI->O           1   0.019   0.000  blk0000004f (sig000000c5)
+     MUXCY:CI->O           1   0.019   0.000  blk0000004d (sig000000c4)
+     MUXCY:CI->O           1   0.019   0.000  blk0000004b (sig000000c3)
+     MUXCY:CI->O           1   0.019   0.000  blk00000049 (sig000000c2)
+     MUXCY:CI->O           1   0.019   0.000  blk00000047 (sig000000c1)
+     MUXCY:CI->O           1   0.019   0.000  blk00000045 (sig000000c0)
+     MUXCY:CI->O           1   0.019   0.000  blk00000043 (sig000000bf)
+     MUXCY:CI->O           1   0.019   0.000  blk00000041 (sig000000be)
+     MUXCY:CI->O           1   0.019   0.000  blk0000003f (sig000000bd)
+     MUXCY:CI->O           1   0.019   0.000  blk0000003d (sig000000bc)
+     MUXCY:CI->O           1   0.019   0.000  blk0000003b (sig000000bb)
+     MUXCY:CI->O           1   0.019   0.000  blk00000039 (sig000000ba)
+     XORCY:CI->O          21   0.180   1.361  blk00000036 (sig00000080)
+     LUT6:I2->O            4   0.203   0.683  blk00000066 (m_axis_result_tdata<20>)
+     end scope: 'convertirVelAFijo:m_axis_result_tdata<20>'
+     OBUF:I->O                 2.571          velocidadFixed_20_OBUF (velocidadFixed<20>)
+    ----------------------------------------
+    Total                     12.485ns (4.972ns logic, 7.513ns route)
+                                       (39.8% logic, 60.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |   22.100|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 34.00 secs
+Total CPU time to Xst completion: 33.27 secs
+ 
+--> 
+
+Total memory usage is 195960 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :   74 (   0 filtered)
+

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Fernando\Desktop\SimulacionesX\JuegoLED\main.ncd
+OUTFILE=C:\Users\Fernando\Desktop\SimulacionesX\JuegoLED\main.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\Fernando\Desktop\SimulacionesX\JuegoLED
+LICENSE=WebPack
+USER_INFO=209824483_0_0_637

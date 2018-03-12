@@ -1,0 +1,5 @@
+verilog work "Sumador.v"
+verilog work "Selectordisplay.v"
+verilog work "Selectordigito.v"
+verilog work "Codificadorsietesegmentos.v"
+verilog work "main.v"

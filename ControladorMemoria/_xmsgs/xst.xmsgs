@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="0" delta="new" >Part-select index evaluated to out of bound value may lead to incorrect synthesis results; it is recommended not to use them in RTL
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 115: Signal &lt;<arg fmt="%s" index="1">x_salida_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 116: Signal &lt;<arg fmt="%s" index="1">y_salida_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 119: Signal &lt;<arg fmt="%s" index="1">direccion_memoria_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 123: Signal &lt;<arg fmt="%s" index="1">x_salida_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 124: Signal &lt;<arg fmt="%s" index="1">y_salida_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 126: Signal &lt;<arg fmt="%s" index="1">x_sensor</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 127: Signal &lt;<arg fmt="%s" index="1">direccion_memoria_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 127: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 131: Signal &lt;<arg fmt="%s" index="1">dato_leer_memoria</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 132: Signal &lt;<arg fmt="%s" index="1">dato_leer_memoria</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 135: Signal &lt;<arg fmt="%s" index="1">direccion_memoria_actual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 135: Result of <arg fmt="%d" index="1">10</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">9</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="91" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\Controlador.v" Line 149: Signal &lt;<arg fmt="%s" index="1">EstadoActual</arg>&gt; missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1499" delta="old" >"C:\Users\Fernando\Desktop\SimulacionesX\ControladorMemoria\ipcore_dir\ram4.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ram4</arg>&gt; remains a black box.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

@@ -1,0 +1,15 @@
+net "clock" loc = V10 |  IOSTANDARD=LVCMOS33;
+net "boton" loc = T12  |  IOSTANDARD=LVCMOS33;
+net "a" loc = T17  |  IOSTANDARD=LVCMOS33;
+net "b" loc = T18  |  IOSTANDARD=LVCMOS33;
+net "c" loc = U17  |  IOSTANDARD=LVCMOS33;
+net "d" loc = U18  |  IOSTANDARD=LVCMOS33;
+net "e" loc = M14  |  IOSTANDARD=LVCMOS33;
+net "f" loc = N14  |  IOSTANDARD=LVCMOS33;
+net "g" loc = L14  |  IOSTANDARD=LVCMOS33;
+net "d0" loc = N16  |  IOSTANDARD=LVCMOS33;
+net "d1" loc = N15  |  IOSTANDARD=LVCMOS33;
+net "d2" loc = P18  |  IOSTANDARD=LVCMOS33;
+net "d3" loc = P17  |  IOSTANDARD=LVCMOS33;
+net "boton" CLOCK_DEDICATED_ROUTE = FALSE;
+

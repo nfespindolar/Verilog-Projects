@@ -1,0 +1,18 @@
+# Output products list for <sumaDeLongitudes>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_sumaDeLongitudes.vhd
+sumaDeLongitudes.asy
+sumaDeLongitudes.gise
+sumaDeLongitudes.ngc
+sumaDeLongitudes.sym
+sumaDeLongitudes.v
+sumaDeLongitudes.veo
+sumaDeLongitudes.xco
+sumaDeLongitudes.xise
+sumaDeLongitudes\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+sumaDeLongitudes\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+sumaDeLongitudes\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+sumaDeLongitudes\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+sumaDeLongitudes_flist.txt
+sumaDeLongitudes_readme.txt
+sumaDeLongitudes_xmdf.tcl

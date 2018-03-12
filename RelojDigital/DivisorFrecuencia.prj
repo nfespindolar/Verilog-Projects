@@ -1,0 +1,4 @@
+verilog work "divisorFrecuenciaSeg.v"
+verilog work "divisorFrecuenciaMin.v"
+verilog work "divisorFrecuenciaHor.v"
+verilog work "DivisorFrecuencia.v"

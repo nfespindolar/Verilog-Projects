@@ -1,0 +1,7 @@
+verilog work "../DecodificadorHexadecimal/Selectordisplay.v"
+verilog work "../DecodificadorHexadecimal/SelectorDigito.v"
+verilog work "../DecodificadorHexadecimal/Codificadorsietesegmentos.v"
+verilog work "debounce.v"
+verilog work "cuenta.v"
+verilog work "codifBin7segDec.v"
+verilog work "Contador.v"

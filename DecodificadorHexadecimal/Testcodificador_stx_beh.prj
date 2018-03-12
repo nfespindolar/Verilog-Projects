@@ -1,0 +1,3 @@
+verilog isim_temp "Codificador.v"
+verilog isim_temp "Testcodificador.v"
+verilog isim_temp "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,1526 @@
+Release 13.4 Map O.87xd (nt)
+Xilinx Mapping Report File for Design 'mainVelocimetro'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd
+mainVelocimetro.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Tue Jun 12 11:40:46 2012
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                 2,677 out of  18,224   14%
+    Number used as Flip Flops:               2,676
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                1
+  Number of Slice LUTs:                      6,934 out of   9,112   76%
+    Number used as logic:                    6,725 out of   9,112   73%
+      Number using O6 output only:           3,947
+      Number using O5 output only:             148
+      Number using O5 and O6:                2,630
+      Number used as ROM:                        0
+    Number used as Memory:                      67 out of   2,176    3%
+      Number used as Dual Port RAM:              0
+      Number used as Single Port RAM:            0
+      Number used as Shift Register:            67
+        Number using O6 output only:            19
+        Number using O5 output only:             0
+        Number using O5 and O6:                 48
+    Number used exclusively as route-thrus:    142
+      Number with same-slice register load:    124
+      Number with same-slice carry load:        18
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 2,100 out of   2,278   92%
+  Nummber of MUXCYs used:                    3,804 out of   4,556   83%
+  Number of LUT Flip Flop pairs used:        7,201
+    Number with an unused Flip Flop:         4,913 out of   7,201   68%
+    Number with an unused LUT:                 267 out of   7,201    3%
+    Number of fully used LUT-FF pairs:       2,021 out of   7,201   28%
+    Number of unique control sets:              67
+    Number of slice register sites lost
+      to control set restrictions:             161 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        13 out of     232    5%
+    Number of LOCed IOBs:                       13 out of      13  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                        20 out of      32   62%
+  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       4 out of      16   25%
+    Number used as BUFGs:                        4
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                           15 out of      32   46%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                3.54
+
+Peak Memory Usage:  335 MB
+Total REAL time to MAP completion:  8 mins 9 secs 
+Total CPU time to MAP completion:   7 mins 23 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network velocidad1/hallarConstanteKmh/sig000000ec has no
+   load.
+INFO:LIT:395 - The above info message is repeated 88 more times for the
+   following (max. 5 shown):
+   velocidad1/hallarConstanteKmh/sig000000ed,
+   velocidad1/hallarConstanteKmh/sig000000ee,
+   velocidad1/hallarConstanteKmh/sig000000f6,
+   velocidad1/hallarConstanteKmh/sig000000f5,
+   velocidad1/hallarConstanteKmh/sig000000f4
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 295 block(s) removed
+ 161 block(s) optimized away
+ 334 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+Loadless block "desplazamiento1/convertirDespAFijo/blk0000002a" (MUX) removed.
+ The signal "desplazamiento1/convertirDespAFijo/sig00000044" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/convertirDespAFijo/blk00000029" (MUX) removed.
+   The signal "desplazamiento1/convertirDespAFijo/sig00000046" is loadless and has
+been removed.
+    Loadless block "desplazamiento1/convertirDespAFijo/blk0000007d" (ROM) removed.
+ The signal "desplazamiento1/convertirDespAFijo/sig00000045" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/convertirDespAFijo/blk0000007c" (ROM) removed.
+Loadless block "desplazamiento1/convertirDespAFijo/blk00000043" (XOR) removed.
+ The signal "desplazamiento1/convertirDespAFijo/sig0000009e" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/convertirDespAFijo/blk00000045" (MUX) removed.
+Loadless block "desplazamiento1/convertirDespAFijo/blk0000006e" (XOR) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000ad" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig00000159" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000c1" (MUX) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000af" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig00000147" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000ac" (MUX) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000b1" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig00000148" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000ae" (MUX) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000b3" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig00000149" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000b0" (MUX) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000b5" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig0000014a" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000b2" (MUX) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000b7" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig0000014b" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000b4" (MUX) removed.
+Loadless block "desplazamiento1/sumatotalDistancia/blk000000b8" (XOR) removed.
+ The signal "desplazamiento1/sumatotalDistancia/sig0000014c" is loadless and has
+been removed.
+  Loadless block "desplazamiento1/sumatotalDistancia/blk000000b6" (MUX) removed.
+Loadless block "velocidad1/convertirVelAFijo/blk0000002a" (MUX) removed.
+ The signal "velocidad1/convertirVelAFijo/sig00000044" is loadless and has been
+removed.
+  Loadless block "velocidad1/convertirVelAFijo/blk00000029" (MUX) removed.
+   The signal "velocidad1/convertirVelAFijo/sig00000046" is loadless and has been
+removed.
+    Loadless block "velocidad1/convertirVelAFijo/blk0000007d" (ROM) removed.
+ The signal "velocidad1/convertirVelAFijo/sig00000045" is loadless and has been
+removed.
+  Loadless block "velocidad1/convertirVelAFijo/blk0000007c" (ROM) removed.
+Loadless block "velocidad1/convertirVelAFijo/blk00000043" (XOR) removed.
+ The signal "velocidad1/convertirVelAFijo/sig0000009e" is loadless and has been
+removed.
+  Loadless block "velocidad1/convertirVelAFijo/blk00000045" (MUX) removed.
+Loadless block "velocidad1/convertirVelAFijo/blk0000006e" (XOR) removed.
+Loadless block "velocidad1/productokmh/blk000000c6" (AND) removed.
+Loadless block "velocidad1/productokmh/blk000000ed" (AND) removed.
+Loadless block "velocidad1/productokmh/blk00000114" (AND) removed.
+Loadless block "velocidad1/productokmh/blk00000153" (SFF) removed.
+ The signal "velocidad1/productokmh/sig000002c3" is loadless and has been
+removed.
+ The signal "velocidad1/productokmh/sig000001de" is loadless and has been
+removed.
+  Loadless block "velocidad1/productokmh/blk00000156" (XOR) removed.
+   The signal "velocidad1/productokmh/sig000001e1" is loadless and has been
+removed.
+    Loadless block "velocidad1/productokmh/blk00000159" (MUX) removed.
+     The signal "velocidad1/productokmh/sig000001f2" is loadless and has been
+removed.
+      Loadless block "velocidad1/productokmh/blk0000016b" (AND) removed.
+   The signal "velocidad1/productokmh/sig000001f1" is loadless and has been
+removed.
+    Loadless block "velocidad1/productokmh/blk0000016a" (ROM) removed.
+ The signal "velocidad1/productokmh/sig000001dc" is loadless and has been
+removed.
+Loadless block "velocidad1/productokmh/blk00000154" (SFF) removed.
+ The signal "velocidad1/productokmh/sig000001dd" is loadless and has been
+removed.
+  Loadless block "velocidad1/productokmh/blk00000155" (XOR) removed.
+   The signal "velocidad1/productokmh/sig000001df" is loadless and has been
+removed.
+    Loadless block "velocidad1/productokmh/blk00000157" (MUX) removed.
+     The signal "velocidad1/productokmh/sig000001f0" is loadless and has been
+removed.
+      Loadless block "velocidad1/productokmh/blk00000169" (AND) removed.
+   The signal "velocidad1/productokmh/sig000001ef" is loadless and has been
+removed.
+    Loadless block "velocidad1/productokmh/blk00000168" (ROM) removed.
+Loadless block "velocidad1/productokmh/blk00000167" (AND) removed.
+Loadless block "velocidad1/productokmh/blk00000210" (FF) removed.
+ The signal "velocidad1/productokmh/sig00000263" is loadless and has been
+removed.
+  Loadless block "velocidad1/productokmh/blk000001de" (XOR) removed.
+   The signal "velocidad1/productokmh/sig0000024c" is loadless and has been
+removed.
+    Loadless block "velocidad1/productokmh/blk000001ea" (MUX) removed.
+   The signal "velocidad1/productokmh/sig00000265" is loadless and has been
+removed.
+    Loadless block "velocidad1/productokmh/blk000001f7" (ROM) removed.
+     The signal "velocidad1/productokmh/sig00000116" is loadless and has been
+removed.
+      Loadless block "velocidad1/productokmh/blk000001dd" (FF) removed.
+       The signal "velocidad1/productokmh/sig0000023d" is loadless and has been
+removed.
+        Loadless block "velocidad1/productokmh/blk000001ab" (XOR) removed.
+         The signal "velocidad1/productokmh/sig00000226" is loadless and has been
+removed.
+          Loadless block "velocidad1/productokmh/blk000001b7" (MUX) removed.
+         The signal "velocidad1/productokmh/sig0000023f" is loadless and has been
+removed.
+          Loadless block "velocidad1/productokmh/blk000001c4" (ROM) removed.
+Loadless block "velocidad1/restarDesp/blk0000016e" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig00000244" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk0000019b" (FF) removed.
+   The signal "velocidad1/restarDesp/sig00000258" is loadless and has been removed.
+    Loadless block "velocidad1/restarDesp/blk0000018d" (MUX) removed.
+Loadless block "velocidad1/restarDesp/blk00000170" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig00000236" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk0000016d" (MUX) removed.
+Loadless block "velocidad1/restarDesp/blk00000172" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig00000237" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk0000016f" (MUX) removed.
+Loadless block "velocidad1/restarDesp/blk00000174" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig00000238" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk00000171" (MUX) removed.
+Loadless block "velocidad1/restarDesp/blk00000176" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig00000239" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk00000173" (MUX) removed.
+Loadless block "velocidad1/restarDesp/blk00000178" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig0000023a" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk00000175" (MUX) removed.
+Loadless block "velocidad1/restarDesp/blk00000179" (XOR) removed.
+ The signal "velocidad1/restarDesp/sig0000023b" is loadless and has been removed.
+  Loadless block "velocidad1/restarDesp/blk00000177" (MUX) removed.
+The signal "velocidad1/tresmilAFloat/sig000000bb" is sourceless and has been
+removed.
+The signal "velocidad1/milAFloat/sig000000bb" is sourceless and has been
+removed.
+The signal "desplazamiento1/milfAFloat/sig000000bb" is sourceless and has been
+removed.
+The signal "desplazamiento1/circunfAFloat/sig000000bb" is sourceless and has
+been removed.
+The signal
+"velocidad1/hallarConstanteKmh/U0/i_synth/i_nd_to_rdy/opt_has_pipe.pipe<13>_0"
+is sourceless and has been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk00000336" (ROM) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig00000002" is sourceless and has
+been removed.
+   Sourceless block "velocidad1/hallarConstanteKmh/blk0000004b" (FF) removed.
+    The signal "velocidad1/hallarConstanteKmh/sig00000093" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000092" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk0000004a" (FF) removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk0000034b" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig00000350" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk0000034c" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig00000351" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk00000350" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig00000355" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000345" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000ec" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000b5" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk00000087" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000000ed" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000b4" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk00000088" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000000ee" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000f6" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000bb" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk0000008c" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000000f5" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000ba" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk0000008d" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000000f4" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000000b9" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk0000008e" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000000f3" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig0000034c" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig0000034d" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig0000034e" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig0000034f" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002e1" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001b7" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001be" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002e3" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001b8" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001bd" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002e5" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001b9" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001bc" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002e7" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001ba" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001bb" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002e9" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001bb" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001ba" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002eb" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001bc" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001b9" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002ed" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001bd" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001b8" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002ef" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001be" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001b7" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig000002f1" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk000001bf" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig000001b6" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000346" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000352" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000353" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000354" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000318" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk00000244" (FF) removed.
+  The signal "velocidad1/hallarConstanteKmh/sig00000307" is sourceless and has
+been removed.
+The signal "velocidad1/hallarConstanteKmh/sig00000357" is sourceless and has
+been removed.
+ Sourceless block "velocidad1/hallarConstanteKmh/blk00000355" (FF) removed.
+The signal
+"velocidad1/cocienteVelocidad/U0/i_synth/i_nd_to_rdy/opt_has_pipe.pipe<13>_0" is
+sourceless and has been removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk00000336" (ROM) removed.
+  The signal "velocidad1/cocienteVelocidad/sig00000002" is sourceless and has been
+removed.
+   Sourceless block "velocidad1/cocienteVelocidad/blk0000004b" (FF) removed.
+    The signal "velocidad1/cocienteVelocidad/sig00000093" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000092" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk0000004a" (FF) removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk0000034b" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig00000350" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk0000034c" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig00000351" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk00000350" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig00000355" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000345" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000ec" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000b5" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk00000087" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000000ed" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000b4" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk00000088" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000000ee" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000f6" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000bb" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk0000008c" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000000f5" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000ba" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk0000008d" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000000f4" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000000b9" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk0000008e" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000000f3" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig0000034c" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig0000034d" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig0000034e" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig0000034f" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002e1" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001b7" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001be" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002e3" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001b8" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001bd" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002e5" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001b9" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001bc" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002e7" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001ba" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001bb" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002e9" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001bb" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001ba" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002eb" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001bc" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001b9" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002ed" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001bd" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001b8" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002ef" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001be" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001b7" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig000002f1" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk000001bf" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig000001b6" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000346" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000352" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000353" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000354" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000318" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk00000244" (FF) removed.
+  The signal "velocidad1/cocienteVelocidad/sig00000307" is sourceless and has been
+removed.
+The signal "velocidad1/cocienteVelocidad/sig00000357" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/cocienteVelocidad/blk00000355" (FF) removed.
+The signal
+"velocidad1/contadorASeg/U0/i_synth/i_nd_to_rdy/opt_has_pipe.pipe<13>_0" is
+sourceless and has been removed.
+ Sourceless block "velocidad1/contadorASeg/blk00000336" (ROM) removed.
+  The signal "velocidad1/contadorASeg/sig00000002" is sourceless and has been
+removed.
+   Sourceless block "velocidad1/contadorASeg/blk0000004b" (FF) removed.
+    The signal "velocidad1/contadorASeg/sig00000093" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000092" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk0000004a" (FF) removed.
+ Sourceless block "velocidad1/contadorASeg/blk0000034b" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig00000350" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk0000034c" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig00000351" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk00000350" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig00000355" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000345" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000ec" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000b5" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk00000087" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000000ed" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000b4" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk00000088" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000000ee" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000f6" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000bb" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk0000008c" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000000f5" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000ba" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk0000008d" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000000f4" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000000b9" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk0000008e" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000000f3" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig0000034c" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig0000034d" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig0000034e" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig0000034f" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002e1" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001b7" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001be" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002e3" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001b8" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001bd" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002e5" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001b9" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001bc" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002e7" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001ba" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001bb" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002e9" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001bb" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001ba" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002eb" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001bc" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001b9" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002ed" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001bd" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001b8" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002ef" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001be" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001b7" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig000002f1" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk000001bf" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig000001b6" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000346" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000352" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000353" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000354" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000318" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk00000244" (FF) removed.
+  The signal "velocidad1/contadorASeg/sig00000307" is sourceless and has been
+removed.
+The signal "velocidad1/contadorASeg/sig00000357" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/contadorASeg/blk00000355" (FF) removed.
+The signal
+"desplazamiento1/milimetrosAmetros/U0/i_synth/i_nd_to_rdy/opt_has_pipe.pipe<13>_
+0" is sourceless and has been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk00000336" (ROM) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig00000002" is sourceless and has
+been removed.
+   Sourceless block "desplazamiento1/milimetrosAmetros/blk0000004b" (FF) removed.
+    The signal "desplazamiento1/milimetrosAmetros/sig00000093" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000092" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk0000004a" (FF) removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk0000034b" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig00000350" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk0000034c" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig00000351" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk00000350" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig00000355" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000345" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000ec" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000b5" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk00000087" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000000ed" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000b4" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk00000088" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000000ee" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000f6" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000bb" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk0000008c" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000000f5" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000ba" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk0000008d" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000000f4" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000000b9" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk0000008e" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000000f3" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig0000034c" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig0000034d" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig0000034e" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig0000034f" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002e1" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001b7" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001be" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002e3" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001b8" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001bd" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002e5" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001b9" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001bc" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002e7" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001ba" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001bb" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002e9" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001bb" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001ba" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002eb" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001bc" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001b9" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002ed" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001bd" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001b8" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002ef" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001be" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001b7" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig000002f1" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk000001bf" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig000001b6" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000346" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000352" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000353" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000354" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000318" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk00000244" (FF) removed.
+  The signal "desplazamiento1/milimetrosAmetros/sig00000307" is sourceless and has
+been removed.
+The signal "desplazamiento1/milimetrosAmetros/sig00000357" is sourceless and has
+been removed.
+ Sourceless block "desplazamiento1/milimetrosAmetros/blk00000355" (FF) removed.
+The signal
+"velocidad1/convertirVelAFijo/U0/i_synth/FLT_TO_FIX_OP.SPD.OP/RESULT<20>" is
+sourceless and has been removed.
+The signal
+"velocidad1/convertirVelAFijo/U0/i_synth/i_nd_to_rdy/opt_has_pipe.first_q" is
+sourceless and has been removed.
+ Sourceless block "velocidad1/convertirVelAFijo/blk000000d9" (ROM) removed.
+  The signal "velocidad1/convertirVelAFijo/sig00000004" is sourceless and has been
+removed.
+   Sourceless block "velocidad1/convertirVelAFijo/blk00000003" (FF) removed.
+The signal "velocidad1/convertirVelAFijo/sig00000003" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/convertirVelAFijo/blk0000002b" (FF) removed.
+The signal "velocidad1/convertirVelAFijo/sig00000047" is sourceless and has been
+removed.
+The signal
+"desplazamiento1/convertirDespAFijo/U0/i_synth/FLT_TO_FIX_OP.SPD.OP/RESULT<20>"
+is sourceless and has been removed.
+The signal
+"desplazamiento1/convertirDespAFijo/U0/i_synth/i_nd_to_rdy/opt_has_pipe.first_q"
+is sourceless and has been removed.
+ Sourceless block "desplazamiento1/convertirDespAFijo/blk000000d9" (ROM) removed.
+  The signal "desplazamiento1/convertirDespAFijo/sig00000004" is sourceless and
+has been removed.
+   Sourceless block "desplazamiento1/convertirDespAFijo/blk00000003" (FF) removed.
+The signal "desplazamiento1/convertirDespAFijo/sig00000003" is sourceless and
+has been removed.
+ Sourceless block "desplazamiento1/convertirDespAFijo/blk0000002b" (FF) removed.
+The signal "desplazamiento1/convertirDespAFijo/sig00000047" is sourceless and
+has been removed.
+The signal "velocidad1/restarDesp/U0/i_synth/i_nd_to_rdy/opt_has_pipe.pipe<8>_0"
+is sourceless and has been removed.
+ Sourceless block "velocidad1/restarDesp/blk00000283" (ROM) removed.
+  The signal "velocidad1/restarDesp/sig00000004" is sourceless and has been
+removed.
+   Sourceless block "velocidad1/restarDesp/blk0000004b" (FF) removed.
+    The signal "velocidad1/restarDesp/sig00000076" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000075" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk0000004a" (FF) removed.
+ Sourceless block "velocidad1/restarDesp/blk000002a0" (FF) removed.
+  The signal "velocidad1/restarDesp/sig00000298" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk000002a1" (FF) removed.
+  The signal "velocidad1/restarDesp/sig00000299" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk000002a3" (FF) removed.
+  The signal "velocidad1/restarDesp/sig0000029b" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000293" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig0000028f" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000080" (FF) removed.
+  The signal "velocidad1/restarDesp/sig000000c9" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000081" (FF) removed.
+  The signal "velocidad1/restarDesp/sig000000ca" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000082" (FF) removed.
+  The signal "velocidad1/restarDesp/sig000000cb" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000083" (FF) removed.
+  The signal "velocidad1/restarDesp/sig000000cc" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000099" (FF) removed.
+  The signal "velocidad1/restarDesp/sig00000172" is sourceless and has been
+removed.
+   Sourceless block "velocidad1/restarDesp/blk000001d1" (ROM) removed.
+    The signal "velocidad1/restarDesp/sig0000011f" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig0000011d" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig0000011e" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000120" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig0000012d" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000086" (FF) removed.
+  The signal "velocidad1/restarDesp/sig00000103" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig0000029a" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000296" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000290" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000291" is sourceless and has been
+removed.
+The signal "velocidad1/restarDesp/sig00000285" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk00000267" (ROM) removed.
+The signal "velocidad1/restarDesp/sig0000029c" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/restarDesp/blk000002aa" (FF) removed.
+The signal "velocidad1/contadorAfloat/sig0000017e" is sourceless and has been
+removed.
+The signal "velocidad1/millonAseg/sig0000017e" is sourceless and has been
+removed.
+The signal
+"velocidad1/productokmh/U0/i_synth/i_nd_to_rdy/opt_has_pipe.pipe<6>_0" is
+sourceless and has been removed.
+ Sourceless block "velocidad1/productokmh/blk000002b9" (ROM) removed.
+  The signal "velocidad1/productokmh/sig00000003" is sourceless and has been
+removed.
+   Sourceless block "velocidad1/productokmh/blk00000004" (FF) removed.
+    The signal "velocidad1/productokmh/sig00000026" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig00000025" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk00000003" (FF) removed.
+ Sourceless block "velocidad1/productokmh/blk000002cd" (FF) removed.
+  The signal "velocidad1/productokmh/sig000002c4" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk000002cf" (FF) removed.
+  The signal "velocidad1/productokmh/sig000002c6" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk000002d1" (FF) removed.
+  The signal "velocidad1/productokmh/sig000002c8" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig000000bb" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk00000050" (FF) removed.
+  The signal "velocidad1/productokmh/sig00000043" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig000000bc" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk00000051" (FF) removed.
+  The signal "velocidad1/productokmh/sig00000044" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig000000bd" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk00000052" (FF) removed.
+  The signal "velocidad1/productokmh/sig00000045" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig00000046" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig000000c2" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk00000054" (FF) removed.
+  The signal "velocidad1/productokmh/sig000000a2" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig000000fc" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig00000100" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig00000104" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig00000293" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk0000022f" (FF) removed.
+  The signal "velocidad1/productokmh/sig00000283" is sourceless and has been
+removed.
+The signal "velocidad1/productokmh/sig000002ca" is sourceless and has been
+removed.
+ Sourceless block "velocidad1/productokmh/blk000002d6" (FF) removed.
+The signal "asignarcolores/ramDesplazamiento/N0" is sourceless and has been
+removed.
+The signal "asignarcolores/ramVelocidad/N0" is sourceless and has been removed.
+The signal "asignarcolores/ramAceleracion/douta<7>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<6>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<5>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<4>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<3>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<2>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<1>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/douta<0>" is sourceless and has been
+removed.
+The signal "asignarcolores/ramAceleracion/N0" is sourceless and has been
+removed.
+ Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/sel_pipe_0" (FF) removed.
+  The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/sel_pipe<0>" is sourceless and has been removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux11" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux21" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux31" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux41" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux51" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux61" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux71" (ROM) removed.
+   Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux81" (ROM) removed.
+ Sourceless block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/sel_pipe_1" (FF) removed.
+  The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/has_mux_a.A/sel_pipe<1>" is sourceless and has been removed.
+The signal "asignarcolores/ramAceleracion/N1" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ena_array<2>" is sourceless and has been removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<0>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[0].ram.ram_douta<0>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<1>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[0].ram.ram_douta<1>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<2>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[0].ram.ram_douta<2>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<3>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[0].ram.ram_douta<3>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<4>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[2].ram.ram_douta<0>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<5>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[2].ram.ram_douta<1>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<6>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[2].ram.ram_douta<2>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.ram_douta<7>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[2].ram.ram_douta<3>" is sourceless and has been
+removed.
+The signal
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[0].ram.ram_ena" is sourceless and has been removed.
+The signal "asignarcolores/graficar/ramPuntos/N0" is sourceless and has been
+removed.
+The signal "asignarcolores/graficarDes/ramPuntos/N0" is sourceless and has been
+removed.
+Unused block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_PWR_16_o_equal_3_o<1>1" (ROM)
+removed.
+Unused block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/out1_INV_0" (BUF) removed.
+Unused block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+Unused block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+Unused block
+"asignarcolores/ramAceleracion/U0/xst_blk_mem_generator/gnativebmg.native_blk_me
+m_gen/valid.cstr/ramloop[2].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram" (RAMB16BWER)
+removed.
+Unused block "asignarcolores/ramAceleracion/XST_GND" (ZERO) removed.
+Unused block "asignarcolores/ramAceleracion/XST_VCC" (ONE) removed.
+Unused block "desplazamiento1/circunfAFloat/blk000000c5" (FF) removed.
+Unused block "desplazamiento1/convertirDespAFijo/blk00000082" (ROM) removed.
+Unused block "desplazamiento1/milfAFloat/blk000000c5" (FF) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk00000086" (FF) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk0000008b" (FF) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001a4" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001a6" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001a8" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001aa" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001ac" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001ae" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001b0" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001b2" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk000001b4" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk00000236" (XOR) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk00000288" (ROM) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk00000289" (ROM) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk0000028a" (ROM) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk0000028e" (ROM) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk00000292" (ROM) removed.
+Unused block "desplazamiento1/milimetrosAmetros/blk00000354" (SRLC16E) removed.
+Unused block "velocidad1/cocienteVelocidad/blk00000086" (FF) removed.
+Unused block "velocidad1/cocienteVelocidad/blk0000008b" (FF) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001a4" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001a6" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001a8" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001aa" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001ac" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001ae" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001b0" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001b2" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk000001b4" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk00000236" (XOR) removed.
+Unused block "velocidad1/cocienteVelocidad/blk00000288" (ROM) removed.
+Unused block "velocidad1/cocienteVelocidad/blk00000289" (ROM) removed.
+Unused block "velocidad1/cocienteVelocidad/blk0000028a" (ROM) removed.
+Unused block "velocidad1/cocienteVelocidad/blk0000028e" (ROM) removed.
+Unused block "velocidad1/cocienteVelocidad/blk00000292" (ROM) removed.
+Unused block "velocidad1/cocienteVelocidad/blk00000354" (SRLC16E) removed.
+Unused block "velocidad1/contadorASeg/blk00000086" (FF) removed.
+Unused block "velocidad1/contadorASeg/blk0000008b" (FF) removed.
+Unused block "velocidad1/contadorASeg/blk000001a4" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001a6" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001a8" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001aa" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001ac" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001ae" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001b0" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001b2" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk000001b4" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk00000236" (XOR) removed.
+Unused block "velocidad1/contadorASeg/blk00000288" (ROM) removed.
+Unused block "velocidad1/contadorASeg/blk00000289" (ROM) removed.
+Unused block "velocidad1/contadorASeg/blk0000028a" (ROM) removed.
+Unused block "velocidad1/contadorASeg/blk0000028e" (ROM) removed.
+Unused block "velocidad1/contadorASeg/blk00000292" (ROM) removed.
+Unused block "velocidad1/contadorASeg/blk00000354" (SRLC16E) removed.
+Unused block "velocidad1/contadorAfloat/blk0000018e" (FF) removed.
+Unused block "velocidad1/convertirVelAFijo/blk00000082" (ROM) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk00000086" (FF) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk0000008b" (FF) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001a4" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001a6" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001a8" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001aa" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001ac" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001ae" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001b0" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001b2" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk000001b4" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk00000236" (XOR) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk00000288" (ROM) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk00000289" (ROM) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk0000028a" (ROM) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk0000028e" (ROM) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk00000292" (ROM) removed.
+Unused block "velocidad1/hallarConstanteKmh/blk00000354" (SRLC16E) removed.
+Unused block "velocidad1/milAFloat/blk000000c5" (FF) removed.
+Unused block "velocidad1/millonAseg/blk0000018e" (FF) removed.
+Unused block "velocidad1/productokmh/blk00000053" (FF) removed.
+Unused block "velocidad1/productokmh/blk00000221" (XOR) removed.
+Unused block "velocidad1/productokmh/blk00000271" (ROM) removed.
+Unused block "velocidad1/productokmh/blk00000272" (ROM) removed.
+Unused block "velocidad1/productokmh/blk00000273" (ROM) removed.
+Unused block "velocidad1/productokmh/blk00000274" (ROM) removed.
+Unused block "velocidad1/productokmh/blk000002d5" (SRLC16E) removed.
+Unused block "velocidad1/restarDesp/blk000001d0" (ROM) removed.
+Unused block "velocidad1/restarDesp/blk000001e4" (ROM) removed.
+Unused block "velocidad1/restarDesp/blk00000266" (ROM) removed.
+Unused block "velocidad1/restarDesp/blk00000284" (ROM) removed.
+Unused block "velocidad1/restarDesp/blk000002a9" (SRLC16E) removed.
+Unused block "velocidad1/tresmilAFloat/blk000000c5" (FF) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+GND 		asignarcolores/graficar/ramPuntos/XST_GND
+VCC 		asignarcolores/graficar/ramPuntos/XST_VCC
+GND 		asignarcolores/graficarDes/ramPuntos/XST_GND
+VCC 		asignarcolores/graficarDes/ramPuntos/XST_VCC
+GND 		asignarcolores/ramCero/XST_GND
+VCC 		asignarcolores/ramCero/XST_VCC
+GND 		asignarcolores/ramCinco/XST_GND
+VCC 		asignarcolores/ramCinco/XST_VCC
+GND 		asignarcolores/ramCuatro/XST_GND
+VCC 		asignarcolores/ramCuatro/XST_VCC
+GND 		asignarcolores/ramDesplazamiento/XST_GND
+VCC 		asignarcolores/ramDesplazamiento/XST_VCC
+GND 		asignarcolores/ramDos/XST_GND
+VCC 		asignarcolores/ramDos/XST_VCC
+GND 		asignarcolores/ramNueve/XST_GND
+VCC 		asignarcolores/ramNueve/XST_VCC
+GND 		asignarcolores/ramOcho/XST_GND
+VCC 		asignarcolores/ramOcho/XST_VCC
+GND 		asignarcolores/ramPunto/XST_GND
+VCC 		asignarcolores/ramPunto/XST_VCC
+GND 		asignarcolores/ramSeis/XST_GND
+VCC 		asignarcolores/ramSeis/XST_VCC
+GND 		asignarcolores/ramSiete/XST_GND
+VCC 		asignarcolores/ramSiete/XST_VCC
+GND 		asignarcolores/ramTres/XST_GND
+VCC 		asignarcolores/ramTres/XST_VCC
+GND 		asignarcolores/ramUno/XST_GND
+VCC 		asignarcolores/ramUno/XST_VCC
+GND 		asignarcolores/ramVelocidad/XST_GND
+VCC 		asignarcolores/ramVelocidad/XST_VCC
+VCC 		desplazamiento1/circunfAFloat/blk00000001
+GND 		desplazamiento1/circunfAFloat/blk00000002
+VCC 		desplazamiento1/convertirDespAFijo/blk00000001
+GND 		desplazamiento1/convertirDespAFijo/blk00000002
+LUT2 		desplazamiento1/convertirDespAFijo/blk00000070
+   optimized to 1
+VCC 		desplazamiento1/milfAFloat/blk00000001
+GND 		desplazamiento1/milfAFloat/blk00000002
+VCC 		desplazamiento1/milimetrosAmetros/blk00000001
+GND 		desplazamiento1/milimetrosAmetros/blk00000002
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000262
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000340
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000341
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000342
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000343
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000344
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000345
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000346
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000347
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000348
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk00000349
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk0000034a
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk0000034d
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk0000034e
+   optimized to 1
+LUT2 		desplazamiento1/milimetrosAmetros/blk0000034f
+   optimized to 1
+VCC 		desplazamiento1/sumatotalDistancia/blk00000001
+GND 		desplazamiento1/sumatotalDistancia/blk00000002
+VCC 		velocidad1/cocienteVelocidad/blk00000001
+GND 		velocidad1/cocienteVelocidad/blk00000002
+LUT2 		velocidad1/cocienteVelocidad/blk00000262
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000340
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000341
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000342
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000343
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000344
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000345
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000346
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000347
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000348
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk00000349
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk0000034a
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk0000034d
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk0000034e
+   optimized to 1
+LUT2 		velocidad1/cocienteVelocidad/blk0000034f
+   optimized to 1
+VCC 		velocidad1/contadorASeg/blk00000001
+GND 		velocidad1/contadorASeg/blk00000002
+LUT2 		velocidad1/contadorASeg/blk00000262
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000340
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000341
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000342
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000343
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000344
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000345
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000346
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000347
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000348
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk00000349
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk0000034a
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk0000034d
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk0000034e
+   optimized to 1
+LUT2 		velocidad1/contadorASeg/blk0000034f
+   optimized to 1
+VCC 		velocidad1/contadorAfloat/blk00000001
+GND 		velocidad1/contadorAfloat/blk00000002
+LUT2 		velocidad1/contadorAfloat/blk00000101
+   optimized to 0
+VCC 		velocidad1/convertirVelAFijo/blk00000001
+GND 		velocidad1/convertirVelAFijo/blk00000002
+LUT2 		velocidad1/convertirVelAFijo/blk00000070
+   optimized to 1
+VCC 		velocidad1/hallarConstanteKmh/blk00000001
+GND 		velocidad1/hallarConstanteKmh/blk00000002
+LUT2 		velocidad1/hallarConstanteKmh/blk00000262
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000340
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000341
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000342
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000343
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000344
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000345
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000346
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000347
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000348
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk00000349
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk0000034a
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk0000034d
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk0000034e
+   optimized to 1
+LUT2 		velocidad1/hallarConstanteKmh/blk0000034f
+   optimized to 1
+VCC 		velocidad1/milAFloat/blk00000001
+GND 		velocidad1/milAFloat/blk00000002
+VCC 		velocidad1/millonAseg/blk00000001
+GND 		velocidad1/millonAseg/blk00000002
+LUT2 		velocidad1/millonAseg/blk00000101
+   optimized to 0
+VCC 		velocidad1/productokmh/blk00000001
+GND 		velocidad1/productokmh/blk00000002
+LUT2 		velocidad1/productokmh/blk00000089
+   optimized to 1
+LUT4 		velocidad1/productokmh/blk0000008b
+   optimized to 0
+LUT4 		velocidad1/productokmh/blk0000008f
+   optimized to 0
+LUT4 		velocidad1/productokmh/blk00000093
+   optimized to 0
+FDE 		velocidad1/productokmh/blk0000009f
+   optimized to 0
+FDE 		velocidad1/productokmh/blk000000a3
+   optimized to 0
+FDE 		velocidad1/productokmh/blk000000aa
+   optimized to 0
+LUT4 		velocidad1/productokmh/blk000000c7
+   optimized to 0
+LUT4 		velocidad1/productokmh/blk000000ee
+   optimized to 0
+LUT4 		velocidad1/productokmh/blk00000115
+   optimized to 0
+MULT_AND 		velocidad1/productokmh/blk0000016d
+MULT_AND 		velocidad1/productokmh/blk0000016f
+MULT_AND 		velocidad1/productokmh/blk00000171
+MULT_AND 		velocidad1/productokmh/blk00000173
+MULT_AND 		velocidad1/productokmh/blk00000175
+MULT_AND 		velocidad1/productokmh/blk00000177
+MULT_AND 		velocidad1/productokmh/blk0000017a
+LUT2 		velocidad1/productokmh/blk0000024d
+   optimized to 1
+LUT3 		velocidad1/productokmh/blk000002b4
+   optimized to 0
+LUT2 		velocidad1/productokmh/blk000002ca
+   optimized to 1
+LUT2 		velocidad1/productokmh/blk000002cb
+   optimized to 1
+LUT2 		velocidad1/productokmh/blk000002cc
+   optimized to 1
+LUT2 		velocidad1/productokmh/blk000002ce
+   optimized to 1
+LUT2 		velocidad1/productokmh/blk000002d0
+   optimized to 1
+VCC 		velocidad1/restarDesp/blk00000001
+GND 		velocidad1/restarDesp/blk00000002
+LUT2 		velocidad1/restarDesp/blk000001ab
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk00000297
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk00000298
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk00000299
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk0000029a
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk0000029b
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk0000029c
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk0000029d
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk0000029e
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk0000029f
+   optimized to 1
+LUT2 		velocidad1/restarDesp/blk000002a2
+   optimized to 1
+VCC 		velocidad1/tresmilAFloat/blk00000001
+GND 		velocidad1/tresmilAFloat/blk00000002
+
+To enable printing of redundant blocks removed and signals merged, set the
+detailed map report option and rerun map.
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| blanking                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| clock                              | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| colores<0>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<3>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<4>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<5>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<6>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| colores<7>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| hsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| iman                               | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| vsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

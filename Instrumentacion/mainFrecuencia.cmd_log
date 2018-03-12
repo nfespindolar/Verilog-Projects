@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 mainFrecuencia.ngc mainFrecuencia.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainFrecuencia_map.ncd mainFrecuencia.ngd mainFrecuencia.pcf 
+par -w -intstyle ise -ol high -mt off mainFrecuencia_map.ncd mainFrecuencia.ncd mainFrecuencia.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainFrecuencia.twx mainFrecuencia.ncd -o mainFrecuencia.twr mainFrecuencia.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f mainFrecuencia.ut mainFrecuencia.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Instrumentacion/mainFrecuencia.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pines.ucf -p xc6slx16-csg324-3 mainFrecuencia.ngc mainFrecuencia.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainFrecuencia_map.ncd mainFrecuencia.ngd mainFrecuencia.pcf 
+par -w -intstyle ise -ol high -mt off mainFrecuencia_map.ncd mainFrecuencia.ncd mainFrecuencia.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainFrecuencia.twx mainFrecuencia.ncd -o mainFrecuencia.twr mainFrecuencia.pcf -ucf pines.ucf 
+bitgen -intstyle ise -f mainFrecuencia.ut mainFrecuencia.ncd 

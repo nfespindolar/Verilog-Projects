@@ -1,0 +1,3 @@
+verilog work "debounce.v"
+verilog work "Testdebounce.v"
+verilog work "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

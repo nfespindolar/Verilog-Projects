@@ -1,0 +1,21 @@
+Running: C:\xilinix\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Fernando/Desktop/SimulacionesX/PrimerVGA/TestControlador_isim_beh.exe -prj C:/Users/Fernando/Desktop/SimulacionesX/PrimerVGA/TestControlador_beh.prj work.TestControlador work.glbl 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/PrimerVGA/controlador.v" into library work
+Analyzing Verilog file "C:/Users/Fernando/Desktop/SimulacionesX/PrimerVGA/TestControlador.v" into library work
+Analyzing Verilog file "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 116388 KB
+Fuse CPU Usage: 358 ms
+Compiling module controlador
+Compiling module TestControlador
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/Fernando/Desktop/SimulacionesX/PrimerVGA/TestControlador_isim_beh.exe
+Fuse Memory Usage: 120852 KB
+Fuse CPU Usage: 389 ms

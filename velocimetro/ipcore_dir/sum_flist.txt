@@ -1,0 +1,18 @@
+# Output products list for <sum>
+_xmsgs\pn_parser.xmsgs
+demo_tb\tb_sum.vhd
+sum.asy
+sum.gise
+sum.ngc
+sum.sym
+sum.v
+sum.veo
+sum.xco
+sum.xise
+sum\cmodel\floating_point_v6_0_bitacc_cmodel_lin.zip
+sum\cmodel\floating_point_v6_0_bitacc_cmodel_lin64.zip
+sum\cmodel\floating_point_v6_0_bitacc_cmodel_nt.zip
+sum\cmodel\floating_point_v6_0_bitacc_cmodel_nt64.zip
+sum_flist.txt
+sum_readme.txt
+sum_xmdf.tcl

@@ -1,0 +1,14 @@
+# Output products list for <Core>
+Core.asy
+Core.gise
+Core.ngc
+Core.sym
+Core.v
+Core.veo
+Core.xco
+Core.xise
+Core\doc\c_addsub_v11_0_readme.txt
+Core\doc\c_addsub_v11_0_vinfo.html
+Core\doc\ds214_addsub.pdf
+Core_flist.txt
+Core_xmdf.tcl

@@ -1,0 +1,3 @@
+verilog isim_temp "SelectorDigito.v"
+verilog isim_temp "TestSelector.v"
+verilog isim_temp "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

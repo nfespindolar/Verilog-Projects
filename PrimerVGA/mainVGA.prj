@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/ram240x160.v"
+verilog work "DivisorFrecuencia.v"
+verilog work "controlador.v"
+verilog work "colorpixel.v"
+verilog work "mainVGA.v"

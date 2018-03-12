@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/TestRam1x30000_isim_beh.exe" -prj "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/TestRam1x30000_beh.prj" "work.TestRam1x30000" "work.glbl" 

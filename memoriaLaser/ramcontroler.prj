@@ -1,0 +1,5 @@
+verilog work "ram.v"
+verilog work "PulsoAImpulso.v"
+verilog work "counter.v"
+verilog work "comp.v"
+verilog work "ramcontroler.v"

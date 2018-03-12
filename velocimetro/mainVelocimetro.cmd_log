@@ -1,0 +1,472 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/velocimetro/mainVelocimetro.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc C:/Users/Fernando/Desktop/SimulacionesX/operaciones/pines.ucf -p xc6slx16-csg324-3 mainVelocimetro.ngc mainVelocimetro.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o mainVelocimetro_map.ncd mainVelocimetro.ngd mainVelocimetro.pcf 
+par -w -intstyle ise -ol high -mt off mainVelocimetro_map.ncd mainVelocimetro.ncd mainVelocimetro.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml mainVelocimetro.twx mainVelocimetro.ncd -o mainVelocimetro.twr mainVelocimetro.pcf 
+bitgen -intstyle ise -f mainVelocimetro.ut mainVelocimetro.ncd 

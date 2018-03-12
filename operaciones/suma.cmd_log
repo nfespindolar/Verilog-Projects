@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/suma.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/operaciones/suma.syr" 

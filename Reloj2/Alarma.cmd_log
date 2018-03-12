@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Alarma.xst" -ofn "C:/Users/Fernando/Desktop/SimulacionesX/Reloj2/Alarma.syr" 

@@ -1,0 +1,12 @@
+[Inputs]
+b0
+b1
+[Outputs]
+s0
+s1
+s2
+s3
+[BiDir]
+[ATTRIBUTES]
+VeriModel SelectorDigito
+

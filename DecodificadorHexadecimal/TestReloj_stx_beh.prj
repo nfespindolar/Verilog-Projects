@@ -1,0 +1,3 @@
+verilog isim_temp "PruebaReloj.v"
+verilog isim_temp "TestReloj.v"
+verilog isim_temp "C:/xilinix/ISE_DS/ISE//verilog/src/glbl.v"

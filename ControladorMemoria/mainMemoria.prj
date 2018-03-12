@@ -1,0 +1,4 @@
+verilog work "ipcore_dir/ram4.v"
+verilog work "memoria4K.v"
+verilog work "Controlador.v"
+verilog work "mainMemoria.v"
